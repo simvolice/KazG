@@ -9,14 +9,22 @@
     <context-param>
 		<param-name>contextConfigLocation</param-name>
 		<param-value>
-			classpath:org/springframework/config/data-context.xml
+			classpath:org/springframework/config/business-context.xml
 		</param-value>
 	</context-param>
-	<listener>
-		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
-	</listener>
+	<!--<listener>-->
+		<!--&lt;!&ndash;<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>&ndash;&gt;-->
+	<!--</listener>-->
 
 
+	<filter>
+		<filter-name>OpenEntityManagerInViewFilter</filter-name>
+		<filter-class>org.springframework.orm.jpa.support.OpenEntityManagerInViewFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>OpenEntityManagerInViewFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
 
 
     <servlet>
