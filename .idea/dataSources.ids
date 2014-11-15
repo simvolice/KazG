@@ -1,6 +1,83 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component name="dataSourceStorage">
-  <data-source name="MySQL - @localhost" uuid="703b17f1-f127-497a-98c4-083f3b74410f">
-    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  <data-source name="MySQL - kazgidro@178.91.252.123" uuid="703b17f1-f127-497a-98c4-083f3b74410f">
+    <database-info product="MySQL" version="5.5.23" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.31 ( Revision: alexander.soklakov@oracle.com-20140520065950-groqzzbvxprqdmnz )">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="lower" quoted-identifiers="lower"/>
+    <schema name="" catalog="kazgidro"/>
+    <table name="doc_create_usl" schema="" catalog="kazgidro" type="TABLE">
+      <column name="docCreateUslID" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="filialID" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="date" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93"/>
+      <column name="userID" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="kontragentyID" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="dogovorID" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="uslugaID" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="stoimost" sqlType="DOUBLE" precision="22" scale="0" nullable="true" jdbcType="8"/>
+      <primary-key name="PRIMARY" columns="docCreateUslID"/>
+      <foreign-key name="dogovorid" columns="dogovorID" ref-table="dogovora" ref-schema="" ref-catalog="kazgidro" ref-columns="dogovorid" update-rule="3" delete-rule="3" deferrability="2"/>
+      <foreign-key name="filialid" columns="filialID" ref-table="filialy" ref-schema="" ref-catalog="kazgidro" ref-columns="filialid" update-rule="3" delete-rule="3" deferrability="2"/>
+      <foreign-key name="kontragentid" columns="kontragentyID" ref-table="kontragent" ref-schema="" ref-catalog="kazgidro" ref-columns="kontragentid" update-rule="3" delete-rule="3" deferrability="2"/>
+      <foreign-key name="userid" columns="userID" ref-table="users" ref-schema="" ref-catalog="kazgidro" ref-columns="userid" update-rule="3" delete-rule="3" deferrability="2"/>
+      <foreign-key name="uslugiid" columns="uslugaID" ref-table="uslugi" ref-schema="" ref-catalog="kazgidro" ref-columns="uslugiid" update-rule="3" delete-rule="3" deferrability="2"/>
+      <index name="iddoc_create_usl_UNIQUE" unique="true" columns="docCreateUslID"/>
+      <index name="dogovoraID_idx" unique="false" columns="dogovorID"/>
+      <index name="filialID_idx" unique="false" columns="filialID"/>
+      <index name="kontragentyID_idx" unique="false" columns="kontragentyID"/>
+      <index name="userID_idx" unique="false" columns="userID"/>
+      <index name="uslugiID_idx" unique="false" columns="uslugaID"/>
+    </table>
+    <table name="doc_plan" schema="" catalog="kazgidro" type="TABLE">
+      <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="date" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93"/>
+      <column name="nomer" sqlType="VARCHAR" precision="45" scale="0" nullable="false" jdbcType="12"/>
+      <column name="avtor" sqlType="VARCHAR" precision="45" scale="0" nullable="false" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="id"/>
+    </table>
+    <table name="dogovora" schema="" catalog="kazgidro" type="TABLE">
+      <column name="dogovorid" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="start_date" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93"/>
+      <column name="end_date" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93"/>
+      <column name="Summa" sqlType="DOUBLE" precision="22" scale="0" nullable="false" jdbcType="8"/>
+      <primary-key name="PRIMARY" columns="dogovorid"/>
+      <exported-key name="dogovorid" table="doc_create_usl" schema="" catalog="kazgidro" columns="dogovorID"/>
+    </table>
+    <table name="filialy" schema="" catalog="kazgidro" type="TABLE">
+      <column name="filialid" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="naimenovanie" sqlType="VARCHAR" precision="45" scale="0" nullable="false" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="filialid"/>
+      <exported-key name="filialid" table="doc_create_usl" schema="" catalog="kazgidro" columns="filialID"/>
+      <index name="idfilialy_UNIQUE" unique="true" columns="filialid"/>
+    </table>
+    <table name="kontragent" schema="" catalog="kazgidro" type="TABLE">
+      <column name="kontragentid" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="naimenovanie" sqlType="VARCHAR" precision="45" scale="0" nullable="false" jdbcType="12"/>
+      <column name="BIN" sqlType="VARCHAR" precision="45" scale="0" nullable="false" jdbcType="12"/>
+      <column name="IIN" sqlType="VARCHAR" precision="45" scale="0" nullable="false" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="kontragentid"/>
+      <exported-key name="kontragentid" table="doc_create_usl" schema="" catalog="kazgidro" columns="kontragentyID"/>
+      <index name="idkontragent_UNIQUE" unique="true" columns="kontragentid"/>
+    </table>
+    <table name="users" schema="" catalog="kazgidro" type="TABLE">
+      <column name="userid" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="username" sqlType="VARCHAR" precision="45" scale="0" nullable="false" jdbcType="12"/>
+      <column name="userpassword" sqlType="VARCHAR" precision="45" scale="0" nullable="false" jdbcType="12"/>
+      <column name="userrole" sqlType="VARCHAR" precision="45" scale="0" nullable="false" jdbcType="12"/>
+      <column name="userfirstname" sqlType="VARCHAR" precision="45" scale="0" nullable="false" jdbcType="12"/>
+      <column name="userlastname" sqlType="VARCHAR" precision="45" scale="0" nullable="false" jdbcType="12"/>
+      <column name="useremail" sqlType="VARCHAR" precision="45" scale="0" nullable="false" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="userid"/>
+      <exported-key name="userid" table="doc_create_usl" schema="" catalog="kazgidro" columns="userID"/>
+      <index name="idusers_UNIQUE" unique="true" columns="userid"/>
+    </table>
+    <table name="uslugi" schema="" catalog="kazgidro" type="TABLE">
+      <column name="uslugiid" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="naimenovanie" sqlType="VARCHAR" precision="45" scale="0" nullable="false" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="uslugiid"/>
+      <exported-key name="uslugiid" table="doc_create_usl" schema="" catalog="kazgidro" columns="uslugaID"/>
+      <index name="iduslugi_UNIQUE" unique="true" columns="uslugiid"/>
+    </table>
   </data-source>
 </component>

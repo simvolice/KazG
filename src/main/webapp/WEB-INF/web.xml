@@ -9,7 +9,7 @@
     <context-param>
 		<param-name>contextConfigLocation</param-name>
 		<param-value>
-			classpath:org/springframework/config/data-context.xml
+			classpath:config/business-context.xml, classpath:config/tool-context.xml
 		</param-value>
 	</context-param>
 	<listener>
@@ -25,7 +25,7 @@
 
 		<init-param>
 			<param-name>contextConfigLocation</param-name>
-			<param-value>classpath:org/springframework/config/root-context.xml</param-value>
+			<param-value>classpath:config/root-context.xml</param-value>
 		</init-param>
 		<load-on-startup>1</load-on-startup>
 	</servlet>

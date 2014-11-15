@@ -1,9 +1,10 @@
 package org.springframework.model;
 
 import javax.persistence.*;
+import java.util.Collection;
 
 /**
- * Created by Администратор on 10.11.2014.
+ * Created by user on 15.11.2014.
  */
 @Entity
 @Table(name = "users", schema = "", catalog = "kazgidro")
@@ -15,6 +16,7 @@ public class UsersEntity {
     private String userfirstname;
     private String userlastname;
     private String useremail;
+    private Collection<DocCreateUslEntity> docCreateUslsByUserid;
 
     @Id
     @Column(name = "userid", nullable = false, insertable = true, updatable = true)
@@ -115,5 +117,14 @@ public class UsersEntity {
         result = 31 * result + (userlastname != null ? userlastname.hashCode() : 0);
         result = 31 * result + (useremail != null ? useremail.hashCode() : 0);
         return result;
+    }
+
+    @OneToMany(mappedBy = "usersByUserId")
+    public Collection<DocCreateUslEntity> getDocCreateUslsByUserid() {
+        return docCreateUslsByUserid;
+    }
+
+    public void setDocCreateUslsByUserid(Collection<DocCreateUslEntity> docCreateUslsByUserid) {
+        this.docCreateUslsByUserid = docCreateUslsByUserid;
     }
 }
