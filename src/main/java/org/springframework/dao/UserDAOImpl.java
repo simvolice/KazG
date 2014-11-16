@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.model.UsersEntity;
 import org.springframework.stereotype.Repository;
 
+import java.util.List;
 import java.util.Locale;
 import java.util.ResourceBundle;
 
@@ -29,7 +30,7 @@ public class UserDAOImpl implements UserDAO {
 
 
         UsersEntity usersEntityName =
-                (UsersEntity) getSessionFactory().createQuery("from UsersEntity c where c.username=" + usrName);
+                (UsersEntity) getSessionFactory().createQuery("from UsersEntity c where c.username=" + usrName).uniqueResult();
 
 
         if(usersEntityName.getUserpassword() == usrPass){
@@ -72,7 +73,7 @@ getSessionFactory().saveOrUpdate(usersEntity);
     public String DeleteUser(Integer usrId) {
 
 
-        UsersEntity usersEntity = (UsersEntity)getSessionFactory().createQuery("from UsersEntity c where c.id =" + usrId);
+        UsersEntity usersEntity = (UsersEntity)getSessionFactory().createQuery("from UsersEntity c where c.id =" + usrId).uniqueResult();
 
 
         getSessionFactory().delete(usersEntity);
@@ -86,6 +87,20 @@ getSessionFactory().saveOrUpdate(usersEntity);
         ResourceBundle bundle = ResourceBundle.getBundle("messages.messages", Locale.getDefault());
 
         return  bundle.getString("UsrDelete");
+    }
+
+    @Override
+    public List<UsersEntity> GetAllUsers() {
+
+
+
+        return getSessionFactory().createQuery("from UsersEntity").list();
+
+
+
+
+
+
     }
 
 

@@ -2,82 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3dfaa8a2-392d-49a9-850a-4dd09e4004b0" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjrt_1_8_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_entitymanager_4_3_7_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jcl_over_slf4j_1_7_7.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_7.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_commons_1_9_1_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_jpa_1_7_1_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_config_3_2_5_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_core_3_2_5_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_web_3_2_5_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="DELETED" beforePath="C:\Users\Администратор\Desktop\Projects\KazGTest3\.idea\libraries\Maven__asm_asm_3_3_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Администратор\Desktop\Projects\KazGTest3\.idea\libraries\Maven__com_sun_xml_bind_jaxb_core_2_2_10_b140310_1920.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Администратор\Desktop\Projects\KazGTest3\.idea\libraries\Maven__com_sun_xml_bind_jaxb_impl_2_2_10_b140310_1920.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Администратор\Desktop\Projects\KazGTest3\.idea\libraries\Maven__commons_logging_commons_logging_1_1_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Администратор\Desktop\Projects\KazGTest3\.idea\libraries\Maven__org_apache_cxf_cxf_core_3_0_2.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Администратор\Desktop\Projects\KazGTest3\.idea\libraries\Maven__org_apache_cxf_cxf_rt_bindings_soap_3_0_2.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Администратор\Desktop\Projects\KazGTest3\.idea\libraries\Maven__org_apache_cxf_cxf_rt_bindings_xml_3_0_2.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Администратор\Desktop\Projects\KazGTest3\.idea\libraries\Maven__org_apache_cxf_cxf_rt_databinding_jaxb_3_0_2.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Администратор\Desktop\Projects\KazGTest3\.idea\libraries\Maven__org_apache_cxf_cxf_rt_frontend_jaxws_3_0_2.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Администратор\Desktop\Projects\KazGTest3\.idea\libraries\Maven__org_apache_cxf_cxf_rt_frontend_simple_3_0_2.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Администратор\Desktop\Projects\KazGTest3\.idea\libraries\Maven__org_apache_cxf_cxf_rt_transports_http_3_0_2.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Администратор\Desktop\Projects\KazGTest3\.idea\libraries\Maven__org_apache_cxf_cxf_rt_ws_addr_3_0_2.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Администратор\Desktop\Projects\KazGTest3\.idea\libraries\Maven__org_apache_cxf_cxf_rt_ws_policy_3_0_2.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Администратор\Desktop\Projects\KazGTest3\.idea\libraries\Maven__org_apache_cxf_cxf_rt_wsdl_3_0_2.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Администратор\Desktop\Projects\KazGTest3\.idea\libraries\Maven__org_apache_neethi_neethi_3_0_3.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Администратор\Desktop\Projects\KazGTest3\.idea\libraries\Maven__org_apache_ws_xmlschema_xmlschema_core_2_1_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Администратор\Desktop\Projects\KazGTest3\.idea\libraries\Maven__org_codehaus_woodstox_stax2_api_3_1_4.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Администратор\Desktop\Projects\KazGTest3\.idea\libraries\Maven__org_codehaus_woodstox_woodstox_core_asl_4_4_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Администратор\Desktop\Projects\KazGTest3\.idea\libraries\Maven__org_hibernate_common_hibernate_commons_annotations_4_0_1_Final.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Администратор\Desktop\Projects\KazGTest3\.idea\libraries\Maven__org_hibernate_common_hibernate_commons_annotations_4_0_4_Final.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Администратор\Desktop\Projects\KazGTest3\.idea\libraries\Maven__org_hibernate_hibernate_core_4_1_9_Final.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Администратор\Desktop\Projects\KazGTest3\.idea\libraries\Maven__org_hibernate_hibernate_core_4_2_0_Final.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Администратор\Desktop\Projects\KazGTest3\.idea\libraries\Maven__org_hibernate_hibernate_core_4_3_4_Final.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Администратор\Desktop\Projects\KazGTest3\.idea\libraries\Maven__org_hibernate_hibernate_core_4_3_5_Final.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Администратор\Desktop\Projects\KazGTest3\.idea\libraries\Maven__org_hibernate_hibernate_core_4_3_6_Final.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Администратор\Desktop\Projects\KazGTest3\.idea\libraries\Maven__org_javassist_javassist_3_15_0_GA.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Администратор\Desktop\Projects\KazGTest3\.idea\libraries\Maven__org_javassist_javassist_3_17_1_GA.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Администратор\Desktop\Projects\KazGTest3\.idea\libraries\Maven__org_jboss_logging_jboss_logging_3_1_0_GA.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Администратор\Desktop\Projects\KazGTest3\.idea\libraries\Maven__org_jboss_spec_javax_transaction_jboss_transaction_api_1_1_spec_1_0_0_Final.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Администратор\Desktop\Projects\KazGTest3\.idea\libraries\Maven__org_springframework_spring_aop_3_1_0_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Администратор\Desktop\Projects\KazGTest3\.idea\libraries\Maven__org_springframework_spring_asm_3_1_0_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Администратор\Desktop\Projects\KazGTest3\.idea\libraries\Maven__org_springframework_spring_beans_3_1_0_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Администратор\Desktop\Projects\KazGTest3\.idea\libraries\Maven__org_springframework_spring_context_3_1_0_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Администратор\Desktop\Projects\KazGTest3\.idea\libraries\Maven__org_springframework_spring_context_support_3_1_0_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Администратор\Desktop\Projects\KazGTest3\.idea\libraries\Maven__org_springframework_spring_core_3_1_0_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Администратор\Desktop\Projects\KazGTest3\.idea\libraries\Maven__org_springframework_spring_core_4_1_1_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Администратор\Desktop\Projects\KazGTest3\.idea\libraries\Maven__org_springframework_spring_expression_3_1_0_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Администратор\Desktop\Projects\KazGTest3\.idea\libraries\Maven__org_springframework_spring_jdbc_3_1_0_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Администратор\Desktop\Projects\KazGTest3\.idea\libraries\Maven__org_springframework_spring_orm_3_1_0_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Администратор\Desktop\Projects\KazGTest3\.idea\libraries\Maven__org_springframework_spring_test_3_1_0_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Администратор\Desktop\Projects\KazGTest3\.idea\libraries\Maven__org_springframework_spring_web_3_1_0_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Администратор\Desktop\Projects\KazGTest3\.idea\libraries\Maven__org_springframework_spring_webmvc_3_1_0_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Администратор\Desktop\Projects\KazGTest3\.idea\libraries\Maven__org_springframework_spring_webmvc_4_1_2_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Администратор\Desktop\Projects\KazGTest3\.idea\libraries\Maven__wsdl4j_wsdl4j_1_6_3.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Администратор\Desktop\Projects\KazGTest3\.idea\libraries\Maven__xml_resolver_xml_resolver_1_2.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Администратор\Desktop\Projects\KazGTest3\.idea\libraries\hibernate_core_4_3_7_Final.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Администратор\Desktop\Projects\KazGTest3\.idea\libraries\spring_aop_2_0_m4.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Администратор\Desktop\Projects\KazGTest3\.idea\libraries\spring_aop_4_1_2_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Администратор\Desktop\Projects\KazGTest3\.idea\libraries\spring_core_4_1_2_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Администратор\Desktop\Projects\KazGTest3\.idea\libraries\spring_jdbc_4_1_2_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Администратор\Desktop\Projects\KazGTest3\.idea\libraries\spring_tx_4_1_2_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Администратор\Desktop\Projects\KazGTest3\src\main\java\org\springframework\service\DaoImplTest.java" afterPath="" />
-      <change type="MOVED" beforePath="C:\Users\Администратор\Desktop\Projects\KazGTest3\.idea\libraries\Maven__org_springframework_spring_tx_3_1_0_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_4_0_7_RELEASE.xml" />
-      <change type="MOVED" beforePath="C:\Users\Администратор\Desktop\Projects\KazGTest3\.idea\libraries\mysql_connector_java_5_1_31_bin.xml" afterPath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_5_1_34_bin.xml" />
-      <change type="MOVED" beforePath="C:\Users\Администратор\Desktop\Projects\KazGTest3\src\main\java\org\springframework\dao\Dao.java" afterPath="$PROJECT_DIR$/src/main/java/org/springframework/dao/UserDAO.java" />
-      <change type="MOVED" beforePath="C:\Users\Администратор\Desktop\Projects\KazGTest3\src\main\java\org\springframework\dao\DaoImpl.java" afterPath="$PROJECT_DIR$/src/main/java/org/springframework/dao/UserDAOImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.ids" afterPath="$PROJECT_DIR$/.idea/dataSources.ids" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/KazG.iml" afterPath="$PROJECT_DIR$/KazG.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/KazG_war.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/KazG_war.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/KazG_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/KazG_war_exploded.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/config/business-context.xml" afterPath="$PROJECT_DIR$/src/main/resources/config/business-context.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/config/data-access.properties" afterPath="$PROJECT_DIR$/src/main/resources/config/data-access.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/messages/messages.properties" afterPath="$PROJECT_DIR$/src/main/resources/messages/messages.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/spring_webmvc_4_1_2_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/spring_webmvc_4_1_2_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/org/springframework/test/UserDAOImplTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/springframework/dao/UserDAO.java" afterPath="$PROJECT_DIR$/src/main/java/org/springframework/dao/UserDAO.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/springframework/dao/UserDAOImpl.java" afterPath="$PROJECT_DIR$/src/main/java/org/springframework/dao/UserDAOImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path=".idea/dataSources.local.xml" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -125,12 +53,15 @@
       <file leaf-file-name="UserDAOImpl.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/springframework/dao/UserDAOImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.2125" vertical-offset="0" max-vertical-offset="1360">
-              <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
+            <state vertical-scroll-proportion="0.4722222" vertical-offset="0" max-vertical-offset="901">
+              <caret line="28" column="61" selection-start-line="28" selection-start-column="61" selection-end-line="28" selection-end-column="61" />
               <folding>
+                <element signature="method#UserAunth#0;class#UserDAOImpl#0" expanded="false" />
+                <element signature="method#AddUser#0;class#UserDAOImpl#0" expanded="false" />
                 <element signature="method#DeleteUser#0;class#UserDAOImpl#0" expanded="false" />
-                <element signature="e#1796#1797#0" expanded="true" />
-                <element signature="e#1853#1854#0" expanded="true" />
+                <element signature="method#GetAllUsers#0;class#UserDAOImpl#0" expanded="false" />
+                <element signature="e#1999#2000#0" expanded="true" />
+                <element signature="e#2056#2057#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -151,6 +82,8 @@
         <option value="$PROJECT_DIR$/src/main/java/org/springframework/service/DaoImplTest.java" />
         <option value="$PROJECT_DIR$/src/main/resources/messages/messages.properties" />
         <option value="$PROJECT_DIR$/src/main/java/org/springframework/dao/UserDAO.java" />
+        <option value="db-console:/b8892e39/703b17f1-f127-497a-98c4-083f3b74410f/" />
+        <option value="$PROJECT_DIR$/src/test/org/springframework/test/UserDAOImplTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/springframework/dao/UserDAOImpl.java" />
       </list>
     </option>
@@ -228,6 +161,14 @@
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -244,6 +185,36 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="KazG" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="KazGTest3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -298,34 +269,8 @@
               <option name="myItemId" value="resources" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-          </PATH>
-          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="KazG" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="KazGTest3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="springframework" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="model" />
+              <option name="myItemId" value="config" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -348,14 +293,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="springframework" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dao" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -381,8 +318,20 @@
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
     <property name="last_opened_file_path" value="$APPLICATION_CONFIG_DIR$/jdbc-drivers/mysql-connector-java-5.1.34-bin.jar!/" />
+    <property name="OverrideImplement.combined" value="true" />
+    <property name="OverrideImplement.overriding.sorted" value="false" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers" value="false" />
   </component>
-  <component name="RunManager" selected="JUnit.UserDAOImplTest.testAddUser">
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="org.springframework.test" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.UserDAOImplTest.testUserAunth">
     <configuration default="false" name="UserDAOImplTest.testAddUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="KazG" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -390,6 +339,50 @@
       <option name="PACKAGE_NAME" value="org.springframework.service" />
       <option name="MAIN_CLASS_NAME" value="org.springframework.service.UserDAOImplTest" />
       <option name="METHOD_NAME" value="testAddUser" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="UserDAOImplTest.testUserAunth" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="KazG" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="org.springframework.test" />
+      <option name="MAIN_CLASS_NAME" value="org.springframework.test.UserDAOImplTest" />
+      <option name="METHOD_NAME" value="testUserAunth" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="UserDAOImplTest.testGetAllUsers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="KazG" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="org.springframework.test" />
+      <option name="MAIN_CLASS_NAME" value="org.springframework.test.UserDAOImplTest" />
+      <option name="METHOD_NAME" value="testGetAllUsers" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -525,12 +518,16 @@
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
       <method />
     </configuration>
-    <list size="1">
+    <list size="3">
       <item index="0" class="java.lang.String" itemvalue="JUnit.UserDAOImplTest.testAddUser" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.UserDAOImplTest.testUserAunth" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.UserDAOImplTest.testGetAllUsers" />
     </list>
     <recent_temporary>
-      <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.UserDAOImplTest.testAddUser" />
+      <list size="3">
+        <item index="0" class="java.lang.String" itemvalue="JUnit.UserDAOImplTest.testUserAunth" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.UserDAOImplTest.testGetAllUsers" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.UserDAOImplTest.testAddUser" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="TestNG" default="true" selected="false">
@@ -550,41 +547,49 @@
       <created>1416128312632</created>
       <option name="number" value="Default" />
       <updated>1416128312632</updated>
-      <workItem from="1416128313468" duration="5876000" />
+      <workItem from="1416128313468" duration="11769000" />
     </task>
+    <task id="LOCAL-00001" summary="Сделали USerDAO">
+      <created>1416134215909</created>
+      <option name="number" value="00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1416134215909</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5876000" />
+    <option name="totallyTimeSpent" value="11769000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-4" y="-4" width="1608" height="864" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Hibernate Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3297587" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32991013" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32991013" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34450403" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.77613944" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24967907" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3297587" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24967907" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3297587" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32991013" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5321716" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -605,9 +610,13 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
+    <MESSAGE value="Сделали USerDAO" />
+    <option name="LAST_COMMIT_MESSAGE" value="Сделали USerDAO" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -654,25 +663,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="dbDummy://dbtable:/b8892e39/703b17f1-f127-497a-98c4-083f3b74410f/kazgidro..users">
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="100">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/config/business-context.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.35190615" vertical-offset="168" max-vertical-offset="850">
-          <caret line="24" column="42" selection-start-line="24" selection-start-column="42" selection-end-line="24" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/springframework/model/UsersEntity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.07172996" vertical-offset="0" max-vertical-offset="1785">
@@ -705,20 +695,70 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/springframework/dao/UserDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.35416666" vertical-offset="0" max-vertical-offset="720">
-          <caret line="15" column="43" selection-start-line="15" selection-start-column="43" selection-end-line="15" selection-end-column="43" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="527">
+          <caret line="20" column="12" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://db-console:/b8892e39/703b17f1-f127-497a-98c4-083f3b74410f/">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="691">
+          <caret line="0" column="18" selection-start-line="0" selection-start-column="18" selection-end-line="0" selection-end-column="18" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/config/root-context.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="707">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/config/business-context.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.4" vertical-offset="139" max-vertical-offset="850">
+          <caret line="22" column="4" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/b8892e39/703b17f1-f127-497a-98c4-083f3b74410f/kazgidro..users">
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="100">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/org/springframework/test/UserDAOImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.50416666" vertical-offset="249" max-vertical-offset="1632">
+          <caret line="38" column="125" selection-start-line="38" selection-start-column="111" selection-end-line="38" selection-end-column="125" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/springframework/dao/UserDAOImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2125" vertical-offset="0" max-vertical-offset="1360">
-          <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
+        <state vertical-scroll-proportion="0.4722222" vertical-offset="0" max-vertical-offset="901">
+          <caret line="28" column="61" selection-start-line="28" selection-start-column="61" selection-end-line="28" selection-end-column="61" />
           <folding>
+            <element signature="method#UserAunth#0;class#UserDAOImpl#0" expanded="false" />
+            <element signature="method#AddUser#0;class#UserDAOImpl#0" expanded="false" />
             <element signature="method#DeleteUser#0;class#UserDAOImpl#0" expanded="false" />
-            <element signature="e#1796#1797#0" expanded="true" />
-            <element signature="e#1853#1854#0" expanded="true" />
+            <element signature="method#GetAllUsers#0;class#UserDAOImpl#0" expanded="false" />
+            <element signature="e#1999#2000#0" expanded="true" />
+            <element signature="e#2056#2057#0" expanded="true" />
           </folding>
         </state>
       </provider>
