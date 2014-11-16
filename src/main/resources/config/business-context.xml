@@ -13,6 +13,7 @@
 
     <import resource="data-context.xml"/>
 
+    <context:component-scan base-package="org.springframework.dao"></context:component-scan>
     <context:component-scan base-package="org.springframework.service"/>
     <context:property-placeholder location="classpath:config/data-access.properties"/>
 
@@ -27,7 +28,7 @@
 
         <property name="hibernateProperties">
             <props>
-                <prop key="dialect">org.hibernate.dialect.MySQL5InnoDBDialect</prop>
+                <prop key="hibernate.dialect">org.hibernate.dialect.MySQL5InnoDBDialect</prop>
                 <prop key="show_sql">true</prop>
 
                 <prop key="hibernate.generate_statistics">true</prop>
