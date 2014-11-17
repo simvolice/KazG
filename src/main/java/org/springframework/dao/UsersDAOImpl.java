@@ -84,6 +84,11 @@ public class UsersDAOImpl implements UserDAO {
     public UsersEntity findByIdUser(int id) {
         UsersEntity usersEntity= (UsersEntity)currentSession().createQuery("from UsersEntity c where c.id =:id").setParameter("id", id).uniqueResult();
 
+
+        if (usersEntity.getDocUslugi().size()==0){
+            usersEntity.getDocUslugi().clear();
+        }
+
         return usersEntity;
     }
 

@@ -20,7 +20,7 @@ public class FilialyEntity {
     //relationship with docCreateEntity
     private Set<DocCreateUslEntity> docUslugi = new HashSet<DocCreateUslEntity>();
 
-    @OneToMany(mappedBy = "filialyEntity", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
+    @OneToMany(mappedBy = "filialyEntity", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.LAZY)
     public Set<DocCreateUslEntity> getDocUslugi(){
         return this.docUslugi;
     }

@@ -72,11 +72,20 @@ public class FilialyDAOImpl implements FilialyDAO {
 
     }
 
+
     @Override
-    public String addDocCreateUsl(FilialyEntity filialyEntity, DocCreateUslEntity docCreateUslEntity) {
+    @Transactional
+    public String updateRecordsFilialy(FilialyEntity filialyEntity, DocCreateUslEntity docCreateUslEntity) {
 
-
-        return null;
+        filialyEntity.addDocUslugi(docCreateUslEntity);
+        currentSession().saveOrUpdate(filialyEntity);
+        ResourceBundle bundle = null;
+        try {
+            bundle = ResourceBundle.getBundle("resources.messages.messages", Locale.getDefault());
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return  bundle.getString("UpdateRows");
     }
 
 
@@ -102,6 +111,9 @@ public class FilialyDAOImpl implements FilialyDAO {
     public FilialyEntity findByIdFilialy(int id) {
         FilialyEntity filialyEntity = (FilialyEntity)currentSession().createQuery("from FilialyEntity c where c.id =:id").setParameter("id", id).uniqueResult();
 
+        if (filialyEntity.getDocUslugi().size()==0){
+            filialyEntity.getDocUslugi().clear();
+        }
         return filialyEntity;
     }
 

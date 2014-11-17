@@ -21,5 +21,5 @@ public interface FilialyDAO {
 
     public String updateRecordsFilialy(FilialyEntity filialyEntity);
 
-    public String addDocCreateUsl(FilialyEntity filialyEntity, DocCreateUslEntity docCreateUslEntity);
+    public String updateRecordsFilialy(FilialyEntity filialyEntity, DocCreateUslEntity docCreateUslEntity);
 }

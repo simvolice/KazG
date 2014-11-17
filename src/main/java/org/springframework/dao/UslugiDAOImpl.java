@@ -81,6 +81,10 @@ public class UslugiDAOImpl implements UslugiDAO {
     public UslugiEntity findByIdUslugi(int id) {
         UslugiEntity uslugiEntity= (UslugiEntity)currentSession().createQuery("from UslugiEntity c where c.id =:id").setParameter("id", id).uniqueResult();
 
+        if (uslugiEntity.getDocUslugi().size()==0){
+            uslugiEntity.getDocUslugi().clear();
+        }
+
         return uslugiEntity;
     }
 

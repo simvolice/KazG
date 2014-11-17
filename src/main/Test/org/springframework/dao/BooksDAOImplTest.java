@@ -36,20 +36,22 @@ public class BooksDAOImplTest {
 
 
 
+
         DocCreateUslDAO docCreateUslDAO = ctx.getBean(DocCreateUslDAO.class);
         FilialyDAO filialyDAO = ctx.getBean(FilialyDAO.class);
         DogovoraDAO dogovoraDAO = ctx.getBean(DogovoraDAO.class);
         UslugiDAO uslugiDAO = ctx.getBean(UslugiDAO.class);
         KontragentyDAO kontragentyDAO = ctx.getBean(KontragentyDAO.class);
         UserDAO userDAO = ctx.getBean(UserDAO.class);
-//       List<DocCreateUslEntity> docCreateUslEntity;
-//
-//        docCreateUslEntity = docCreateUslDAO.getAllRecordsDocCreateUsl();
-//
-//        listContacts(docCreateUslEntity);
 
 
-        // zapolnenie doc create uslugi
+
+
+
+
+
+
+        //doc create usl
         DocCreateUslEntity docUslugiDocument = new DocCreateUslEntity();
 
         Timestamp timestamp = new Timestamp(new Date().getTime());
@@ -57,14 +59,11 @@ public class BooksDAOImplTest {
         docUslugiDocument.setDate(timestamp);
         docUslugiDocument.setStoimost(774411000.00);
 
-
-        // zapolnenie filial
+        String answer = null;
         FilialyEntity filialyEntity = new FilialyEntity();
         filialyEntity = filialyDAO.findByIdFilialy(9);
-       // UserServiceImpl k = new UserServiceImpl();
-       // k.insertDataFilial(9, docUslugiDocument);
-
         filialyEntity.addDocUslugi(docUslugiDocument);
+
 
         // userid
 
@@ -89,26 +88,33 @@ public class BooksDAOImplTest {
         kontragentEntity.addDocUslugi(docUslugiDocument);
 
         //save all entties
-//        String answer;
-//        answer = filialyDAO.updateRecordsFilialy(filialyEntity);
-//        System.out.println(answer);
-//        answer = userDAO.updateRecordsUsers(usersEntity);
-//        System.out.println(answer);
-//        answer = dogovoraDAO.updateRecordsDogovora(dogovoraEntity);
-//        System.out.println(answer);
-//        answer = uslugiDAO.updateRecordsUslugi(uslugiEntity);
-//        System.out.println(answer);
-//        answer = kontragentyDAO.updateRecordsKontragenty(kontragentEntity);
-//        System.out.println(answer);
-//        answer = docCreateUslDAO.addRecordsDocCreateUsl(docUslugiDocument);
-//        System.out.println(answer);
-
-        //add records to doc create usl
+      /*  answer = filialyDAO.updateRecordsFilialy(filialyEntity);
+        System.out.println(answer);
+        answer = userDAO.updateRecordsUsers(usersEntity);
+        System.out.println(answer);
+        answer = dogovoraDAO.updateRecordsDogovora(dogovoraEntity);
+        System.out.println(answer);
+        answer = uslugiDAO.updateRecordsUslugi(uslugiEntity);
+        System.out.println(answer);
+        answer = kontragentyDAO.updateRecordsKontragenty(kontragentEntity);
+        System.out.println(answer);*/
+        answer = docCreateUslDAO.addRecordsDocCreateUsl(docUslugiDocument);
+        System.out.println(answer);
 
 
 
 
-    }
+
+
+
+
+
+
+
+
+
+
+}
     private static void listContacts(List<DocCreateUslEntity> filialyEntities ){
         System.out.println("");
         System.out.println("Listing contacts without details: ");

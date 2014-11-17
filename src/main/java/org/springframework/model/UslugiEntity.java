@@ -17,22 +17,22 @@ public class UslugiEntity {
 
 
     // relaship with doc
-    private Set<DocCreateUslEntity> docCreateUslEntitySet = new HashSet<DocCreateUslEntity>();
+    private Set<DocCreateUslEntity> docUslugi = new HashSet<DocCreateUslEntity>();
 
     @OneToMany(mappedBy = "uslugiEntity", cascade = CascadeType.ALL, orphanRemoval = true)
-    public Set<DocCreateUslEntity> getDocCreateUslEntitySet(){
-        return this.docCreateUslEntitySet;
+    public Set<DocCreateUslEntity> getDocUslugi(){
+        return this.docUslugi;
     }
-    public void setDocCreateUslEntitySet(Set<DocCreateUslEntity> docCreateUslEntitySet){
-        this.docCreateUslEntitySet = docCreateUslEntitySet;
+    public void setDocUslugi(Set<DocCreateUslEntity> docCreateUslEntitySet){
+        this.docUslugi = docCreateUslEntitySet;
     }
 
     public void addDocUslugi(DocCreateUslEntity docCreateUslEntity){
         docCreateUslEntity.setUslugiEntity(this);
-        getDocCreateUslEntitySet().add(docCreateUslEntity);
+        getDocUslugi().add(docCreateUslEntity);
     }
     public void removeDocUslugi(DocCreateUslEntity docCreateUslEntity){
-        getDocCreateUslEntitySet().remove(docCreateUslEntity);
+        getDocUslugi().remove(docCreateUslEntity);
     }
 
     @Id

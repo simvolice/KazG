@@ -81,6 +81,11 @@ public class KontragentyDAOImpl implements KontragentyDAO {
     public KontragentEntity findByIdKontragenty(int id) {
         KontragentEntity kontragentEntity= (KontragentEntity)currentSession().createQuery("from KontragentEntity c where c.id =:id").setParameter("id", id).uniqueResult();
 
+
+        if (kontragentEntity.getDocUslugi().size()==0){
+            kontragentEntity.getDocUslugi().clear();
+        }
+
         return kontragentEntity;
     }
 

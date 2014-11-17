@@ -81,6 +81,10 @@ public class DogovoraDAOImpl implements DogovoraDAO {
 
         DogovoraEntity dogovoraEntity= (DogovoraEntity)currentSession().createQuery("from DogovoraEntity c where c.id =:id").setParameter("id", id).uniqueResult();
 
+        if (dogovoraEntity.getDocUslugi().size()==0){
+            dogovoraEntity.getDocUslugi().clear();
+        }
+
         return dogovoraEntity;
     }
 

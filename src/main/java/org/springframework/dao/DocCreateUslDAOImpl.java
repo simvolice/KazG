@@ -4,6 +4,7 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.model.DocCreateUslEntity;
+import org.springframework.model.DogovoraEntity;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -64,13 +65,24 @@ public class DocCreateUslDAOImpl implements DocCreateUslDAO {
     @Override
     @Transactional
     public String deleteRecordDocCreateUsl(DocCreateUslEntity docCreateUslEntity) {
-        return null;
+        currentSession().delete(docCreateUslEntity);
+        ResourceBundle bundle = null;
+        try {
+            bundle = ResourceBundle.getBundle("resources.messages.messages", Locale.getDefault());
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return  bundle.getString("DeleteRowSuccess");
     }
 
     @Override
     @Transactional
     public DocCreateUslEntity findByIdDocCreateUsl(int id) {
-        return null;
+        DocCreateUslEntity docCreateUslEntity= (DocCreateUslEntity)currentSession().createQuery("from DocCreateUslEntity c where c.id =:id").setParameter("id", id).uniqueResult();
+
+
+
+        return docCreateUslEntity;
     }
 
     @Override
