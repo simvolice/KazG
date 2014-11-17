@@ -55,8 +55,6 @@
 
 
 
-           <intercept-url pattern="/login*" access="permitAll" filters="none"/>
-           <intercept-url pattern="/**" access="permitAll" filters="none"/>
 
               <session-management>
                      <concurrency-control max-sessions="1" error-if-maximum-exceeded="true" />
@@ -69,17 +67,11 @@
 
 
 
-
-              <logout
-                      logout-url="/login"
-                      />
+           <form-login login-page="/login.html" authentication-failure-url="/login-error.html" />
+           <logout />
 
 
-              <form-login
-                          login-page="/login"
 
-                          default-target-url="/index"
-                      />
        </http>
 
 

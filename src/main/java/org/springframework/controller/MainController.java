@@ -17,10 +17,9 @@ public class MainController {
         return "login.html";
     }
 
-    // Login form with error
-    @RequestMapping("/login.html")
+    @RequestMapping("/login-error.html")
     public String loginError(Model model) {
-        model.addAttribute("login", true);
+        model.addAttribute("loginError", true);
         return "login.html";
     }
 
