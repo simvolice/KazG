@@ -1,6 +1,6 @@
 package org.springframework.dao;
 
-import org.hibernate.metamodel.domain.Entity;
+import org.springframework.model.DocCreateUslEntity;
 import org.springframework.model.FilialyEntity;
 import org.springframework.model.UsersEntity;;
 
@@ -21,5 +21,5 @@ public interface FilialyDAO {
 
     public String updateRecordsFilialy(FilialyEntity filialyEntity);
 
-
+    public String addDocCreateUsl(FilialyEntity filialyEntity, DocCreateUslEntity docCreateUslEntity);
 }

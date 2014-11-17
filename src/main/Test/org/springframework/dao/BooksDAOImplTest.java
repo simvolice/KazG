@@ -1,11 +1,15 @@
 package org.springframework.dao;
 
+import org.apache.commons.logging.LogFactory;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.metamodel.domain.Entity;
 import org.junit.Test;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.support.GenericXmlApplicationContext;
 import org.springframework.model.*;
+import org.springframework.service.UserService;
+import org.springframework.service.UserServiceImpl;
 import org.springframework.transaction.annotation.Transactional;
 
 import javax.print.Doc;
@@ -19,7 +23,6 @@ import java.util.Set;
 import static org.junit.Assert.*;
 
 public class BooksDAOImplTest {
-
 
 
 
@@ -48,14 +51,8 @@ public class BooksDAOImplTest {
 
         // zapolnenie doc create uslugi
         DocCreateUslEntity docUslugiDocument = new DocCreateUslEntity();
-        //java.sql.Timestamp date = new Timestamp();
-        //Timestamp timestamp = new Timestamp(date.getTime("2014-11-17"));
-//        java.util.Date date = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").parse("2014-11-18 16:29:31");
-//        java.sql.Timestamp timestamp = new java.sql.Timestamp(date.getTime());
-
 
         Timestamp timestamp = new Timestamp(new Date().getTime());
-
 
         docUslugiDocument.setDate(timestamp);
         docUslugiDocument.setStoimost(774411000.00);
@@ -64,6 +61,9 @@ public class BooksDAOImplTest {
         // zapolnenie filial
         FilialyEntity filialyEntity = new FilialyEntity();
         filialyEntity = filialyDAO.findByIdFilialy(9);
+       // UserServiceImpl k = new UserServiceImpl();
+       // k.insertDataFilial(9, docUslugiDocument);
+
         filialyEntity.addDocUslugi(docUslugiDocument);
 
         // userid

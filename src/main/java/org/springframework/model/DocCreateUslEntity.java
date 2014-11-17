@@ -4,7 +4,7 @@ import javax.persistence.*;
 import java.sql.Timestamp;
 
 /**
- * Created by Естай on 11.11.2014.
+ * Created by Естай on 17.11.2014.
  */
 @Entity
 @Table(name = "doc_create_usl", schema = "", catalog = "kazgidro")
@@ -12,39 +12,6 @@ public class DocCreateUslEntity {
     private int docCreateUslId;
     private Timestamp date;
     private Double stoimost;
-
-
-
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "docCreateUslID", nullable = false, insertable = true, updatable = true)
-    public int getDocCreateUslId() {
-        return docCreateUslId;
-    }
-
-    public void setDocCreateUslId(int docCreateUslId) {
-        this.docCreateUslId = docCreateUslId;
-    }
-
-    @Basic
-    @Column(name = "date", nullable = false, insertable = true, updatable = true)
-    public Timestamp getDate() {
-        return date;
-    }
-
-    public void setDate(Timestamp date) {
-        this.date = date;
-    }
-
-    @Basic
-    @Column(name = "stoimost", nullable = true, insertable = true, updatable = true, precision = 0)
-    public Double getStoimost() {
-        return stoimost;
-    }
-
-    public void setStoimost(Double stoimost) {
-        this.stoimost = stoimost;
-    }
 
 
     // relationsip with kontragent entit
@@ -116,4 +83,60 @@ public class DocCreateUslEntity {
     }
 
 
+
+
+
+
+
+    @Id
+    @Column(name = "docCreateUslID", nullable = false, insertable = true, updatable = true)
+    public int getDocCreateUslId() {
+        return docCreateUslId;
+    }
+
+    public void setDocCreateUslId(int docCreateUslId) {
+        this.docCreateUslId = docCreateUslId;
+    }
+
+    @Basic
+    @Column(name = "date", nullable = false, insertable = true, updatable = true)
+    public Timestamp getDate() {
+        return date;
+    }
+
+    public void setDate(Timestamp date) {
+        this.date = date;
+    }
+
+    @Basic
+    @Column(name = "stoimost", nullable = true, insertable = true, updatable = true, precision = 0)
+    public Double getStoimost() {
+        return stoimost;
+    }
+
+    public void setStoimost(Double stoimost) {
+        this.stoimost = stoimost;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        DocCreateUslEntity that = (DocCreateUslEntity) o;
+
+        if (docCreateUslId != that.docCreateUslId) return false;
+        if (date != null ? !date.equals(that.date) : that.date != null) return false;
+        if (stoimost != null ? !stoimost.equals(that.stoimost) : that.stoimost != null) return false;
+
+        return true;
+    }
+
+    @Override
+    public int hashCode() {
+        int result = docCreateUslId;
+        result = 31 * result + (date != null ? date.hashCode() : 0);
+        result = 31 * result + (stoimost != null ? stoimost.hashCode() : 0);
+        return result;
+    }
 }

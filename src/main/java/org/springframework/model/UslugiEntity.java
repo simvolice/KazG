@@ -5,7 +5,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 /**
- * Created by Естай on 11.11.2014.
+ * Created by Естай on 17.11.2014.
  */
 @Entity
 @Table(name = "uslugi", schema = "", catalog = "kazgidro")
@@ -14,29 +14,28 @@ public class UslugiEntity {
     private String naimenovanie;
 
 
-    // relationship with doc_create_uslugi
-    private Set<DocCreateUslEntity> documentUslugi = new HashSet<DocCreateUslEntity>();
+
+
+    // relaship with doc
+    private Set<DocCreateUslEntity> docCreateUslEntitySet = new HashSet<DocCreateUslEntity>();
+
     @OneToMany(mappedBy = "uslugiEntity", cascade = CascadeType.ALL, orphanRemoval = true)
-    public Set<DocCreateUslEntity> getDocumentUslugi(){
-        return documentUslugi;
+    public Set<DocCreateUslEntity> getDocCreateUslEntitySet(){
+        return this.docCreateUslEntitySet;
     }
-    public void setDocumentUslugi(Set<DocCreateUslEntity> docCreateUslEntity){
-        this.documentUslugi = docCreateUslEntity;
+    public void setDocCreateUslEntitySet(Set<DocCreateUslEntity> docCreateUslEntitySet){
+        this.docCreateUslEntitySet = docCreateUslEntitySet;
     }
 
     public void addDocUslugi(DocCreateUslEntity docCreateUslEntity){
         docCreateUslEntity.setUslugiEntity(this);
-        getDocumentUslugi().add(docCreateUslEntity);
+        getDocCreateUslEntitySet().add(docCreateUslEntity);
     }
-
     public void removeDocUslugi(DocCreateUslEntity docCreateUslEntity){
-        getDocumentUslugi().remove(docCreateUslEntity);
+        getDocCreateUslEntitySet().remove(docCreateUslEntity);
     }
-
-
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "uslugiid", nullable = false, insertable = true, updatable = true)
     public int getUslugiid() {
         return uslugiid;

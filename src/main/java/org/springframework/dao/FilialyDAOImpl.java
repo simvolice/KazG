@@ -3,9 +3,8 @@ package org.springframework.dao;
 import org.apache.commons.logging.LogFactory;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
-import org.hibernate.metamodel.domain.Entity;
-import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.model.DocCreateUslEntity;
 import org.springframework.model.FilialyEntity;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
@@ -73,6 +72,13 @@ public class FilialyDAOImpl implements FilialyDAO {
 
     }
 
+    @Override
+    public String addDocCreateUsl(FilialyEntity filialyEntity, DocCreateUslEntity docCreateUslEntity) {
+
+
+        return null;
+    }
+
 
     @Override
     @Transactional
@@ -80,7 +86,7 @@ public class FilialyDAOImpl implements FilialyDAO {
 
 
         currentSession().delete(filialyEntity);
-        //currentSession().close();
+
         ResourceBundle bundle = null;
         try {
             bundle = ResourceBundle.getBundle("resources.messages.messages", Locale.getDefault());

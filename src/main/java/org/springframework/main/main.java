@@ -1,13 +1,9 @@
 package org.springframework.main;
 
 import org.springframework.context.support.GenericXmlApplicationContext;
-import org.springframework.dao.DAO;
+import org.springframework.dao.UserDAO;
 import org.springframework.model.KontragentEntity;
 import org.springframework.model.UsersEntity;
-import org.springframework.service.UserService;
-import org.springframework.transaction.annotation.Transactional;
-
-import java.util.List;
 
 /**
  * Created by Естай on 12.11.2014.

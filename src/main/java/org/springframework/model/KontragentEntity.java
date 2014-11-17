@@ -5,7 +5,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 /**
- * Created by Естай on 11.11.2014.
+ * Created by Естай on 17.11.2014.
  */
 @Entity
 @Table(name = "kontragent", schema = "", catalog = "kazgidro")
@@ -14,7 +14,6 @@ public class KontragentEntity {
     private String naimenovanie;
     private String bin;
     private String iin;
-
 
     //relationship with doc create uslugi
     private Set<DocCreateUslEntity> docUslugi = new HashSet<DocCreateUslEntity>();
@@ -36,8 +35,8 @@ public class KontragentEntity {
         getDocUslugi().remove(docCreateUslEntity);
     }
 
+
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "kontragentid", nullable = false, insertable = true, updatable = true)
     public int getKontragentid() {
         return kontragentid;
@@ -46,7 +45,6 @@ public class KontragentEntity {
     public void setKontragentid(int kontragentid) {
         this.kontragentid = kontragentid;
     }
-
 
     @Basic
     @Column(name = "naimenovanie", nullable = false, insertable = true, updatable = true, length = 45)
@@ -92,6 +90,7 @@ public class KontragentEntity {
 
         return true;
     }
+
     @Override
     public int hashCode() {
         int result = kontragentid;

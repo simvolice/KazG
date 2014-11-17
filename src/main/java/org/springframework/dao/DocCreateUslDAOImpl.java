@@ -62,16 +62,19 @@ public class DocCreateUslDAOImpl implements DocCreateUslDAO {
     }
 
     @Override
+    @Transactional
     public String deleteRecordDocCreateUsl(DocCreateUslEntity docCreateUslEntity) {
         return null;
     }
 
     @Override
+    @Transactional
     public DocCreateUslEntity findByIdDocCreateUsl(int id) {
         return null;
     }
 
     @Override
+    @Transactional
     public String updateRecordsDocCreateUsl(DocCreateUslEntity docCreateUslEntity) {
         return null;
     }

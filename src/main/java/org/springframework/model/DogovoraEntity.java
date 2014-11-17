@@ -2,20 +2,20 @@ package org.springframework.model;
 
 import javax.persistence.*;
 import java.sql.Timestamp;
-import java.util.Date;
 import java.util.HashSet;
 import java.util.Set;
 
 /**
- * Created by Естай on 11.11.2014.
+ * Created by Естай on 17.11.2014.
  */
 @Entity
 @Table(name = "dogovora", schema = "", catalog = "kazgidro")
 public class DogovoraEntity {
     private int dogovorid;
-    private Date startDate;
-    private Date endDate;
+    private Timestamp startDate;
+    private Timestamp endDate;
     private double summa;
+
 
     //relationship with doc create uslugi
     private Set<DocCreateUslEntity> docUslugi = new HashSet<DocCreateUslEntity>();
@@ -39,7 +39,6 @@ public class DogovoraEntity {
 
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "dogovorid", nullable = false, insertable = true, updatable = true)
     public int getDogovorid() {
         return dogovorid;
@@ -50,24 +49,22 @@ public class DogovoraEntity {
     }
 
     @Basic
-    @Temporal(TemporalType.DATE)
     @Column(name = "start_date", nullable = false, insertable = true, updatable = true)
-    public Date getStartDate() {
+    public Timestamp getStartDate() {
         return startDate;
     }
 
-    public void setStartDate(Date startDate) {
+    public void setStartDate(Timestamp startDate) {
         this.startDate = startDate;
     }
 
     @Basic
-    @Temporal(TemporalType.DATE)
     @Column(name = "end_date", nullable = false, insertable = true, updatable = true)
-    public Date getEndDate() {
+    public Timestamp getEndDate() {
         return endDate;
     }
 
-    public void setEndDate(Date endDate) {
+    public void setEndDate(Timestamp endDate) {
         this.endDate = endDate;
     }
 

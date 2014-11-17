@@ -1,11 +1,12 @@
 package org.springframework.model;
 
 import javax.persistence.*;
+import javax.print.Doc;
 import java.util.HashSet;
 import java.util.Set;
 
 /**
- * Created by Естай on 11.11.2014.
+ * Created by Естай on 17.11.2014.
  */
 @Entity
 @Table(name = "filialy", schema = "", catalog = "kazgidro")
@@ -14,16 +15,19 @@ public class FilialyEntity {
     private String naimenovanie;
 
 
+
+
     //relationship with docCreateEntity
     private Set<DocCreateUslEntity> docUslugi = new HashSet<DocCreateUslEntity>();
 
-    @OneToMany(mappedBy = "filialyEntity", cascade = CascadeType.ALL, orphanRemoval = true)
+    @OneToMany(mappedBy = "filialyEntity", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
     public Set<DocCreateUslEntity> getDocUslugi(){
         return this.docUslugi;
     }
     public void setDocUslugi(Set<DocCreateUslEntity> docUslugiSet){
         this.docUslugi = docUslugiSet;
     }
+
 
     public void addDocUslugi(DocCreateUslEntity docCreateUslEntity){
         docCreateUslEntity.setFilialyEntity(this);
@@ -34,8 +38,10 @@ public class FilialyEntity {
         getDocUslugi().remove(docCreateUslEntity);
     }
 
+
+
+
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "filialid", nullable = false, insertable = true, updatable = true)
     public int getFilialid() {
         return filialid;
