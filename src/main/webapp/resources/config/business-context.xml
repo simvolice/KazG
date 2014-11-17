@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+    http://www.springframework.org/schema/mvc
+    http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context-3.0.xsd
+    http://www.springframework.org/schema/aop
+    http://www.springframework.org/schema/aop/spring-aop-3.0.xsd
+    http://www.springframework.org/schema/tx
+    http://www.springframework.org/schema/tx/spring-tx.xsd
+    http://www.springframework.org/schema/jee
+    http://www.springframework.org/schema/jee/spring-jee-2.5.xsd">
+
+
+
+
+    <import resource="data-context.xml"/>
+
+    <!--<context:component-scan base-package="org.springframework.service"/>-->
+    <!--<context:property-placeholder location="classpath:resources/config/data-access.properties"/>-->
+
+
+    <context:annotation-config></context:annotation-config>
+    <context:component-scan base-package="org.springframework.dao" />
+    <context:component-scan base-package="org.springframework.service" />
+    <tx:annotation-driven/>
+    <!--<bean id="userDao" class="org.springframework.dao.UsersDAOImpl">-->
+    <!--<property name="sessionFactory" ref="sessionFactory"/>-->
+    <!--</bean>-->
+
+
+    <bean id="sessionFactory"
+          class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
+        <property name="dataSource" ref="dataSource" />
+        <!--<property name="mappingLocations" value="resources/config/hibernate.cfg.xml" />-->
+        <property name="packagesToScan" value="org.springframework.model"/>
+
+        <property name="hibernateProperties">
+            <props>
+                <prop key="dialect">org.hibernate.dialect.MySQL5InnoDBDialect</prop>
+
+                <prop key="hibernate.generate_statistics">true</prop>
+                <prop key="hibernate.connection.url">jdbc:mysql://localhost:3306/kazgidro</prop>
+                <prop key="hibernate.connection.driver_class">com.mysql.jdbc.Driver</prop>
+
+            </props>
+        </property>
+    </bean>
+
+
+    <bean id="transactionManager"
+          class="org.springframework.orm.hibernate4.HibernateTransactionManager">
+        <property name="sessionFactory" ref="sessionFactory"/>
+    </bean>
+
+
+</beans>

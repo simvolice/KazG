@@ -1,29 +1,25 @@
 package org.springframework.dao;
 
-import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
-import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
-import org.hibernate.metamodel.domain.Entity;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.model.*;
-import org.springframework.service.UserServiceImpl;
+import org.springframework.model.DogovoraEntity;
+import org.springframework.model.FilialyEntity;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
-import javax.annotation.Resource;
-import java.util.Collection;
 import java.util.List;
 import java.util.Locale;
 import java.util.ResourceBundle;
 
 /**
- * Created by Администратор on 10.11.2014.
+ * Created by Естай on 17.11.2014.
  */
-
 @Repository
-public class UsersDAOImpl implements UserDAO {
+public class DogovoraDAOImpl implements DogovoraDAO {
+
+    //sesstion initialization
 
     private org.apache.commons.logging.Log log= LogFactory.getLog(FilialyDAOImpl.class);
 
@@ -44,19 +40,19 @@ public class UsersDAOImpl implements UserDAO {
         return sessionFactory.getCurrentSession();
     }
 
-
+    // functions started
 
 
     @Override
     @Transactional
-    public List<UsersEntity> getAllRecordsUserEntity() {
-        return currentSession().createQuery("from UsersEntity c").list();
+    public List<DogovoraEntity> getAllRecordsDogovora() {
+        return currentSession().createQuery("from DogovoraEntity c").list();
     }
 
     @Override
     @Transactional
-    public String addRecordsUsers(UsersEntity usersEntity) {
-        currentSession().saveOrUpdate(usersEntity);
+    public String addRecordsDogovora(DogovoraEntity dogovoraEntity) {
+        currentSession().saveOrUpdate(dogovoraEntity);
         ResourceBundle bundle = null;
         try {
             bundle = ResourceBundle.getBundle("resources.messages.messages", Locale.getDefault());
@@ -68,8 +64,8 @@ public class UsersDAOImpl implements UserDAO {
 
     @Override
     @Transactional
-    public String deleteRecordUsers(UsersEntity usersEntity) {
-        currentSession().delete(usersEntity);
+    public String deleteRecordDogovora(DogovoraEntity dogovoraEntity) {
+        currentSession().delete(dogovoraEntity);
         ResourceBundle bundle = null;
         try {
             bundle = ResourceBundle.getBundle("resources.messages.messages", Locale.getDefault());
@@ -81,16 +77,18 @@ public class UsersDAOImpl implements UserDAO {
 
     @Override
     @Transactional
-    public UsersEntity findByIdUser(int id) {
-        UsersEntity usersEntity= (UsersEntity)currentSession().createQuery("from UsersEntity c where c.id =:id").setParameter("id", id).uniqueResult();
+    public DogovoraEntity findByIdDogovora(int id) {
 
-        return usersEntity;
+        DogovoraEntity dogovoraEntity= (DogovoraEntity)currentSession().createQuery("from DogovoraEntity c where c.id =:id").setParameter("id", id).uniqueResult();
+
+        return dogovoraEntity;
     }
 
     @Override
     @Transactional
-    public String updateRecordsUsers(UsersEntity usersEntity) {
-        currentSession().saveOrUpdate(usersEntity);
+    public String updateRecordsDogovora(DogovoraEntity dogovoraEntity) {
+
+        currentSession().saveOrUpdate(dogovoraEntity);
         ResourceBundle bundle = null;
         try {
             bundle = ResourceBundle.getBundle("resources.messages.messages", Locale.getDefault());

@@ -1,13 +1,22 @@
 package org.springframework.model;
 
+import org.hibernate.internal.util.ValueHolder;
+import org.hibernate.metamodel.domain.*;
+import org.springframework.dao.UserDAO;
+
 import javax.persistence.*;
+import javax.persistence.Entity;
+import javax.print.Doc;
+import java.util.HashSet;
+import java.util.Set;
+import javax.persistence.GenerationType;
 
 /**
- * Created by Администратор on 10.11.2014.
+ * Created by Естай on 11.11.2014.
  */
 @Entity
 @Table(name = "users", schema = "", catalog = "kazgidro")
-public class UsersEntity {
+public class UsersEntity{
     private int userid;
     private String username;
     private String userpassword;
@@ -16,7 +25,31 @@ public class UsersEntity {
     private String userlastname;
     private String useremail;
 
+
+    //relationship with doc create uslugi
+    private Set<DocCreateUslEntity> docCreateUslEntitySet = new HashSet<DocCreateUslEntity>();
+
+
+    @OneToMany(mappedBy = "usersEntity", cascade = CascadeType.ALL, orphanRemoval = true)
+    public Set<DocCreateUslEntity> getDocCreateUslEntitySet(){
+        return this.docCreateUslEntitySet;
+    }
+    public void setDocCreateUslEntitySet(Set<DocCreateUslEntity> docCreateUslEntitySet){
+        this.docCreateUslEntitySet = docCreateUslEntitySet;
+    }
+
+    public void addDocUslugi(DocCreateUslEntity docCreateUslEntity){
+        docCreateUslEntity.setUsersEntity(this);
+        getDocCreateUslEntitySet().add(docCreateUslEntity);
+    }
+    public void removeDocUslugi(DocCreateUslEntity docCreateUslEntity){
+        getDocCreateUslEntitySet().remove(docCreateUslEntity);
+    }
+
+
+
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "userid", nullable = false, insertable = true, updatable = true)
     public int getUserid() {
         return userid;
@@ -86,34 +119,7 @@ public class UsersEntity {
         this.useremail = useremail;
     }
 
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
 
-        UsersEntity that = (UsersEntity) o;
 
-        if (userid != that.userid) return false;
-        if (useremail != null ? !useremail.equals(that.useremail) : that.useremail != null) return false;
-        if (userfirstname != null ? !userfirstname.equals(that.userfirstname) : that.userfirstname != null)
-            return false;
-        if (userlastname != null ? !userlastname.equals(that.userlastname) : that.userlastname != null) return false;
-        if (username != null ? !username.equals(that.username) : that.username != null) return false;
-        if (userpassword != null ? !userpassword.equals(that.userpassword) : that.userpassword != null) return false;
-        if (userrole != null ? !userrole.equals(that.userrole) : that.userrole != null) return false;
 
-        return true;
-    }
-
-    @Override
-    public int hashCode() {
-        int result = userid;
-        result = 31 * result + (username != null ? username.hashCode() : 0);
-        result = 31 * result + (userpassword != null ? userpassword.hashCode() : 0);
-        result = 31 * result + (userrole != null ? userrole.hashCode() : 0);
-        result = 31 * result + (userfirstname != null ? userfirstname.hashCode() : 0);
-        result = 31 * result + (userlastname != null ? userlastname.hashCode() : 0);
-        result = 31 * result + (useremail != null ? useremail.hashCode() : 0);
-        return result;
-    }
 }
