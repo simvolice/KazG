@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="spring-context-support-4.1.2.RELEASE">
+    <CLASSES>
+      <root url="jar://D:/spring-context-support-4.1.2.RELEASE.jar!/" />
+      <root url="jar://D:/spring-context-4.1.2.RELEASE.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

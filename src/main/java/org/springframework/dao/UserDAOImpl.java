@@ -3,6 +3,7 @@ package org.springframework.dao;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.model.UsersEntity;
 import org.springframework.stereotype.Repository;
 
@@ -54,6 +55,7 @@ public class UserDAOImpl implements UserDAO {
 
 
     @Override
+
 
     public String AddUser(UsersEntity usersEntity) {
 
