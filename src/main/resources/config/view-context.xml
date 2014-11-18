@@ -1,24 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:p="http://www.springframework.org/schema/p"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
 
        <bean id="templateResolver"
              class="org.thymeleaf.templateresolver.ServletContextTemplateResolver">
-              <property name="prefix" value="/WEB-INF/thymeleaf/" />
+              <property name="prefix" value="/WEB-INF/templates/" />
               <property name="suffix" value=".html" />
               <property name="templateMode" value="HTML5" />
+           <property name="characterEncoding" value="UTF-8" />
               <!-- Template cache is set to false (default is true).        -->
               <property name="cacheable" value="false" />
        </bean>
 
        <bean id="templateEngine" class="org.thymeleaf.spring4.SpringTemplateEngine">
               <property name="templateResolver" ref="templateResolver" />
+
+           <property name="additionalDialects">
+               <set>
+                   <bean class="org.thymeleaf.spring4.dialect.SpringStandardDialect" />
+               </set>
+           </property>
+
        </bean>
 
 
+    <bean id="viewResolver" class="org.thymeleaf.spring4.view.ThymeleafViewResolver">
+        <property name="templateEngine" ref="templateEngine" />
+        <property name="characterEncoding" value="UTF-8" />
+    </bean>
 
+
+
+    <bean id="messageSource" class="org.springframework.context.support.ResourceBundleMessageSource" p:fallbackToSystemLocale="true" p:basename="messages/messages"/>
 
 
 

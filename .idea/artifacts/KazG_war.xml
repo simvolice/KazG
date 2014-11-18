@@ -3,18 +3,6 @@
     <output-path>$PROJECT_DIR$/target</output-path>
     <root id="archive" name="spring-webmvc-4.1.2.RELEASE.war">
       <element id="artifact" artifact-name="KazG:war exploded" />
-      <element id="directory" name="WEB-INF">
-        <element id="directory" name="lib">
-          <element id="library" level="module" name="JUnit4" module-name="KazG" />
-          <element id="library" level="project" name="commons-dbcp:commons-dbcp:1.4" />
-          <element id="library" level="project" name="spring-webmvc-4.1.2.RELEASE" />
-          <element id="library" level="project" name="mysql-connector-java-5.1.34-bin" />
-          <element id="library" level="project" name="spring-context-support-4.1.2.RELEASE" />
-          <element id="library" level="project" name="hibernate-core-4.3.7.Final" />
-          <element id="library" level="project" name="hibernate-jpa-2.1-api-1.0.0.Final" />
-          <element id="library" level="project" name="ehcache-2.9.0" />
-        </element>
-      </element>
     </root>
   </artifact>
 </component>
