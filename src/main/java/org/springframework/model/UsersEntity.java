@@ -19,6 +19,31 @@ public class UsersEntity {
     private String useremail;
 
 
+
+
+    // relationship with DOC plan entity
+    private Set<DocPlanEntity> docPlanEntities = new HashSet<DocPlanEntity>();
+
+
+    @OneToMany(mappedBy = "usersEntity", cascade = CascadeType.ALL, orphanRemoval = true)
+    public Set<DocPlanEntity> getDocPlanEntities(){
+        return this.docPlanEntities;
+    }
+    public void setDocPlanEntities(Set<DocPlanEntity> docPlanEntities){
+        this.docPlanEntities= docPlanEntities;
+    }
+
+    public void addDocPlan(DocPlanEntity docPlanEntity){
+        docPlanEntity.setUsersEntity(this);
+        getDocPlanEntities().add(docPlanEntity);
+    }
+
+    public void removeDocPlan(DocPlanEntity docPlanEntity){
+        getDocPlanEntities().remove(docPlanEntity);
+    }
+
+
+
     // relaship with doc
     private Set<DocCreateUslEntity> docUslugi = new HashSet<DocCreateUslEntity>();
 

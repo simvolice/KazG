@@ -33,7 +33,6 @@ public class DocCreateUslDAOImpl implements DocCreateUslDAO {
     }
 
     @Override
-    @Transactional
     public List<DocCreateUslEntity> getAllRecordsDocCreateUsl() {
 
 
@@ -49,7 +48,6 @@ public class DocCreateUslDAOImpl implements DocCreateUslDAO {
     }
 
     @Override
-    @Transactional
     public String addRecordsDocCreateUsl(DocCreateUslEntity docCreateUslEntity) {
 
         currentSession().saveOrUpdate(docCreateUslEntity);
@@ -63,7 +61,7 @@ public class DocCreateUslDAOImpl implements DocCreateUslDAO {
     }
 
     @Override
-    @Transactional
+
     public String deleteRecordDocCreateUsl(DocCreateUslEntity docCreateUslEntity) {
         currentSession().delete(docCreateUslEntity);
         ResourceBundle bundle = null;
@@ -76,7 +74,6 @@ public class DocCreateUslDAOImpl implements DocCreateUslDAO {
     }
 
     @Override
-    @Transactional
     public DocCreateUslEntity findByIdDocCreateUsl(int id) {
         DocCreateUslEntity docCreateUslEntity= (DocCreateUslEntity)currentSession().createQuery("from DocCreateUslEntity c where c.id =:id").setParameter("id", id).uniqueResult();
 
@@ -86,8 +83,14 @@ public class DocCreateUslDAOImpl implements DocCreateUslDAO {
     }
 
     @Override
-    @Transactional
     public String updateRecordsDocCreateUsl(DocCreateUslEntity docCreateUslEntity) {
-        return null;
+        currentSession().saveOrUpdate(docCreateUslEntity);
+        ResourceBundle bundle = null;
+        try {
+            bundle = ResourceBundle.getBundle("resources.messages.messages", Locale.getDefault());
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return  bundle.getString("UpdateRows");
     }
 }

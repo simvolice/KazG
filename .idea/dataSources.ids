@@ -22,7 +22,6 @@
       <foreign-key name="kontragentid" columns="kontragentyID" ref-table="kontragent" ref-schema="" ref-catalog="kazgidro" ref-columns="kontragentid" update-rule="3" delete-rule="3" deferrability="2"/>
       <foreign-key name="userid" columns="userID" ref-table="users" ref-schema="" ref-catalog="kazgidro" ref-columns="userid" update-rule="3" delete-rule="3" deferrability="2"/>
       <foreign-key name="uslugiid" columns="uslugaID" ref-table="uslugi" ref-schema="" ref-catalog="kazgidro" ref-columns="uslugiid" update-rule="3" delete-rule="3" deferrability="2"/>
-      <index name="iddoc_create_usl_UNIQUE" unique="true" columns="docCreateUslID"/>
       <index name="dogovoraID_idx" unique="false" columns="dogovorID"/>
       <index name="filialID_idx" unique="false" columns="filialID"/>
       <index name="kontragentyID_idx" unique="false" columns="kontragentyID"/>
@@ -32,14 +31,20 @@
     <table name="doc_plan" schema="" catalog="kazgidro" type="TABLE">
       <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
       <column name="date" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93"/>
-      <column name="nomer" sqlType="VARCHAR" precision="45" scale="0" nullable="false" jdbcType="12"/>
-      <column name="avtor" sqlType="VARCHAR" precision="45" scale="0" nullable="false" jdbcType="12"/>
+      <column name="avtor" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="filialID" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="year" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
       <primary-key name="PRIMARY" columns="id"/>
+      <foreign-key name="FK_FilialID" columns="filialID" ref-table="filialy" ref-schema="" ref-catalog="kazgidro" ref-columns="filialid" update-rule="3" delete-rule="3" deferrability="2"/>
+      <foreign-key name="FK_UserID" columns="avtor" ref-table="users" ref-schema="" ref-catalog="kazgidro" ref-columns="userid" update-rule="3" delete-rule="3" deferrability="2"/>
+      <exported-key name="FK_DocPlanID" table="planbymonthes" schema="" catalog="kazgidro" columns="docPlanID"/>
+      <index name="filialID_idx" unique="false" columns="filialID"/>
+      <index name="FK_UserID_idx" unique="false" columns="avtor"/>
     </table>
     <table name="dogovora" schema="" catalog="kazgidro" type="TABLE">
-      <column name="dogovorid" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
-      <column name="start_date" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93"/>
-      <column name="end_date" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93"/>
+      <column name="dogovorid" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="start_date" sqlType="DATE" precision="10" scale="0" nullable="false" jdbcType="91"/>
+      <column name="end_date" sqlType="DATE" precision="10" scale="0" nullable="false" jdbcType="91"/>
       <column name="Summa" sqlType="DOUBLE" precision="22" scale="0" nullable="false" jdbcType="8"/>
       <primary-key name="PRIMARY" columns="dogovorid"/>
       <exported-key name="dogovorid" table="doc_create_usl" schema="" catalog="kazgidro" columns="dogovorID"/>
@@ -49,6 +54,7 @@
       <column name="naimenovanie" sqlType="VARCHAR" precision="45" scale="0" nullable="false" jdbcType="12"/>
       <primary-key name="PRIMARY" columns="filialid"/>
       <exported-key name="filialid" table="doc_create_usl" schema="" catalog="kazgidro" columns="filialID"/>
+      <exported-key name="FK_FilialID" table="doc_plan" schema="" catalog="kazgidro" columns="filialID"/>
       <index name="idfilialy_UNIQUE" unique="true" columns="filialid"/>
     </table>
     <table name="kontragent" schema="" catalog="kazgidro" type="TABLE">
@@ -60,6 +66,15 @@
       <exported-key name="kontragentid" table="doc_create_usl" schema="" catalog="kazgidro" columns="kontragentyID"/>
       <index name="idkontragent_UNIQUE" unique="true" columns="kontragentid"/>
     </table>
+    <table name="planbymonthes" schema="" catalog="kazgidro" type="TABLE">
+      <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="monthName" sqlType="VARCHAR" precision="45" scale="0" nullable="false" jdbcType="12"/>
+      <column name="kolvoDogovorov" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="docPlanID" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <foreign-key name="FK_DocPlanID" columns="docPlanID" ref-table="doc_plan" ref-schema="" ref-catalog="kazgidro" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
+      <index name="FK_DocPlanID_idx" unique="false" columns="docPlanID"/>
+    </table>
     <table name="users" schema="" catalog="kazgidro" type="TABLE">
       <column name="userid" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
       <column name="username" sqlType="VARCHAR" precision="45" scale="0" nullable="false" jdbcType="12"/>
@@ -70,6 +85,7 @@
       <column name="useremail" sqlType="VARCHAR" precision="45" scale="0" nullable="false" jdbcType="12"/>
       <primary-key name="PRIMARY" columns="userid"/>
       <exported-key name="userid" table="doc_create_usl" schema="" catalog="kazgidro" columns="userID"/>
+      <exported-key name="FK_UserID" table="doc_plan" schema="" catalog="kazgidro" columns="avtor"/>
       <index name="idusers_UNIQUE" unique="true" columns="userid"/>
     </table>
     <table name="uslugi" schema="" catalog="kazgidro" type="TABLE">

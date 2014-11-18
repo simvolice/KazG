@@ -1,11 +1,10 @@
 package org.springframework.dao;
 
-import org.apache.commons.logging.LogFactory;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.model.KontragentEntity;
-import org.springframework.model.UslugiEntity;
+import org.springframework.model.DocCreateUslEntity;
+import org.springframework.model.DocPlanEntity;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -14,43 +13,38 @@ import java.util.Locale;
 import java.util.ResourceBundle;
 
 /**
- * Created by Естай on 17.11.2014.
+ * Created by Естай on 18.11.2014.
  */
 @Repository
-public class UslugiDAOImpl implements UslugiDAO {
-
-    //sesstion initialization
-
-    private org.apache.commons.logging.Log log= LogFactory.getLog(KontragentyDAOImpl.class);
+public class DocPlanDAOImpl implements DocPlanDAO {
 
     @Autowired
     private SessionFactory sessionFactory;
 
+    //@Resource(name = "sessionFactory")
     public SessionFactory getSessionFactory(){
         return sessionFactory;
     }
 
-    public void setSessionFactory(SessionFactory sessionFactory){
-        this.sessionFactory= sessionFactory;
-    }
 
     public Session currentSession(){
         return sessionFactory.getCurrentSession();
     }
 
-    // functions started
-
-
 
 
     @Override
-    public List<UslugiEntity> getAllRecordsUslugi() {
-        return currentSession().createQuery("from UslugiEntity c").list();
+    public List<DocPlanEntity> getAllRecordsDocPlan() {
+
+        return currentSession().createQuery("from DocPlanEntity c").list();
+
+
+
     }
 
     @Override
-    public String addRecordsUslugi(UslugiEntity uslugiEntity) {
-        currentSession().saveOrUpdate(uslugiEntity);
+    public String addRecordsDocPlan(DocPlanEntity docPlanEntity) {
+        currentSession().saveOrUpdate(docPlanEntity);
         ResourceBundle bundle = null;
         try {
             bundle = ResourceBundle.getBundle("resources.messages.messages", Locale.getDefault());
@@ -58,13 +52,11 @@ public class UslugiDAOImpl implements UslugiDAO {
             e.printStackTrace();
         }
         return  bundle.getString("AddRowSuccess");
-
     }
 
     @Override
-    @Transactional
-    public String deleteRecordUslugi(UslugiEntity uslugiEntity) {
-        currentSession().delete(uslugiEntity);
+    public String deleteRecordDocPlan(DocPlanEntity docPlanEntity) {
+        currentSession().delete(docPlanEntity);
         ResourceBundle bundle = null;
         try {
             bundle = ResourceBundle.getBundle("resources.messages.messages", Locale.getDefault());
@@ -75,19 +67,20 @@ public class UslugiDAOImpl implements UslugiDAO {
     }
 
     @Override
-    public UslugiEntity findByIdUslugi(int id) {
-        UslugiEntity uslugiEntity= (UslugiEntity)currentSession().createQuery("from UslugiEntity c where c.id =:id").setParameter("id", id).uniqueResult();
+    public DocPlanEntity findByIdDocPlan(int id) {
+        DocPlanEntity docPlanEntity= (DocPlanEntity)currentSession().createQuery("from DocPlanEntity c where c.id =:id").setParameter("id", id).uniqueResult();
 
-        if (uslugiEntity.getDocUslugi().size()==0){
-            uslugiEntity.getDocUslugi().clear();
+
+        if (docPlanEntity.getPlanByMonth().size() == 0){
+            docPlanEntity.getPlanByMonth().clear();
         }
 
-        return uslugiEntity;
+        return docPlanEntity;
     }
 
     @Override
-    public String updateRecordsUslugi(UslugiEntity uslugiEntity) {
-        currentSession().saveOrUpdate(uslugiEntity);
+    public String updateRecordsDocPlan(DocPlanEntity docPlanEntity) {
+        currentSession().saveOrUpdate(docPlanEntity);
         ResourceBundle bundle = null;
         try {
             bundle = ResourceBundle.getBundle("resources.messages.messages", Locale.getDefault());

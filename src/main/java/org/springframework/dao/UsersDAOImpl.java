@@ -8,9 +8,7 @@ import org.hibernate.SessionFactory;
 import org.hibernate.metamodel.domain.Entity;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.model.*;
-import org.springframework.service.UserServiceImpl;
 import org.springframework.stereotype.Repository;
-import org.springframework.transaction.annotation.Transactional;
 
 import javax.annotation.Resource;
 import java.util.Collection;
@@ -30,12 +28,10 @@ public class UsersDAOImpl implements UserDAO {
     @Autowired
     private SessionFactory sessionFactory;
 
-    //@Resource(name = "sessionFactory")
     public SessionFactory getSessionFactory(){
         return sessionFactory;
     }
 
-    //@Resource(name = "sessionFactory")
     public void setSessionFactory(SessionFactory sessionFactory){
         this.sessionFactory= sessionFactory;
     }
@@ -48,13 +44,11 @@ public class UsersDAOImpl implements UserDAO {
 
 
     @Override
-    @Transactional
     public List<UsersEntity> getAllRecordsUserEntity() {
         return currentSession().createQuery("from UsersEntity c").list();
     }
 
     @Override
-    @Transactional
     public String addRecordsUsers(UsersEntity usersEntity) {
         currentSession().saveOrUpdate(usersEntity);
         ResourceBundle bundle = null;
@@ -67,7 +61,6 @@ public class UsersDAOImpl implements UserDAO {
     }
 
     @Override
-    @Transactional
     public String deleteRecordUsers(UsersEntity usersEntity) {
         currentSession().delete(usersEntity);
         ResourceBundle bundle = null;
@@ -80,7 +73,6 @@ public class UsersDAOImpl implements UserDAO {
     }
 
     @Override
-    @Transactional
     public UsersEntity findByIdUser(int id) {
         UsersEntity usersEntity= (UsersEntity)currentSession().createQuery("from UsersEntity c where c.id =:id").setParameter("id", id).uniqueResult();
 
@@ -88,12 +80,14 @@ public class UsersDAOImpl implements UserDAO {
         if (usersEntity.getDocUslugi().size()==0){
             usersEntity.getDocUslugi().clear();
         }
+        if (usersEntity.getDocPlanEntities().size()==0){
+            usersEntity.getDocPlanEntities().clear();
+        }
 
         return usersEntity;
     }
 
     @Override
-    @Transactional
     public String updateRecordsUsers(UsersEntity usersEntity) {
         currentSession().saveOrUpdate(usersEntity);
         ResourceBundle bundle = null;

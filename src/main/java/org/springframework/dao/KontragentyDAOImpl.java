@@ -42,13 +42,11 @@ public class KontragentyDAOImpl implements KontragentyDAO {
 
 
     @Override
-    @Transactional
     public List<KontragentEntity> getAllRecordsKontragenty() {
         return currentSession().createQuery("from KontragentEntity c").list();
     }
 
     @Override
-    @Transactional
     public String addRecordsKontragenty(KontragentEntity kontragentEntity) {
 
         currentSession().saveOrUpdate(kontragentEntity);
@@ -64,7 +62,6 @@ public class KontragentyDAOImpl implements KontragentyDAO {
     }
 
     @Override
-    @Transactional
     public String deleteRecordKontragenty(KontragentEntity kontragentEntity) {
         currentSession().delete(kontragentEntity);
         ResourceBundle bundle = null;
@@ -77,7 +74,6 @@ public class KontragentyDAOImpl implements KontragentyDAO {
     }
 
     @Override
-    @Transactional
     public KontragentEntity findByIdKontragenty(int id) {
         KontragentEntity kontragentEntity= (KontragentEntity)currentSession().createQuery("from KontragentEntity c where c.id =:id").setParameter("id", id).uniqueResult();
 
@@ -90,7 +86,6 @@ public class KontragentyDAOImpl implements KontragentyDAO {
     }
 
     @Override
-    @Transactional
     public String updateRecordsKontragenty(KontragentEntity kontragentEntity) {
         currentSession().saveOrUpdate(kontragentEntity);
         ResourceBundle bundle = null;

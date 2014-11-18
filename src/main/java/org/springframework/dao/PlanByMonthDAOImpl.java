@@ -5,7 +5,7 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.model.KontragentEntity;
-import org.springframework.model.UslugiEntity;
+import org.springframework.model.PlanbymonthesEntity;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -14,11 +14,10 @@ import java.util.Locale;
 import java.util.ResourceBundle;
 
 /**
- * Created by Естай on 17.11.2014.
+ * Created by Естай on 18.11.2014.
  */
 @Repository
-public class UslugiDAOImpl implements UslugiDAO {
-
+public class PlanByMonthDAOImpl implements PlanByMonthDAO {
     //sesstion initialization
 
     private org.apache.commons.logging.Log log= LogFactory.getLog(KontragentyDAOImpl.class);
@@ -38,19 +37,15 @@ public class UslugiDAOImpl implements UslugiDAO {
         return sessionFactory.getCurrentSession();
     }
 
-    // functions started
-
-
-
 
     @Override
-    public List<UslugiEntity> getAllRecordsUslugi() {
-        return currentSession().createQuery("from UslugiEntity c").list();
+    public List<PlanbymonthesEntity> getAllRecordsPlanByMonth() {
+        return currentSession().createQuery("from PlanbymonthesEntity c").list();
     }
 
     @Override
-    public String addRecordsUslugi(UslugiEntity uslugiEntity) {
-        currentSession().saveOrUpdate(uslugiEntity);
+    public String addRecordsPlanByMonth(PlanbymonthesEntity planbymonthesEntity) {
+        currentSession().saveOrUpdate(planbymonthesEntity);
         ResourceBundle bundle = null;
         try {
             bundle = ResourceBundle.getBundle("resources.messages.messages", Locale.getDefault());
@@ -58,13 +53,11 @@ public class UslugiDAOImpl implements UslugiDAO {
             e.printStackTrace();
         }
         return  bundle.getString("AddRowSuccess");
-
     }
 
     @Override
-    @Transactional
-    public String deleteRecordUslugi(UslugiEntity uslugiEntity) {
-        currentSession().delete(uslugiEntity);
+    public String deleteRecordPlanByMonth(PlanbymonthesEntity planbymonthesEntity) {
+        currentSession().delete(planbymonthesEntity);
         ResourceBundle bundle = null;
         try {
             bundle = ResourceBundle.getBundle("resources.messages.messages", Locale.getDefault());
@@ -75,19 +68,15 @@ public class UslugiDAOImpl implements UslugiDAO {
     }
 
     @Override
-    public UslugiEntity findByIdUslugi(int id) {
-        UslugiEntity uslugiEntity= (UslugiEntity)currentSession().createQuery("from UslugiEntity c where c.id =:id").setParameter("id", id).uniqueResult();
+    public PlanbymonthesEntity findByIdPlanByMonth(int id) {
+        PlanbymonthesEntity planbymonthesEntity= (PlanbymonthesEntity)currentSession().createQuery("from PlanbymonthesEntity c where c.id =:id").setParameter("id", id).uniqueResult();
 
-        if (uslugiEntity.getDocUslugi().size()==0){
-            uslugiEntity.getDocUslugi().clear();
-        }
-
-        return uslugiEntity;
+        return planbymonthesEntity;
     }
 
     @Override
-    public String updateRecordsUslugi(UslugiEntity uslugiEntity) {
-        currentSession().saveOrUpdate(uslugiEntity);
+    public String updateRecordsPlanByMonth(PlanbymonthesEntity planbymonthesEntity) {
+        currentSession().saveOrUpdate(planbymonthesEntity);
         ResourceBundle bundle = null;
         try {
             bundle = ResourceBundle.getBundle("resources.messages.messages", Locale.getDefault());
@@ -96,5 +85,4 @@ public class UslugiDAOImpl implements UslugiDAO {
         }
         return  bundle.getString("UpdateRows");
     }
-
 }

@@ -2,6 +2,7 @@ package org.springframework.model;
 
 import javax.persistence.*;
 import java.sql.Timestamp;
+import java.util.Date;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -12,8 +13,8 @@ import java.util.Set;
 @Table(name = "dogovora", schema = "", catalog = "kazgidro")
 public class DogovoraEntity {
     private int dogovorid;
-    private Timestamp startDate;
-    private Timestamp endDate;
+    private Date startDate;
+    private Date endDate;
     private double summa;
 
 
@@ -50,21 +51,21 @@ public class DogovoraEntity {
 
     @Basic
     @Column(name = "start_date", nullable = false, insertable = true, updatable = true)
-    public Timestamp getStartDate() {
+    public Date getStartDate() {
         return startDate;
     }
 
-    public void setStartDate(Timestamp startDate) {
+    public void setStartDate(Date startDate) {
         this.startDate = startDate;
     }
 
     @Basic
     @Column(name = "end_date", nullable = false, insertable = true, updatable = true)
-    public Timestamp getEndDate() {
+    public Date getEndDate() {
         return endDate;
     }
 
-    public void setEndDate(Timestamp endDate) {
+    public void setEndDate(Date endDate) {
         this.endDate = endDate;
     }
 

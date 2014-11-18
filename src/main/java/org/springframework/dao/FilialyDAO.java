@@ -13,7 +13,7 @@ public interface FilialyDAO {
 
     public List<FilialyEntity> getAllRecordsFilialy();
 
-    public String addRecordsFilialy(FilialyEntity entity);
+    public String addRecordsFilialy(FilialyEntity filialyEntity);
 
     public String deleteRecordFilialy(FilialyEntity filialyEntity);
 
@@ -21,5 +21,4 @@ public interface FilialyDAO {
 
     public String updateRecordsFilialy(FilialyEntity filialyEntity);
 
-    public String updateRecordsFilialy(FilialyEntity filialyEntity, DocCreateUslEntity docCreateUslEntity);
-}
+  }

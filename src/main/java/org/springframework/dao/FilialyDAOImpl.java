@@ -40,10 +40,9 @@ public class FilialyDAOImpl implements FilialyDAO {
 
 
     @Override
-    @Transactional
-    public String addRecordsFilialy(FilialyEntity entity) {
+    public String addRecordsFilialy(FilialyEntity filialyEntity) {
 
-        currentSession().saveOrUpdate(entity);
+        currentSession().saveOrUpdate(filialyEntity);
         ResourceBundle bundle = null;
         try {
             bundle = ResourceBundle.getBundle("resources.messages.messages", Locale.getDefault());
@@ -58,7 +57,6 @@ public class FilialyDAOImpl implements FilialyDAO {
 
 
     @Override
-    @Transactional
     public String updateRecordsFilialy(FilialyEntity filialyEntity) {
 
         currentSession().saveOrUpdate(filialyEntity);
@@ -74,23 +72,6 @@ public class FilialyDAOImpl implements FilialyDAO {
 
 
     @Override
-    @Transactional
-    public String updateRecordsFilialy(FilialyEntity filialyEntity, DocCreateUslEntity docCreateUslEntity) {
-
-        filialyEntity.addDocUslugi(docCreateUslEntity);
-        currentSession().saveOrUpdate(filialyEntity);
-        ResourceBundle bundle = null;
-        try {
-            bundle = ResourceBundle.getBundle("resources.messages.messages", Locale.getDefault());
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-        return  bundle.getString("UpdateRows");
-    }
-
-
-    @Override
-    @Transactional
     public String deleteRecordFilialy(FilialyEntity filialyEntity) {
 
 
@@ -107,20 +88,19 @@ public class FilialyDAOImpl implements FilialyDAO {
     }
 
     @Override
-    @Transactional
     public FilialyEntity findByIdFilialy(int id) {
         FilialyEntity filialyEntity = (FilialyEntity)currentSession().createQuery("from FilialyEntity c where c.id =:id").setParameter("id", id).uniqueResult();
 
         if (filialyEntity.getDocUslugi().size()==0){
             filialyEntity.getDocUslugi().clear();
         }
+        if (filialyEntity.getDocPlanEntities().size()==0){
+            filialyEntity.getDocPlanEntities().clear();
+        }
         return filialyEntity;
     }
 
     @Override
-
-    @Transactional
-
     public List<FilialyEntity> getAllRecordsFilialy() {
 
         return currentSession().createQuery("from FilialyEntity c").list();

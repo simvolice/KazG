@@ -57,7 +57,7 @@ public class BooksDAOImplTest {
         Timestamp timestamp = new Timestamp(new Date().getTime());
 
         docUslugiDocument.setDate(timestamp);
-        docUslugiDocument.setStoimost(774411000.00);
+        docUslugiDocument.setStoimost(3344.77);
 
         String answer = null;
         FilialyEntity filialyEntity = new FilialyEntity();
@@ -74,7 +74,7 @@ public class BooksDAOImplTest {
         //dogovor
 
         DogovoraEntity dogovoraEntity = new DogovoraEntity();
-        dogovoraEntity = dogovoraDAO.findByIdDogovora(1);
+        dogovoraEntity = dogovoraDAO.findByIdDogovora(2);
         dogovoraEntity.addDocUslugi(docUslugiDocument);
 
         //Uslugi
@@ -84,7 +84,7 @@ public class BooksDAOImplTest {
 
         //kontragenty
         KontragentEntity kontragentEntity = new KontragentEntity();
-        kontragentEntity = kontragentyDAO.findByIdKontragenty(1);
+        kontragentEntity = kontragentyDAO.findByIdKontragenty(2);
         kontragentEntity.addDocUslugi(docUslugiDocument);
 
         //save all entties
