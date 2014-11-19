@@ -43,8 +43,6 @@ public class MainController {
     public String loginError(Model model) {
 
 
-
-
        model.addAttribute("loginError", true);
            return "/login";
 

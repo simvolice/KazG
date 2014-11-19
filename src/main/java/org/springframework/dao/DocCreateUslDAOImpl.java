@@ -3,6 +3,7 @@ package org.springframework.dao;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.model.DocCreateUslEntity;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
@@ -15,10 +16,12 @@ import java.util.ResourceBundle;
  * Created by Естай on 17.11.2014.
  */
 @Repository
+@Qualifier("org/springframework/dao/DocCreateUslDAO.java")
 public class DocCreateUslDAOImpl implements DocCreateUslDAO {
 
 
     @Autowired
+    @Qualifier("sessionFactory")
     private SessionFactory sessionFactory;
 
     //@Resource(name = "sessionFactory")

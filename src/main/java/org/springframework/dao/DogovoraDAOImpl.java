@@ -21,6 +21,11 @@ public class DogovoraDAOImpl implements DogovoraDAO {
 
     //sesstion initialization
 
+
+
+
+
+
     private org.apache.commons.logging.Log log= LogFactory.getLog(FilialyDAOImpl.class);
 
     @Autowired
