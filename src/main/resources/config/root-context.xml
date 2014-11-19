@@ -16,12 +16,12 @@
 
     <mvc:annotation-driven conversion-service="conversionService"></mvc:annotation-driven>
 
-
     <mvc:default-servlet-handler/>
+    <mvc:resources mapping="/resources/**" location="/resources/"/>
 
 
 
-
+    <bean id="messageSource" class="org.springframework.context.support.ResourceBundleMessageSource" p:basename="messages"/>
 
 
 

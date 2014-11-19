@@ -10,21 +10,20 @@
               <property name="prefix" value="/WEB-INF/templates/" />
               <property name="suffix" value=".html" />
               <property name="templateMode" value="HTML5" />
-           <property name="characterEncoding" value="UTF-8" />
               <!-- Template cache is set to false (default is true).        -->
               <property name="cacheable" value="false" />
        </bean>
 
-       <bean id="templateEngine" class="org.thymeleaf.spring4.SpringTemplateEngine">
-              <property name="templateResolver" ref="templateResolver" />
+    <bean id="templateEngine" class="org.thymeleaf.spring4.SpringTemplateEngine">
+        <property name="templateResolver" ref="templateResolver" />
 
-           <property name="additionalDialects">
-               <set>
-                   <bean class="org.thymeleaf.spring4.dialect.SpringStandardDialect" />
-               </set>
-           </property>
+        <property name="additionalDialects">
+            <set>
+                <bean class="org.thymeleaf.spring4.dialect.SpringStandardDialect" />
+            </set>
+        </property>
 
-       </bean>
+    </bean>
 
 
     <bean id="viewResolver" class="org.thymeleaf.spring4.view.ThymeleafViewResolver">
@@ -33,8 +32,8 @@
     </bean>
 
 
-
     <bean id="messageSource" class="org.springframework.context.support.ResourceBundleMessageSource" p:fallbackToSystemLocale="true" p:basename="messages/messages"/>
+
 
 
 

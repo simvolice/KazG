@@ -1,7 +1,7 @@
 <component name="libraryTable">
-  <library name="ehcache-2.9.0">
+  <library name="ehcache-core-2.6.91">
     <CLASSES>
-      <root url="jar://D:/ehcache-2.9.0.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/ehcache-core-2.6.9.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

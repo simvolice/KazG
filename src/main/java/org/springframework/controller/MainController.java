@@ -13,6 +13,11 @@ import java.util.Locale;
 public class MainController {
 
 
+    @RequestMapping("/")
+    public String root(Locale locale) {
+        return "redirect:/login";
+    }
+
 
 
     /** Home page. */
@@ -22,31 +27,16 @@ public class MainController {
     }
 
 
-
-    @RequestMapping("/")
-    public String root(Locale locale) {
-        return "redirect:/login";
-    }
-
-
-
     // Login form
     @RequestMapping("/login")
     public String login() {
-        return "/login";
+        return "login";
     }
-
-
-
 
     @RequestMapping("/login-error")
     public String loginError(Model model) {
-
-
-       model.addAttribute("loginError", true);
-           return "/login";
-
-
+        model.addAttribute("loginError", true);
+        return "login";
     }
 
 

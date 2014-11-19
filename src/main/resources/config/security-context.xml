@@ -65,7 +65,7 @@
                       token-validity-seconds="2419200" data-source-ref="dataSource" remember-me-parameter="remember-me"/>
 
 
-
+<intercept-url pattern="/**" access="permitAll"/>
 
            <form-login login-page="/login" authentication-failure-url="/login-error" />
            <logout />
