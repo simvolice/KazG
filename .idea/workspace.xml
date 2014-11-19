@@ -7,19 +7,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3dfaa8a2-392d-49a9-850a-4dd09e4004b0" name="Default" comment="">
-      <change type="DELETED" beforePath="C:\Users\Администратор\Desktop\Projects\KazGTest3\src\main\webapp\WEB-INF\templates\login.properties" afterPath="" />
-      <change type="MOVED" beforePath="C:\Users\Администратор\Desktop\Projects\KazGTest3\src\main\webapp\WEB-INF\templates\logout.html" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/login-error.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/KazG.iml" afterPath="$PROJECT_DIR$/KazG.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/KazG_war.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/KazG_war.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/KazG_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/KazG_war_exploded.xml" />
+      <change type="DELETED" beforePath="C:\Users\Администратор\Desktop\Projects\KazGTest3\src\main\webapp\WEB-INF\templates\login-error.html" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.ids" afterPath="$PROJECT_DIR$/.idea/dataSources.ids" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/springframework/controller/MainController.java" afterPath="$PROJECT_DIR$/src/main/java/org/springframework/controller/MainController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/config/business-context.xml" afterPath="$PROJECT_DIR$/src/main/resources/config/business-context.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/springframework/dao/UserDAO.java" afterPath="$PROJECT_DIR$/src/main/java/org/springframework/dao/UserDAO.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/springframework/dao/UserDAOImpl.java" afterPath="$PROJECT_DIR$/src/main/java/org/springframework/dao/UserDAOImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/index.html" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/login.html" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/login.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/messages/messages.properties" afterPath="$PROJECT_DIR$/src/main/resources/messages/messages.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/messages/messages_ru.properties" afterPath="$PROJECT_DIR$/src/main/resources/messages/messages_ru.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/config/root-context.xml" afterPath="$PROJECT_DIR$/src/main/resources/config/root-context.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/config/security-context.xml" afterPath="$PROJECT_DIR$/src/main/resources/config/security-context.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/config/view-context.xml" afterPath="$PROJECT_DIR$/src/main/resources/config/view-context.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path=".idea/dataSources.local.xml" />
@@ -83,12 +80,69 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="login.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="login.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/login.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5118343" vertical-offset="776" max-vertical-offset="1980">
-              <caret line="51" column="19" selection-start-line="51" selection-start-column="19" selection-end-line="51" selection-end-column="19" />
+            <state vertical-scroll-proportion="-9.935484" vertical-offset="528" max-vertical-offset="2090">
+              <caret line="38" column="37" selection-start-line="38" selection-start-column="37" selection-end-line="38" selection-end-column="37" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="security-context.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/config/security-context.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-8.8" vertical-offset="1078" max-vertical-offset="1980">
+              <caret line="59" column="47" selection-start-line="59" selection-start-column="47" selection-end-line="59" selection-end-column="47" />
+              <folding>
+                <marker date="1416293840569" expanded="true" signature="1138:1201" placeholder="select usern..users..." />
+                <marker date="1416293840569" expanded="true" signature="1323:1375" placeholder="select usern..users..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="messages.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/messages/messages.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-1.5714285" vertical-offset="0" max-vertical-offset="242">
+              <caret line="2" column="65" selection-start-line="2" selection-start-column="65" selection-end-line="2" selection-end-column="65" />
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="ResourceBundle">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="messages_ru.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/messages/messages_ru.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-1.5714285" vertical-offset="0" max-vertical-offset="242">
+              <caret line="2" column="65" selection-start-line="2" selection-start-column="65" selection-end-line="2" selection-end-column="65" />
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="ResourceBundle">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MainController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/springframework/controller/MainController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.48194444" vertical-offset="577" max-vertical-offset="1496">
+              <caret line="42" column="40" selection-start-line="42" selection-start-column="40" selection-end-line="42" selection-end-column="40" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#393#394#0" expanded="true" />
+                <element signature="e#423#424#0" expanded="true" />
+                <element signature="e#491#492#0" expanded="true" />
+                <element signature="e#531#532#0" expanded="true" />
+                <element signature="e#610#611#0" expanded="true" />
+                <element signature="e#641#642#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -104,28 +158,29 @@
         <option value="$PROJECT_DIR$/src/main/resources/config/data-access.properties" />
         <option value="$PROJECT_DIR$/src/main/java/org/springframework/dao/DaoImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/springframework/service/DaoImplTest.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/messages/messages.properties" />
         <option value="db-console:/b8892e39/703b17f1-f127-497a-98c4-083f3b74410f/" />
         <option value="$PROJECT_DIR$/src/test/org/springframework/test/UserDAOImplTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/springframework/dao/UserDAO.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/messages.properties" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/thymeleaf/login.properties" />
         <option value="$PROJECT_DIR$/src/main/java/org/springframework/service/Service.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/thymeleaf/login.html" />
-        <option value="$PROJECT_DIR$/src/main/java/org/springframework/dao/UserDAOImpl.java" />
         <option value="$PROJECT_DIR$/src/main/resources/config/tool-context.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/thymeleaf/logout.html" />
         <option value="$PROJECT_DIR$/src/main/resources/config/business-context.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/config/security-context.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/org/springframework/controller/MainController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/login.properties" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/login_ru.properties" />
         <option value="$PROJECT_DIR$/src/main/resources/config/root-context.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/config/view-context.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/index.html" />
+        <option value="$PROJECT_DIR$/src/main/java/org/springframework/dao/UserDAOImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/springframework/dao/UserDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/messages/messages.properties" />
         <option value="$PROJECT_DIR$/src/main/resources/messages/messages_ru.properties" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/login.html" />
+        <option value="$PROJECT_DIR$/src/main/java/org/springframework/controller/MainController.java" />
       </list>
     </option>
   </component>
@@ -224,6 +279,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -495,7 +551,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -528,6 +583,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Администратор\Desktop\Projects\KazGTest3\src\main\webapp\WEB-INF\templates" />
       <recent name="C:\Users\Администратор\Desktop\Projects\KazGTest3\src\main\java\org\springframework\dao" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
@@ -824,10 +880,10 @@
       </method>
     </configuration>
     <list size="4">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.UserDAOImplTest.testAddUser" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.UserDAOImplTest.testUserAunth" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.UserDAOImplTest.testGetAllUsers" />
-      <item index="3" class="java.lang.String" itemvalue="Tomcat Server.Unnamed" />
+      <item index="0" class="java.lang.String" itemvalue="Tomcat Server.Unnamed" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.UserDAOImplTest.testAddUser" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.UserDAOImplTest.testUserAunth" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.UserDAOImplTest.testGetAllUsers" />
     </list>
     <recent_temporary>
       <list size="3">
@@ -855,7 +911,8 @@
       <updated>1416128312632</updated>
       <workItem from="1416128313468" duration="38301000" />
       <workItem from="1416227308448" duration="2729000" />
-      <workItem from="1416285694570" duration="19552000" />
+      <workItem from="1416285694570" duration="19646000" />
+      <workItem from="1416370340419" duration="10298000" />
     </task>
     <task id="LOCAL-00001" summary="Сделали USerDAO">
       <created>1416134215909</created>
@@ -881,11 +938,17 @@
       <option name="project" value="LOCAL" />
       <updated>1416227592918</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Создана первая страница входа">
+      <created>1416312710981</created>
+      <option name="number" value="00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1416312710981</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="60582000" />
+    <option name="totallyTimeSpent" value="70974000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -908,7 +971,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-4" y="-4" width="1608" height="864" extended-state="6" />
+    <frame x="-4" y="-4" width="1608" height="864" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -922,7 +985,7 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5616622" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32991013" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19705094" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.63672924" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24967907" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -998,7 +1061,8 @@
     <MESSAGE value="DAO протестировано и возвр. уникальные значения" />
     <MESSAGE value="Добавлен security" />
     <MESSAGE value="Добавлен DAO эталонный" />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавлен DAO эталонный" />
+    <MESSAGE value="Создана первая страница входа" />
+    <option name="LAST_COMMIT_MESSAGE" value="Создана первая страница входа" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1013,8 +1077,8 @@
           <caret line="23" column="5" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#498#499#0" expanded="true" />
-            <element signature="e#529#530#0" expanded="true" />
+            <element signature="e#610#611#0" expanded="true" />
+            <element signature="e#641#642#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1116,13 +1180,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/springframework/dao/UserDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
-          <caret line="19" column="45" selection-start-line="19" selection-start-column="45" selection-end-line="19" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://D:/spring-context-support-4.1.2.RELEASE.jar!/org/springframework/cache/ehcache/EhCacheCacheManager.class">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="1.2439024" vertical-offset="0" max-vertical-offset="901">
@@ -1149,13 +1206,6 @@
         <state vertical-scroll-proportion="-2.112426" vertical-offset="1224" max-vertical-offset="1785">
           <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/login-error.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="720">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1233,29 +1283,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/config/security-context.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-36.44" vertical-offset="262" max-vertical-offset="1530">
-          <caret line="69" column="83" selection-start-line="69" selection-start-column="83" selection-end-line="69" selection-end-column="83" />
-          <folding>
-            <marker date="1416293840569" expanded="true" signature="-1:-1" placeholder="select usern..users..." />
-            <marker date="1416293840569" expanded="true" signature="-1:-1" placeholder="select usern..users..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/springframework/dao/UserDAOImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.49811321" vertical-offset="792" max-vertical-offset="2310">
-          <caret line="45" column="60" selection-start-line="45" selection-start-column="60" selection-end-line="45" selection-end-column="60" />
-          <folding>
-            <element signature="method#AddUser#0;class#UserDAOImpl#0" expanded="false" />
-            <element signature="method#DeleteUser#0;class#UserDAOImpl#0" expanded="false" />
-            <element signature="method#GetAllUsers#0;class#UserDAOImpl#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/config/root-context.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.124528304" vertical-offset="0" max-vertical-offset="1254">
@@ -1272,10 +1299,38 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/springframework/dao/UserDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.30470914" vertical-offset="0" max-vertical-offset="722">
+          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/springframework/dao/UserDAOImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.13117066" vertical-offset="325" max-vertical-offset="1100">
+          <caret line="28" column="4" selection-start-line="28" selection-start-column="4" selection-end-line="28" selection-end-column="4" />
+          <folding>
+            <element signature="method#AddUser#0;class#UserDAOImpl#0" expanded="false" />
+            <element signature="method#DeleteUser#0;class#UserDAOImpl#0" expanded="false" />
+            <element signature="method#GetAllUsers#0;class#UserDAOImpl#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="45.419353" vertical-offset="2046" max-vertical-offset="21076">
+          <caret line="29" column="16" selection-start-line="29" selection-start-column="16" selection-end-line="29" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/messages/messages.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.13095239" vertical-offset="0" max-vertical-offset="756">
-          <caret line="3" column="162" selection-start-line="3" selection-start-column="162" selection-end-line="3" selection-end-column="162" />
+        <state vertical-scroll-proportion="-1.5714285" vertical-offset="0" max-vertical-offset="242">
+          <caret line="2" column="65" selection-start-line="2" selection-start-column="65" selection-end-line="2" selection-end-column="65" />
           <folding />
         </state>
       </provider>
@@ -1285,8 +1340,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/messages/messages_ru.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="153">
-          <caret line="0" column="36" selection-start-line="0" selection-start-column="36" selection-end-line="0" selection-end-column="36" />
+        <state vertical-scroll-proportion="-1.5714285" vertical-offset="0" max-vertical-offset="242">
+          <caret line="2" column="65" selection-start-line="2" selection-start-column="65" selection-end-line="2" selection-end-column="65" />
           <folding />
         </state>
       </provider>
@@ -1294,23 +1349,38 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/springframework/controller/MainController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/config/security-context.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="860" max-vertical-offset="1749">
-          <caret line="35" column="28" selection-start-line="35" selection-start-column="18" selection-end-line="35" selection-end-column="28" />
+        <state vertical-scroll-proportion="-8.8" vertical-offset="1078" max-vertical-offset="1980">
+          <caret line="59" column="47" selection-start-line="59" selection-start-column="47" selection-end-line="59" selection-end-column="47" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#498#499#0" expanded="true" />
-            <element signature="e#529#530#0" expanded="true" />
+            <marker date="1416293840569" expanded="true" signature="1138:1201" placeholder="select usern..users..." />
+            <marker date="1416293840569" expanded="true" signature="1323:1375" placeholder="select usern..users..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/login.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5118343" vertical-offset="776" max-vertical-offset="1980">
-          <caret line="51" column="19" selection-start-line="51" selection-start-column="19" selection-end-line="51" selection-end-column="19" />
+        <state vertical-scroll-proportion="-9.935484" vertical-offset="528" max-vertical-offset="2090">
+          <caret line="38" column="37" selection-start-line="38" selection-start-column="37" selection-end-line="38" selection-end-column="37" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/springframework/controller/MainController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.48194444" vertical-offset="577" max-vertical-offset="1496">
+          <caret line="42" column="40" selection-start-line="42" selection-start-column="40" selection-end-line="42" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#393#394#0" expanded="true" />
+            <element signature="e#423#424#0" expanded="true" />
+            <element signature="e#491#492#0" expanded="true" />
+            <element signature="e#531#532#0" expanded="true" />
+            <element signature="e#610#611#0" expanded="true" />
+            <element signature="e#641#642#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

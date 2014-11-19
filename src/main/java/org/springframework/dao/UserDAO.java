@@ -11,7 +11,6 @@ import java.util.List;
 public interface UserDAO {
 
 
-public String UserAunth(String usrName, String usrPass);
 
 
     @Secured("ROLE_ADMIN")

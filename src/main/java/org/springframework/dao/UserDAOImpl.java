@@ -26,26 +26,6 @@ public class UserDAOImpl implements UserDAO {
 
 
 
-    @Override
-    public String UserAunth(String usrName, String usrPass ) {
-
-
-        UsersEntity usersEntityName =
-                (UsersEntity) getSessionFactory().createQuery("from UsersEntity c where c.username=" + usrName).uniqueResult();
-
-
-        if(usersEntityName.getUserpassword() == usrPass){
-            return "";
-        }
-
-
-
-        getSessionFactory().close();
-
-
-        ResourceBundle bundle = ResourceBundle.getBundle("messages.messages", Locale.getDefault());
-        return  bundle.getString("ErrorName");
-    }
 
 
 

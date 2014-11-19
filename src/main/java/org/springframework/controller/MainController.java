@@ -15,6 +15,13 @@ public class MainController {
 
 
 
+    /** Home page. */
+    @RequestMapping("/index")
+    public String index() {
+        return "index";
+    }
+
+
 
     @RequestMapping("/")
     public String root(Locale locale) {
@@ -34,8 +41,14 @@ public class MainController {
 
     @RequestMapping("/login-error")
     public String loginError(Model model) {
-        model.addAttribute("loginError", true);
-        return "/login";
+
+
+
+
+       model.addAttribute("loginError", true);
+           return "/login";
+
+
     }
 
 
