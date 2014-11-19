@@ -85,6 +85,7 @@ public class UslugiDAOImpl implements UslugiDAO {
         return uslugiEntity;
     }
 
+
     @Override
     public String updateRecordsUslugi(UslugiEntity uslugiEntity) {
         currentSession().saveOrUpdate(uslugiEntity);
