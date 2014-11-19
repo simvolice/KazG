@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3dfaa8a2-392d-49a9-850a-4dd09e4004b0" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/filials.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/webContexts.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/filials.html" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/filials.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path=".idea/dataSources.local.xml" />
@@ -85,11 +84,11 @@
       <file leaf-file-name="filials.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/filials.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.15779817" vertical-offset="3144" max-vertical-offset="12512">
-              <caret line="190" column="14" selection-start-line="190" selection-start-column="14" selection-end-line="190" selection-end-column="14" />
+            <state vertical-scroll-proportion="0.36330274" vertical-offset="3236" max-vertical-offset="12461">
+              <caret line="202" column="40" selection-start-line="202" selection-start-column="40" selection-end-line="202" selection-end-column="40" />
               <folding>
                 <element signature="n#style#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <marker date="1416421853498" expanded="true" signature="8247:8478" placeholder="..." />
+                <marker date="1416422391805" expanded="true" signature="8122:8353" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -1093,7 +1092,7 @@
       <workItem from="1416323338339" duration="7285000" />
       <workItem from="1416334738644" duration="338000" />
       <workItem from="1416406035507" duration="822000" />
-      <workItem from="1416407283308" duration="14571000" />
+      <workItem from="1416407283308" duration="15015000" />
     </task>
     <task id="LOCAL-00001" summary="Сделали USerDAO">
       <created>1416134215909</created>
@@ -1125,11 +1124,17 @@
       <option name="project" value="LOCAL" />
       <updated>1416418388799</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="добавил филиалы таблица и форма">
+      <created>1416422006046</created>
+      <option name="number" value="00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1416422006046</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="71126000" />
+    <option name="totallyTimeSpent" value="71570000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -1210,7 +1215,8 @@
     <MESSAGE value="Добавлен security" />
     <MESSAGE value="Добавлен DAO эталонный" />
     <MESSAGE value="страница индекс отрисована" />
-    <option name="LAST_COMMIT_MESSAGE" value="страница индекс отрисована" />
+    <MESSAGE value="добавил филиалы таблица и форма" />
+    <option name="LAST_COMMIT_MESSAGE" value="добавил филиалы таблица и форма" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1662,11 +1668,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/filials.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.15779817" vertical-offset="3144" max-vertical-offset="12512">
-          <caret line="190" column="14" selection-start-line="190" selection-start-column="14" selection-end-line="190" selection-end-column="14" />
+        <state vertical-scroll-proportion="0.36330274" vertical-offset="3236" max-vertical-offset="12461">
+          <caret line="202" column="40" selection-start-line="202" selection-start-column="40" selection-end-line="202" selection-end-column="40" />
           <folding>
             <element signature="n#style#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1416421853498" expanded="true" signature="8247:8478" placeholder="..." />
+            <marker date="1416422391805" expanded="true" signature="8122:8353" placeholder="..." />
           </folding>
         </state>
       </provider>
