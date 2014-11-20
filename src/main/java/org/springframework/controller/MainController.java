@@ -92,6 +92,20 @@ model.setViewName("login");
     }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     @RequestMapping("/kontra")
     public String getAllRecordsKontra(Model uimodel){
 
@@ -99,7 +113,7 @@ model.setViewName("login");
 
         uimodel.addAttribute("kontragent", kontragentEntities);
 
-        return "kontra/list";
+        return "kontra";
     }
 
     @RequestMapping("/uslugi")
@@ -109,7 +123,7 @@ model.setViewName("login");
 
         uimodel.addAttribute("uslugi", uslugiEntities);
 
-        return "uslugi/list";
+        return "uslugi";
     }
 
 
@@ -120,7 +134,7 @@ model.setViewName("login");
 
         uimodel.addAttribute("plan", docPlanEntities);
 
-        return "plan/list";
+        return "plan";
     }
 
 
@@ -131,7 +145,7 @@ model.setViewName("login");
 
         uimodel.addAttribute("dogovora", dogovoraEntities);
 
-        return "dogovora/list";
+        return "dogovora";
     }
 
     @RequestMapping("/doc")
@@ -141,7 +155,7 @@ model.setViewName("login");
 
         uimodel.addAttribute("doc", docCreateUslEntities);
 
-        return "doc/list";
+        return "doc";
     }
 
     @RequestMapping("/user")
@@ -151,80 +165,7 @@ model.setViewName("login");
 
         uimodel.addAttribute("users", usersEntities);
 
-        return "user/list";
-    }
-
-@RequestMapping("/filial")
-    public String gelAllRecordsFilial(Model uimodel){
-        
-        List<FilialyEntity> filialyEntityList = this.mainService.getAllRecordsFilialy();
-        
-        uimodel.addAttribute("filials", filialyEntityList);
-        
-        return "filial/list";
-    }
-
-
-    @RequestMapping("/kontra")
-    public String getAllRecordsKontra(Model uimodel){
-
-        List<KontragentEntity> kontragentEntities = this.mainService.getAllRecordsKontragenty();
-
-        uimodel.addAttribute("kontragent", kontragentEntities);
-
-        return "kontra/list";
-    }
-
-    @RequestMapping("/uslugi")
-    public String getAllRecordsUslugi(Model uimodel){
-
-        List<UslugiEntity> uslugiEntities = this.mainService.getAllRecordsUslugi();
-
-        uimodel.addAttribute("uslugi", uslugiEntities);
-
-        return "uslugi/list";
-    }
-
-
-    @RequestMapping("/plan")
-    public String getAllRecordsPlan(Model uimodel){
-
-        List<DocPlanEntity> docPlanEntities = this.mainService.getAllRecordsDocPlan();
-
-        uimodel.addAttribute("plan", docPlanEntities);
-
-        return "plan/list";
-    }
-
-
-    @RequestMapping("/dogovora")
-    public String getAllRecordsDogovora(Model uimodel){
-
-        List<DogovoraEntity> dogovoraEntities = this.mainService.getAllRecordsDogovora();
-
-        uimodel.addAttribute("dogovora", dogovoraEntities);
-
-        return "dogovora/list";
-    }
-
-    @RequestMapping("/doc")
-    public String getAllRecordsDocUslugi(Model uimodel){
-
-        List<DocCreateUslEntity> docCreateUslEntities = this.mainService.getAllRecordsDocCreateUsl();
-
-        uimodel.addAttribute("doc", docCreateUslEntities);
-
-        return "doc/list";
-    }
-
-    @RequestMapping("/user")
-    public String getAllRecordsUser(Model uimodel){
-
-        List<UsersEntity> usersEntities = this.mainService.getAllRecordsUserEntity();
-
-        uimodel.addAttribute("users", usersEntities);
-
-        return "user/list";
+        return "user";
     }
 
 }
