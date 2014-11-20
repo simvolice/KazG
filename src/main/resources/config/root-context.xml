@@ -12,6 +12,9 @@
 
     <context:component-scan base-package="org.springframework.controller"></context:component-scan>
 
+    <context:component-scan base-package="org.springframework.service"/>
+
+
     <context:component-scan base-package="org.springframework.dao" />
 
     <mvc:annotation-driven conversion-service="conversionService"></mvc:annotation-driven>
@@ -20,8 +23,6 @@
     <mvc:resources mapping="/resources/**" location="/resources/"/>
 
 
-
-    <bean id="messageSource" class="org.springframework.context.support.ResourceBundleMessageSource" p:basename="messages"/>
 
 
 

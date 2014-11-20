@@ -67,8 +67,13 @@
 
 <intercept-url pattern="/**" access="permitAll"/>
 
-           <form-login login-page="/login" authentication-failure-url="/login-error" />
-           <logout />
+           <form-login login-page="/login" authentication-failure-url="/login?error"  authentication-success-handler-ref="savedRequestAwareAuthenticationSuccessHandler" default-target-url="/index"
+                       login-processing-url="/auth/login_check"      username-parameter="username"
+                       password-parameter="password"      />
+
+
+
+           <logout logout-success-url="/login?logout" delete-cookies="JSESSIONID"/>
 
 
 

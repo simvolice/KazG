@@ -36,7 +36,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-4 col-md-offset-4">
-                <p th:if="${loginError}" class="error" th:text="#{ErrorName}">Пользователь с таким именем или паролем не найден</p>
+                <p th:if="${error}" class="error" th:text="#{ErrorName}">Пользователь с таким именем или паролем не найден</p>
                 <div class="login-panel panel panel-default">
                     <div class="panel-heading">
 
@@ -44,23 +44,23 @@
                     </div>
                     <div class="panel-body">
 
-                        <form role="form" th:action="@{/j_spring_security_check}" method="post">
+                        <form role="form" action="#" th:action="@{/auth/login_check(targetUrl=${targetUrl})}"  method="post">
                             <fieldset>
                                 <div class="form-group">
-                                    <input class="form-control" placeholder="Username" name="j_username" type="text" id="j_username" autofocus="autofocus"/>
+                                    <input class="form-control" placeholder="Логин" name="username" type="text" id="username" autofocus="autofocus"/>
                                 </div>
                                 <div class="form-group">
-                                    <input class="form-control" placeholder="Password" name="j_password" type="password" id="j_password"/>
+                                    <input class="form-control" placeholder="Пароль" name="password" type="password" id="password"/>
                                 </div>
                                 <div class="checkbox">
                                     <label >
-                                        <input name="remember-me" type="checkbox" value="Remember Me" th:text="#{login.chkBox}"/>Запомнить
+                                        <input name="remember-me" type="checkbox" value="" id="remember-me"/>Запомнить
                                     </label>
                                 </div>
                                 <!-- Change this to a button or input when using this as a form -->
 
 
-                                <button class="btn btn-lg btn-success btn-block" th:text="#{login.enterBtn}" type="submit">Войти</button>
+                                <button class="btn btn-lg btn-success btn-block"  type="submit" th:text="#{login.enterBtn}">Войти</button>
                             </fieldset>
                         </form>
                     </div>

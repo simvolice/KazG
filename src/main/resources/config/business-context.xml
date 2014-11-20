@@ -13,8 +13,8 @@
 
     <import resource="data-context.xml"/>
 
-    <!--<context:component-scan base-package="org.springframework.dao"></context:component-scan>-->
-    <context:component-scan base-package="org.springframework.service"/>
+
+
     <context:property-placeholder location="classpath:config/data-access.properties"/>
 
     <tx:annotation-driven transaction-manager="transactionManager"/>
@@ -34,6 +34,12 @@
                 <prop key="hibernate.generate_statistics">true</prop>
             </props>
         </property>
+    </bean>
+
+
+    <bean id="savedRequestAwareAuthenticationSuccessHandler"
+          class="org.springframework.security.web.authentication.SavedRequestAwareAuthenticationSuccessHandler">
+        <property name="targetUrlParameter" value="targetUrl" />
     </bean>
 
 
