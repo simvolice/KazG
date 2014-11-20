@@ -1,10 +1,11 @@
 package org.springframework.model;
 
 import javax.persistence.*;
-import java.util.Collection;
+import java.util.HashSet;
+import java.util.Set;
 
 /**
- * Created by user on 15.11.2014.
+ * Created by Естай on 17.11.2014.
  */
 @Entity
 @Table(name = "kontragent", schema = "", catalog = "kazgidro")
@@ -13,7 +14,27 @@ public class KontragentEntity {
     private String naimenovanie;
     private String bin;
     private String iin;
-    private Collection<DocCreateUslEntity> docCreateUslsByKontragentid;
+
+    //relationship with doc create uslugi
+    private Set<DocCreateUslEntity> docUslugi = new HashSet<DocCreateUslEntity>();
+
+    @OneToMany(mappedBy = "kontragentEntity", cascade = CascadeType.ALL, orphanRemoval = true)
+    public Set<DocCreateUslEntity> getDocUslugi(){
+        return this.docUslugi;
+    }
+    public void setDocUslugi(Set<DocCreateUslEntity> docUslugiSet){
+        this.docUslugi = docUslugiSet;
+    }
+
+    public void addDocUslugi(DocCreateUslEntity docCreateUslEntity){
+        docCreateUslEntity.setKontragentEntity(this);
+        getDocUslugi().add(docCreateUslEntity);
+    }
+
+    public void removeDocUslugi(DocCreateUslEntity docCreateUslEntity){
+        getDocUslugi().remove(docCreateUslEntity);
+    }
+
 
     @Id
     @Column(name = "kontragentid", nullable = false, insertable = true, updatable = true)
@@ -77,14 +98,5 @@ public class KontragentEntity {
         result = 31 * result + (bin != null ? bin.hashCode() : 0);
         result = 31 * result + (iin != null ? iin.hashCode() : 0);
         return result;
-    }
-
-    @OneToMany(mappedBy = "kontragentByKontragentyId")
-    public Collection<DocCreateUslEntity> getDocCreateUslsByKontragentid() {
-        return docCreateUslsByKontragentid;
-    }
-
-    public void setDocCreateUslsByKontragentid(Collection<DocCreateUslEntity> docCreateUslsByKontragentid) {
-        this.docCreateUslsByKontragentid = docCreateUslsByKontragentid;
     }
 }

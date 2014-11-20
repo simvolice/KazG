@@ -4,7 +4,7 @@ import javax.persistence.*;
 import java.sql.Timestamp;
 
 /**
- * Created by user on 15.11.2014.
+ * Created by Естай on 17.11.2014.
  */
 @Entity
 @Table(name = "doc_create_usl", schema = "", catalog = "kazgidro")
@@ -12,11 +12,81 @@ public class DocCreateUslEntity {
     private int docCreateUslId;
     private Timestamp date;
     private Double stoimost;
-    private DogovoraEntity dogovoraByDogovorId;
-    private FilialyEntity filialyByFilialId;
-    private KontragentEntity kontragentByKontragentyId;
-    private UsersEntity usersByUserId;
-    private UslugiEntity uslugiByUslugaId;
+
+
+    // relationsip with kontragent entit
+
+    private KontragentEntity kontragentEntity;
+
+    @ManyToOne
+    @JoinColumn(name = "kontragentyid")
+    public KontragentEntity getKontragentEntity() {
+
+        return this.kontragentEntity;
+    }
+    public void setKontragentEntity(KontragentEntity kontragentEntity){
+        this.kontragentEntity = kontragentEntity;
+    }
+
+    //relationship with filialyEntity
+    private FilialyEntity filialyEntity;
+
+    @ManyToOne
+    @JoinColumn(name = "filialid")
+    public FilialyEntity getFilialyEntity(){
+        return this.filialyEntity;
+    }
+    public void setFilialyEntity(FilialyEntity filialyEntity){
+        this.filialyEntity = filialyEntity;
+    }
+
+
+
+
+    //relationship with dogovoraEntity
+    private DogovoraEntity dogovoraEntity;
+
+    @ManyToOne
+    @JoinColumn(name = "dogovorid")
+    public DogovoraEntity getDogovoraEntity(){
+        return this.dogovoraEntity;
+    }
+    public void setDogovoraEntity(DogovoraEntity dogovoraEntity){
+        this.dogovoraEntity = dogovoraEntity;
+    }
+
+
+    //relationship with uslugi entity
+    private UslugiEntity uslugiEntity;
+
+    @ManyToOne
+    @JoinColumn(name = "uslugaid")
+    public UslugiEntity getUslugiEntity(){
+        return this.uslugiEntity;
+    }
+    public void setUslugiEntity(UslugiEntity uslugiEntity){
+        this.uslugiEntity = uslugiEntity;
+    }
+
+
+
+    //relationship with userEntity
+    private UsersEntity usersEntity;
+
+    @ManyToOne
+    @JoinColumn(name = "userid")
+    public UsersEntity getUsersEntity(){
+        return this.usersEntity;
+    }
+    public void setUsersEntity(UsersEntity usersEntity){
+        this.usersEntity = usersEntity;
+    }
+
+
+
+
+
+
 
     @Id
     @Column(name = "docCreateUslID", nullable = false, insertable = true, updatable = true)
@@ -68,55 +138,5 @@ public class DocCreateUslEntity {
         result = 31 * result + (date != null ? date.hashCode() : 0);
         result = 31 * result + (stoimost != null ? stoimost.hashCode() : 0);
         return result;
-    }
-
-    @ManyToOne
-    @JoinColumn(name = "dogovorID", referencedColumnName = "dogovorid", nullable = false)
-    public DogovoraEntity getDogovoraByDogovorId() {
-        return dogovoraByDogovorId;
-    }
-
-    public void setDogovoraByDogovorId(DogovoraEntity dogovoraByDogovorId) {
-        this.dogovoraByDogovorId = dogovoraByDogovorId;
-    }
-
-    @ManyToOne
-    @JoinColumn(name = "filialID", referencedColumnName = "filialid", nullable = false)
-    public FilialyEntity getFilialyByFilialId() {
-        return filialyByFilialId;
-    }
-
-    public void setFilialyByFilialId(FilialyEntity filialyByFilialId) {
-        this.filialyByFilialId = filialyByFilialId;
-    }
-
-    @ManyToOne
-    @JoinColumn(name = "kontragentyID", referencedColumnName = "kontragentid", nullable = false)
-    public KontragentEntity getKontragentByKontragentyId() {
-        return kontragentByKontragentyId;
-    }
-
-    public void setKontragentByKontragentyId(KontragentEntity kontragentByKontragentyId) {
-        this.kontragentByKontragentyId = kontragentByKontragentyId;
-    }
-
-    @ManyToOne
-    @JoinColumn(name = "userID", referencedColumnName = "userid", nullable = false)
-    public UsersEntity getUsersByUserId() {
-        return usersByUserId;
-    }
-
-    public void setUsersByUserId(UsersEntity usersByUserId) {
-        this.usersByUserId = usersByUserId;
-    }
-
-    @ManyToOne
-    @JoinColumn(name = "uslugaID", referencedColumnName = "uslugiid", nullable = false)
-    public UslugiEntity getUslugiByUslugaId() {
-        return uslugiByUslugaId;
-    }
-
-    public void setUslugiByUslugaId(UslugiEntity uslugiByUslugaId) {
-        this.uslugiByUslugaId = uslugiByUslugaId;
     }
 }

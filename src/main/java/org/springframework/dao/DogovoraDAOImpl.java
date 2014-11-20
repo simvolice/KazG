@@ -21,11 +21,6 @@ public class DogovoraDAOImpl implements DogovoraDAO {
 
     //sesstion initialization
 
-
-
-
-
-
     private org.apache.commons.logging.Log log= LogFactory.getLog(FilialyDAOImpl.class);
 
     @Autowired
@@ -49,13 +44,11 @@ public class DogovoraDAOImpl implements DogovoraDAO {
 
 
     @Override
-    @Transactional
     public List<DogovoraEntity> getAllRecordsDogovora() {
         return currentSession().createQuery("from DogovoraEntity c").list();
     }
 
     @Override
-    @Transactional
     public String addRecordsDogovora(DogovoraEntity dogovoraEntity) {
         currentSession().saveOrUpdate(dogovoraEntity);
         ResourceBundle bundle = null;
@@ -68,7 +61,6 @@ public class DogovoraDAOImpl implements DogovoraDAO {
     }
 
     @Override
-    @Transactional
     public String deleteRecordDogovora(DogovoraEntity dogovoraEntity) {
         currentSession().delete(dogovoraEntity);
         ResourceBundle bundle = null;
@@ -81,16 +73,18 @@ public class DogovoraDAOImpl implements DogovoraDAO {
     }
 
     @Override
-    @Transactional
     public DogovoraEntity findByIdDogovora(int id) {
 
         DogovoraEntity dogovoraEntity= (DogovoraEntity)currentSession().createQuery("from DogovoraEntity c where c.id =:id").setParameter("id", id).uniqueResult();
+
+        if (dogovoraEntity.getDocUslugi().size()==0){
+            dogovoraEntity.getDocUslugi().clear();
+        }
 
         return dogovoraEntity;
     }
 
     @Override
-    @Transactional
     public String updateRecordsDogovora(DogovoraEntity dogovoraEntity) {
 
         currentSession().saveOrUpdate(dogovoraEntity);

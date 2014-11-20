@@ -1,10 +1,11 @@
 package org.springframework.model;
 
 import javax.persistence.*;
-import java.util.Collection;
+import java.util.HashSet;
+import java.util.Set;
 
 /**
- * Created by user on 15.11.2014.
+ * Created by Естай on 17.11.2014.
  */
 @Entity
 @Table(name = "users", schema = "", catalog = "kazgidro")
@@ -16,7 +17,53 @@ public class UsersEntity {
     private String userfirstname;
     private String userlastname;
     private String useremail;
-    private Collection<DocCreateUslEntity> docCreateUslsByUserid;
+
+
+
+
+    // relationship with DOC plan entity
+    private Set<DocPlanEntity> docPlanEntities = new HashSet<DocPlanEntity>();
+
+
+    @OneToMany(mappedBy = "usersEntity", cascade = CascadeType.ALL, orphanRemoval = true)
+    public Set<DocPlanEntity> getDocPlanEntities(){
+        return this.docPlanEntities;
+    }
+    public void setDocPlanEntities(Set<DocPlanEntity> docPlanEntities){
+        this.docPlanEntities= docPlanEntities;
+    }
+
+    public void addDocPlan(DocPlanEntity docPlanEntity){
+        docPlanEntity.setUsersEntity(this);
+        getDocPlanEntities().add(docPlanEntity);
+    }
+
+    public void removeDocPlan(DocPlanEntity docPlanEntity){
+        getDocPlanEntities().remove(docPlanEntity);
+    }
+
+
+
+    // relaship with doc
+    private Set<DocCreateUslEntity> docUslugi = new HashSet<DocCreateUslEntity>();
+
+    @OneToMany(mappedBy = "usersEntity", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.LAZY)
+    public Set<DocCreateUslEntity> getDocUslugi(){
+        return this.docUslugi;
+    }
+    public void setDocUslugi(Set<DocCreateUslEntity> docCreateUslEntitySet){
+        this.docUslugi = docCreateUslEntitySet;
+    }
+
+    public void addDocUslugi(DocCreateUslEntity docCreateUslEntity){
+        docCreateUslEntity.setUsersEntity(this);
+        getDocUslugi().add(docCreateUslEntity);
+    }
+    public void removeDocUslugi(DocCreateUslEntity docCreateUslEntity){
+        getDocUslugi().remove(docCreateUslEntity);
+    }
+
+
 
     @Id
     @Column(name = "userid", nullable = false, insertable = true, updatable = true)
@@ -117,14 +164,5 @@ public class UsersEntity {
         result = 31 * result + (userlastname != null ? userlastname.hashCode() : 0);
         result = 31 * result + (useremail != null ? useremail.hashCode() : 0);
         return result;
-    }
-
-    @OneToMany(mappedBy = "usersByUserId")
-    public Collection<DocCreateUslEntity> getDocCreateUslsByUserid() {
-        return docCreateUslsByUserid;
-    }
-
-    public void setDocCreateUslsByUserid(Collection<DocCreateUslEntity> docCreateUslsByUserid) {
-        this.docCreateUslsByUserid = docCreateUslsByUserid;
     }
 }

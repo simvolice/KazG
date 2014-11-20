@@ -2,19 +2,42 @@ package org.springframework.model;
 
 import javax.persistence.*;
 import java.sql.Timestamp;
-import java.util.Collection;
+import java.util.Date;
+import java.util.HashSet;
+import java.util.Set;
 
 /**
- * Created by user on 15.11.2014.
+ * Created by Естай on 17.11.2014.
  */
 @Entity
 @Table(name = "dogovora", schema = "", catalog = "kazgidro")
 public class DogovoraEntity {
     private int dogovorid;
-    private Timestamp startDate;
-    private Timestamp endDate;
+    private Date startDate;
+    private Date endDate;
     private double summa;
-    private Collection<DocCreateUslEntity> docCreateUslsByDogovorid;
+
+
+    //relationship with doc create uslugi
+    private Set<DocCreateUslEntity> docUslugi = new HashSet<DocCreateUslEntity>();
+
+    @OneToMany(mappedBy = "dogovoraEntity", cascade = CascadeType.ALL, orphanRemoval = true)
+    public Set<DocCreateUslEntity> getDocUslugi(){
+        return this.docUslugi;
+    }
+    public void setDocUslugi(Set<DocCreateUslEntity> docUslugiSet){
+        this.docUslugi = docUslugiSet;
+    }
+
+    public void addDocUslugi(DocCreateUslEntity docCreateUslEntity){
+        docCreateUslEntity.setDogovoraEntity(this);
+        getDocUslugi().add(docCreateUslEntity);
+    }
+
+    public void removeDocUslugi(DocCreateUslEntity docCreateUslEntity){
+        getDocUslugi().remove(docCreateUslEntity);
+    }
+
 
     @Id
     @Column(name = "dogovorid", nullable = false, insertable = true, updatable = true)
@@ -28,21 +51,21 @@ public class DogovoraEntity {
 
     @Basic
     @Column(name = "start_date", nullable = false, insertable = true, updatable = true)
-    public Timestamp getStartDate() {
+    public Date getStartDate() {
         return startDate;
     }
 
-    public void setStartDate(Timestamp startDate) {
+    public void setStartDate(Date startDate) {
         this.startDate = startDate;
     }
 
     @Basic
     @Column(name = "end_date", nullable = false, insertable = true, updatable = true)
-    public Timestamp getEndDate() {
+    public Date getEndDate() {
         return endDate;
     }
 
-    public void setEndDate(Timestamp endDate) {
+    public void setEndDate(Date endDate) {
         this.endDate = endDate;
     }
 
@@ -81,14 +104,5 @@ public class DogovoraEntity {
         temp = Double.doubleToLongBits(summa);
         result = 31 * result + (int) (temp ^ (temp >>> 32));
         return result;
-    }
-
-    @OneToMany(mappedBy = "dogovoraByDogovorId")
-    public Collection<DocCreateUslEntity> getDocCreateUslsByDogovorid() {
-        return docCreateUslsByDogovorid;
-    }
-
-    public void setDocCreateUslsByDogovorid(Collection<DocCreateUslEntity> docCreateUslsByDogovorid) {
-        this.docCreateUslsByDogovorid = docCreateUslsByDogovorid;
     }
 }

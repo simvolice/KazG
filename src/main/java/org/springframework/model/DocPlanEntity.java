@@ -2,17 +2,82 @@ package org.springframework.model;
 
 import javax.persistence.*;
 import java.sql.Timestamp;
+import java.util.HashSet;
+import java.util.Set;
 
 /**
- * Created by user on 15.11.2014.
+ * Created by Естай on 18.11.2014.
  */
 @Entity
 @Table(name = "doc_plan", schema = "", catalog = "kazgidro")
 public class DocPlanEntity {
     private int id;
     private Timestamp date;
-    private String nomer;
-    private String avtor;
+    private int year;
+
+
+
+
+    //relationship with User entity
+
+
+    private UsersEntity usersEntity;
+
+    @ManyToOne
+    @JoinColumn(name = "avtor")
+    public UsersEntity getUsersEntity(){
+        return this.usersEntity;
+    }
+    public void setUsersEntity(UsersEntity usersEntity){
+        this.usersEntity = usersEntity;
+    }
+
+
+
+
+
+    //relationship with filialyEntity
+    private FilialyEntity filialyEntity;
+
+    @ManyToOne
+    @JoinColumn(name = "filialID")
+    public FilialyEntity getFilialyEntity(){
+        return this.filialyEntity;
+    }
+    public void setFilialyEntity(FilialyEntity filialyEntity){
+        this.filialyEntity = filialyEntity;
+    }
+
+
+
+
+
+    //relationship with Plan by month
+    private Set<PlanbymonthesEntity> planByMonth = new HashSet<PlanbymonthesEntity>();
+
+
+
+    @OneToMany(mappedBy = "docPlanEntity", cascade = CascadeType.ALL, orphanRemoval = true)
+    public Set<PlanbymonthesEntity> getPlanByMonth(){
+        return this.planByMonth;
+    }
+    public void setPlanByMonth(Set<PlanbymonthesEntity> planByMonth){
+        this.planByMonth = planByMonth;
+    }
+
+    public void addPlanByMonth(PlanbymonthesEntity planbymonthesEntity){
+        planbymonthesEntity.setDocPlanEntity(this);
+        getPlanByMonth().add(planbymonthesEntity);
+    }
+
+    public void removePlanByMonth(PlanbymonthesEntity planbymonthesEntity){
+        getPlanByMonth().remove(planbymonthesEntity);
+    }
+
+
+
+
+
 
     @Id
     @Column(name = "id", nullable = false, insertable = true, updatable = true)
@@ -34,47 +99,16 @@ public class DocPlanEntity {
         this.date = date;
     }
 
-    @Basic
-    @Column(name = "nomer", nullable = false, insertable = true, updatable = true, length = 45)
-    public String getNomer() {
-        return nomer;
+
+
+    @Column(name = "year", nullable = false, insertable = true, updatable = true)
+    public int getYear() {
+        return year;
     }
 
-    public void setNomer(String nomer) {
-        this.nomer = nomer;
+    public void setYear(int year) {
+        this.year = year;
     }
 
-    @Basic
-    @Column(name = "avtor", nullable = false, insertable = true, updatable = true, length = 45)
-    public String getAvtor() {
-        return avtor;
-    }
 
-    public void setAvtor(String avtor) {
-        this.avtor = avtor;
-    }
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-
-        DocPlanEntity that = (DocPlanEntity) o;
-
-        if (id != that.id) return false;
-        if (avtor != null ? !avtor.equals(that.avtor) : that.avtor != null) return false;
-        if (date != null ? !date.equals(that.date) : that.date != null) return false;
-        if (nomer != null ? !nomer.equals(that.nomer) : that.nomer != null) return false;
-
-        return true;
-    }
-
-    @Override
-    public int hashCode() {
-        int result = id;
-        result = 31 * result + (date != null ? date.hashCode() : 0);
-        result = 31 * result + (nomer != null ? nomer.hashCode() : 0);
-        result = 31 * result + (avtor != null ? avtor.hashCode() : 0);
-        return result;
-    }
 }

@@ -61,19 +61,31 @@
               </session-management>
 
               <remember-me
-                      key="kazgidro"
+
                       token-validity-seconds="2419200" data-source-ref="dataSource" remember-me-parameter="remember-me"/>
 
 
 <intercept-url pattern="/**" access="permitAll"/>
 
-           <form-login login-page="/login" authentication-failure-url="/login?error"  authentication-success-handler-ref="savedRequestAwareAuthenticationSuccessHandler" default-target-url="/index"
-                       login-processing-url="/auth/login_check"      username-parameter="username"
-                       password-parameter="password"      />
 
 
 
-           <logout logout-success-url="/login?logout" delete-cookies="JSESSIONID"/>
+           <form-login login-page="/login"
+
+                       authentication-failure-url="/login?error"
+
+
+
+                       default-target-url="/index"
+
+
+                       always-use-default-target="true"
+
+                          />
+
+
+
+           <logout logout-success-url="/login?logout"/>
 
 
 

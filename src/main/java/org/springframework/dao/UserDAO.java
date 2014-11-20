@@ -1,25 +1,28 @@
 package org.springframework.dao;
 
-import org.springframework.model.UsersEntity;
-import org.springframework.security.access.annotation.Secured;
+import org.hibernate.metamodel.domain.Entity;
+import org.springframework.model.*;
+import org.springframework.stereotype.Repository;
 
+import java.util.Collection;
+import java.util.Collections;
 import java.util.List;
 
 /**
- * Created by user on 15.11.2014.
+ * Created by Администратор on 10.11.2014.
  */
+
 public interface UserDAO {
 
+    public List<UsersEntity> getAllRecordsUserEntity();
 
+    public String addRecordsUsers(UsersEntity usersEntity);
 
+    public String deleteRecordUsers(UsersEntity usersEntity);
 
-    @Secured("ROLE_ADMIN")
-    public String AddUser (UsersEntity usersEntity);
+    public UsersEntity findByIdUser(int id);
 
-    public String DeleteUser (Integer usrId);
-
-
-    public List<UsersEntity> GetAllUsers();
+    public String updateRecordsUsers(UsersEntity usersEntity);
 
 
 

@@ -17,7 +17,7 @@
 
     <context:property-placeholder location="classpath:config/data-access.properties"/>
 
-    <tx:annotation-driven transaction-manager="transactionManager"/>
+
 
 
     <bean id="sessionFactory"

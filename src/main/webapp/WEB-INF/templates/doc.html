@@ -1,43 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 
 <head>
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="description" content=""/>
+    <meta name="author" content=""/>
 
-    <title>SB Admin 2 - Bootstrap Admin Theme</title>
+    <title>КазГидроМет.Отчет</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="../../resources/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.4/css/jquery.dataTables.css">
+    <link href="../../resources/css/bootstrap.min.css" rel="stylesheet" th:href="@{../../resources/css/bootstrap.min.css}"/>
 
     <link href="../../resources/css/plugins/dataTables.bootstrap.css" rel="stylesheet">
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
     <!-- MetisMenu CSS -->
-    <link href="../../resources/css/plugins/metisMenu/metisMenu.min.css" rel="stylesheet">
+    <link href="../../resources/css/plugins/metisMenu/metisMenu.min.css" th:href="@{../../resources/css/plugins/metisMenu/metisMenu.min.css}" rel="stylesheet">
 
     <!-- Timeline CSS -->
-    <link href="../../resources/css/plugins/timeline.css" rel="stylesheet">
+
 
     <!-- Custom CSS -->
-    <link href="../../resources/css/sb-admin-2.css" rel="stylesheet">
+    <link href="../../resources/css/sb-admin-2.css" th:href="@{../../resources/css/sb-admin-2.css}" rel="stylesheet">
 
     <!-- Morris Charts CSS -->
-    <link href="../../resources/css/plugins/morris.css" rel="stylesheet">
+    <link href="../../resources/css/plugins/morris.css" th:href="@{../../resources/css/plugins/morris.css}" rel="stylesheet">
 
     <!-- Custom Fonts -->
-    <link href="../../resources/font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="../../resources/font-awesome-4.1.0/css/font-awesome.min.css" th:href="@{../../resources/font-awesome-4.1.0/css/font-awesome.min.css}" rel="stylesheet" type="text/css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    [if lt IE 9]
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js" th:src="@{//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js}"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js" th:src="@{//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js}"></script>
+    [endif]
 
 </head>
 
@@ -54,7 +53,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="index.html">КазГидроМет.Отчет</a>
+            <a class="navbar-brand" href="index.html" th:href="@{index.html}">КазГидроМет.Отчет</a>
         </div>
         <!-- /.navbar-header -->
 
@@ -69,13 +68,13 @@
                 </a>
                 <ul class="dropdown-menu dropdown-user">
 
-                    <li><a href="login.html"><i class="fa fa-sign-out fa-fw"></i> Выход</a>
-                    </li>
-                </ul>
-                <!-- /.dropdown-user -->
-            </li>
-            <!-- /.dropdown -->
-        </ul>
+                        <li><a href="/j_spring_security_logout" th:href="@{/j_spring_security_logout}"><i class="fa fa-sign-out fa-fw"></i> Выход</a>
+                        </li>
+                    </ul>
+                    <!-- /.dropdown-user -->
+                </li>
+                <!-- /.dropdown -->
+            </ul>
 
 
         <div class="navbar-default sidebar" role="navigation">
@@ -94,7 +93,7 @@
                     </li>
 
                     <li>
-                        <a class="active" href="index.html"><i class="fa fa-dashboard fa-fw"></i> Главная</a>
+                        <a class="active" href="index.html" th:href="@{index.html}"><i class="fa fa-dashboard fa-fw"></i> Главная</a>
                     </li>
 
 
@@ -104,19 +103,19 @@
 
                         <ul class="nav nav-second-level collapse" id="spr">
                             <li>
-                                    <a href="filials.html">Филиалы</a>
+                                    <a href="filials.html" th:href="@{filials.html}">Филиалы</a>
                             </li>
                             <li>
-                                    <a href="kontra.html">Контрагенты</a>
+                                    <a href="kontra.html" th:href="@{kontra.html}">Контрагенты</a>
 
                             </li>
 
                             <li>
-                                    <a href="dogovora.html">Договора</a>
+                                    <a href="dogovora.html" th:href="@{dogovora.html}">Договора</a>
                             </li>
 
                             <li>
-                                    <a href="uslugi.html">Услуги</a>
+                                    <a href="uslugi.html" th:href="@{uslugi.html}">Услуги</a>
                             </li>
 
 
@@ -135,10 +134,10 @@
 
                         <ul class="nav nav-second-level collapse" id="doc">
                             <li>
-                                    <a href="doc.html">Оказание услуг</a>
+                                    <a href="doc.html" th:href="@{doc.html}">Оказание услуг</a>
                             </li>
                             <li>
-                                    <a href="plan.html">Составление плана</a>
+                                    <a href="plan.html" th:href="@{plan.html}">Составление плана</a>
 
                             </li>
 
@@ -155,14 +154,14 @@
 
 
                     <li>
-                            <a href="report.html"><i class="fa fa-bar-chart-o fa-fw"></i> Отчеты</a>
+                            <a href="report.html" th:href="@{report.html}"><i class="fa fa-bar-chart-o fa-fw"></i> Отчеты</a>
 
                     </li>
 
 
 
                         <li>
-                            <a href="user.html"><i class="fa fa-bar-chart-o fa-fw"></i> Пользователи</a>
+                            <a href="user.html" th:href="@{user.html}"><i class="fa fa-bar-chart-o fa-fw"></i> Пользователи</a>
 
                         </li>
 
@@ -691,42 +690,21 @@
 <!-- /#wrapper -->
 
 <!-- jQuery -->
-<script src="../../resources/js/jquery.js"></script>
+    <script src="../../resources/js/jquery.js" th:src="@{../../resources/js/jquery.js}"></script>
 
 <!-- Bootstrap Core JavaScript -->
-<script src="../../resources/js/bootstrap.min.js"></script>
+    <script src="../../resources/js/bootstrap.min.js" th:src="@{../../resources/js/bootstrap.min.js}"></script>
 
 <!-- Metis Menu Plugin JavaScript -->
-<script src="../../resources/js/plugins/metisMenu/metisMenu.min.js"></script>
+    <script src="../../resources/js/plugins/metisMenu/metisMenu.min.js" th:src="@{../../resources/js/plugins/metisMenu/metisMenu.min.js}"></script>
 
 <!-- Morris Charts JavaScript -->
-<script src="../../resources/js/plugins/morris/raphael.min.js"></script>
-<script src="../../resources/js/plugins/morris/morris.min.js"></script>
-<script src="../../resources/js/plugins/morris/morris-data.js" ></script>
+    <script src="../../resources/js/plugins/morris/raphael.min.js" th:src="@{../../resources/js/plugins/morris/raphael.min.js}"></script>
+    <script src="../../resources/js/plugins/morris/morris.min.js" th:src="@{../../resources/js/plugins/morris/morris.min.js}"></script>
+    <script src="../../resources/js/plugins/morris/morris-data.js" th:src="@{../../resources/js/plugins/morris/morris-data.js}"></script>
 
 <!-- Custom Theme JavaScript -->
-<script src="../../resources/js/sb-admin-2.js"></script>
-
-<!-- DataTables JavaScript -->
-<script src="../../resources/js/plugins/dataTables/jquery.dataTables.js"></script>
-<script src="../../resources/js/plugins/dataTables/dataTables.bootstrap.js"></script>
-
-<!-- DataTables CSS -->
-
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
-<!-- jQuery -->
-<script type="text/javascript" charset="utf8" src="//code.jquery.com/jquery-1.10.2.min.js"></script>
-
-<!-- DataTables -->
-<script type="text/javascript" charset="utf8" src="//cdn.datatables.net/1.10.4/js/jquery.dataTables.js"></script>
-
-
-
-<script>
-    $(document).ready(function() {
-        $('#dataTables-example').dataTable();
-    });
-</script>
+    <script src="../../resources/js/sb-admin-2.js" th:src="@{../../resources/js/sb-admin-2.js}"></script>
 
 </body>
 

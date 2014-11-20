@@ -12,13 +12,13 @@ public interface DogovoraDAO {
 
     public List<DogovoraEntity> getAllRecordsDogovora();
 
-    public String addRecordsDogovora(DogovoraEntity entity);
+    public String addRecordsDogovora(DogovoraEntity dogovoraEntity);
 
-    public String deleteRecordDogovora(DogovoraEntity filialyEntity);
+    public String deleteRecordDogovora(DogovoraEntity dogovoraEntity);
 
     public DogovoraEntity findByIdDogovora(int id);
 
-    public String updateRecordsDogovora(DogovoraEntity filialyEntity);
+    public String updateRecordsDogovora(DogovoraEntity dogovoraEntity);
 
 
 }

@@ -1,17 +1,39 @@
 package org.springframework.model;
 
 import javax.persistence.*;
-import java.util.Collection;
+import java.util.HashSet;
+import java.util.Set;
 
 /**
- * Created by user on 15.11.2014.
+ * Created by Естай on 17.11.2014.
  */
 @Entity
 @Table(name = "uslugi", schema = "", catalog = "kazgidro")
 public class UslugiEntity {
     private int uslugiid;
     private String naimenovanie;
-    private Collection<DocCreateUslEntity> docCreateUslsByUslugiid;
+
+
+
+
+    // relaship with doc
+    private Set<DocCreateUslEntity> docUslugi = new HashSet<DocCreateUslEntity>();
+
+    @OneToMany(mappedBy = "uslugiEntity", cascade = CascadeType.ALL, orphanRemoval = true)
+    public Set<DocCreateUslEntity> getDocUslugi(){
+        return this.docUslugi;
+    }
+    public void setDocUslugi(Set<DocCreateUslEntity> docCreateUslEntitySet){
+        this.docUslugi = docCreateUslEntitySet;
+    }
+
+    public void addDocUslugi(DocCreateUslEntity docCreateUslEntity){
+        docCreateUslEntity.setUslugiEntity(this);
+        getDocUslugi().add(docCreateUslEntity);
+    }
+    public void removeDocUslugi(DocCreateUslEntity docCreateUslEntity){
+        getDocUslugi().remove(docCreateUslEntity);
+    }
 
     @Id
     @Column(name = "uslugiid", nullable = false, insertable = true, updatable = true)
@@ -51,14 +73,5 @@ public class UslugiEntity {
         int result = uslugiid;
         result = 31 * result + (naimenovanie != null ? naimenovanie.hashCode() : 0);
         return result;
-    }
-
-    @OneToMany(mappedBy = "uslugiByUslugaId")
-    public Collection<DocCreateUslEntity> getDocCreateUslsByUslugiid() {
-        return docCreateUslsByUslugiid;
-    }
-
-    public void setDocCreateUslsByUslugiid(Collection<DocCreateUslEntity> docCreateUslsByUslugiid) {
-        this.docCreateUslsByUslugiid = docCreateUslsByUslugiid;
     }
 }
