@@ -17,7 +17,7 @@ public class DogovoraEntity {
     private Date endDate;
     private double summa;
 
-
+private  String naimenovanie;
     //relationship with doc create uslugi
     private Set<DocCreateUslEntity> docUslugi = new HashSet<DocCreateUslEntity>();
 
@@ -36,6 +36,20 @@ public class DogovoraEntity {
 
     public void removeDocUslugi(DocCreateUslEntity docCreateUslEntity){
         getDocUslugi().remove(docCreateUslEntity);
+    }
+
+
+
+
+    @Basic
+    @Column(name = "naimenovanie", nullable = false, insertable = true, updatable = true, length = 45)
+    public String getNaimenovanie() {
+
+        return naimenovanie;
+    }
+
+    public void setNaimenovanie(String naimenovanie) {
+        this.naimenovanie = naimenovanie;
     }
 
 

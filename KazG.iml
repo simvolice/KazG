@@ -94,12 +94,12 @@
     <orderEntry type="library" scope="PROVIDED" name="Maven: javax.servlet:servlet-api:2.4" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: javax.servlet.jsp:jsp-api:2.1" level="project" />
     <orderEntry type="library" name="org.hibernate.java-persistence:jpa-api:2.0-cr-1" level="project" />
-    <orderEntry type="library" name="mysql-connector-java-5.1.34-bin" level="project" />
-    <orderEntry type="library" name="hibernate-jpa-2.1-api-1.0.0.Final1" level="project" />
-    <orderEntry type="library" name="ehcache-2.9.01" level="project" />
-    <orderEntry type="library" name="spring-webmvc-4.1.2.RELEASE1" level="project" />
-    <orderEntry type="library" name="hibernate-core-4.3.7.Final1" level="project" />
-    <orderEntry type="library" name="ehcache-core-2.6.91" level="project" />
-    <orderEntry type="library" name="spring-context-support-4.1.2.RELEASE1" level="project" />
+    <orderEntry type="library" name="ehcache-core-2.6.9" level="project" />
+    <orderEntry type="library" name="ehcache-2.9.0" level="project" />
+    <orderEntry type="library" name="hibernate-core-4.3.7.Final" level="project" />
+    <orderEntry type="library" name="hibernate-jpa-2.1-api-1.0.0.Final" level="project" />
+    <orderEntry type="library" name="mysql-connector-java-5.1.34" level="project" />
+    <orderEntry type="library" name="spring-context-support-4.1.2.RELEASE" level="project" />
+    <orderEntry type="library" name="spring-webmvc-4.1.2.RELEASE" level="project" />
   </component>
 </module>

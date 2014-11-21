@@ -17,7 +17,6 @@ import java.util.ResourceBundle;
  * Created by Естай on 16.11.2014.
  */
 @Repository
-
 public class FilialyDAOImpl implements FilialyDAO {
 
     private org.apache.commons.logging.Log log= LogFactory.getLog(FilialyDAOImpl.class);
@@ -41,7 +40,6 @@ public class FilialyDAOImpl implements FilialyDAO {
 
 
     @Override
-
     public String addRecordsFilialy(FilialyEntity filialyEntity) {
 
         currentSession().saveOrUpdate(filialyEntity);
@@ -59,7 +57,6 @@ public class FilialyDAOImpl implements FilialyDAO {
 
 
     @Override
-
     public String updateRecordsFilialy(FilialyEntity filialyEntity) {
 
         currentSession().saveOrUpdate(filialyEntity);
@@ -75,7 +72,6 @@ public class FilialyDAOImpl implements FilialyDAO {
 
 
     @Override
-
     public String deleteRecordFilialy(FilialyEntity filialyEntity) {
 
 
@@ -92,7 +88,6 @@ public class FilialyDAOImpl implements FilialyDAO {
     }
 
     @Override
-
     public FilialyEntity findByIdFilialy(int id) {
         FilialyEntity filialyEntity = (FilialyEntity)currentSession().createQuery("from FilialyEntity c where c.id =:id").setParameter("id", id).uniqueResult();
 
@@ -106,7 +101,6 @@ public class FilialyDAOImpl implements FilialyDAO {
     }
 
     @Override
-
     public List<FilialyEntity> getAllRecordsFilialy() {
 
         return currentSession().createQuery("from FilialyEntity c").list();
