@@ -9,7 +9,7 @@
     <meta name="description" content=""/>
     <meta name="author" content=""/>
 
-    <title>КазГидроМет.Отчет</title>
+    <title th:text="#{kaz_gidromet_ot4et}">КазГидроМет.Отчет</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="../../resources/css/bootstrap.min.css" rel="stylesheet" th:href="@{../../resources/css/bootstrap.min.css}"/>
@@ -52,7 +52,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="index.html" th:href="@{index.html}">КазГидроМет.Отчет</a>
+            <a class="navbar-brand" href="index.html" th:href="@{index.html}" th:text="#{kaz_gidromet_ot4et}">КазГидроМет.Отчет</a>
         </div>
         <!-- /.navbar-header -->
 
@@ -67,7 +67,7 @@
                 </a>
                 <ul class="dropdown-menu dropdown-user">
 
-                    <li><a href="/j_spring_security_logout" th:href="@{/j_spring_security_logout}"><i class="fa fa-sign-out fa-fw"></i> Выход</a>
+                    <li><a href="/j_spring_security_logout" th:href="@{/j_spring_security_logout}" th:text="#{exit}"><i class="fa fa-sign-out fa-fw"></i> Выход</a>
                     </li>
                 </ul>
                 <!-- /.dropdown-user -->
@@ -81,7 +81,7 @@
                 <ul class="nav" id="side-menu">
                     <li class="sidebar-search">
                         <div class="input-group custom-search-form">
-                            <input type="text" class="form-control" placeholder="Поиск..."/>
+                            <input type="text" class="form-control" placeholder="Поиск..." th:placeholder="#{poisk}"/>
                                 <span class="input-group-btn">
                                 <button class="btn btn-default" type="button">
                                     <i class="fa fa-search"></i>
@@ -92,29 +92,29 @@
                     </li>
 
                     <li>
-                        <a class="active" href="index.html" th:href="@{index}"><i class="fa fa-dashboard fa-fw"></i> Главная</a>
+                        <a class="active" href="index.html" th:href="@{index}" th:text="#{glavnaya}"><i class="fa fa-dashboard fa-fw"></i> Главная</a>
                     </li>
 
 
 
                     <li data-toggle="collapse" data-target="#spr">
-                        <a href="#"><i class="fa fa-table fa-fw"></i> Справочники<span class="fa arrow"></span></a>
+                            <a href="#" th:text="#{spravo4niki}"><i class="fa fa-table fa-fw"></i> Справочники<span class="fa arrow"></span></a>
 
                         <ul class="nav nav-second-level collapse" id="spr">
                             <li>
-                                <a href="filials.html" th:href="@{filials.html}">Филиалы</a>
+                                    <a href="filials.html" th:href="@{filials.html}" th:text="#{filialy}">Филиалы</a>
                             </li>
                             <li>
-                                <a href="kontra.html" th:href="@{kontra.html}">Контрагенты</a>
+                                    <a href="kontra.html" th:href="@{kontra.html}" th:text="#{kontragenty}">Контрагенты</a>
 
                             </li>
 
                             <li>
-                                <a href="dogovora.html" th:href="@{dogovora.html}">Договора</a>
+                                    <a href="dogovora.html" th:href="@{dogovora.html}" th:text="#{dogovora}">Договора</a>
                             </li>
 
                             <li>
-                                <a href="uslugi.html" th:href="@{uslugi.html}">Услуги</a>
+                                    <a href="uslugi.html" th:href="@{uslugi.html}" th:text="#{uslugi}">Услуги</a>
                             </li>
 
 
@@ -127,16 +127,16 @@
 
 
                     <li data-toggle="collapse" data-target="#doc">
-                        <a href="#"><i class="fa fa-edit fa-fw"></i> Документы <span class="fa arrow"></span></a>
+                            <a href="#" th:text="#{dokumenty}"><i class="fa fa-edit fa-fw"></i> Документы <span class="fa arrow"></span></a>
 
 
 
                         <ul class="nav nav-second-level collapse" id="doc">
                             <li>
-                                <a href="doc.html" th:href="@{doc.html}">Оказание услуг</a>
+                                    <a href="doc.html" th:href="@{doc.html}" th:text="#{okazania_uslug}">Оказание услуг</a>
                             </li>
                             <li>
-                                <a href="plan.html" th:href="@{plan.html}">Составление плана</a>
+                                    <a href="plan.html" th:href="@{plan.html}" th:text="#{sostavlenie_plana}">Составление плана</a>
 
                             </li>
 
@@ -153,14 +153,14 @@
 
 
                     <li>
-                        <a href="report.html" th:href="@{report.html}"><i class="fa fa-bar-chart-o fa-fw"></i> Отчеты</a>
+                            <a href="report.html" th:href="@{report.html}" th:text="#{ot4ety}"><i class="fa fa-bar-chart-o fa-fw"></i> Отчеты</a>
 
                     </li>
 
 
 
                     <li>
-                        <a href="user.html" th:href="@{user.html}"><i class="fa fa-bar-chart-o fa-fw"></i> Пользователи</a>
+                            <a href="user.html" th:href="@{user.html}" th:text="#{polzovateli}"><i class="fa fa-bar-chart-o fa-fw"></i> Пользователи</a>
 
                     </li>
 
@@ -189,7 +189,7 @@
     <div id="page-wrapper">
         <div class="row">
             <div class="col-lg-12">
-                <h1 class="page-header">Услуги</h1>
+                <h1 class="page-header" th:text="#{uslugi}">Услуги</h1>
             </div>
             <!-- /.col-lg-12 -->
         </div>
@@ -201,32 +201,32 @@
             <div class="col-lg-12">
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                        <div class="btn-group" role="group" aria-label="...">
-                            <button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal">Добавить</button>
-                            <button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal">Удалить</button>
-                            <button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal">Редактировать</button>
-                        </div>
-
-
-
-
-                        <!-- Modal -->
-                        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                            <div class="modal-dialog">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                                        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
-                                    </div>
-                                    <div class="modal-body">
-                                        ...
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                        <button type="button" class="btn btn-primary">Save changes</button>
-                                    </div>
-                                </div>
+                        <div class="panel-body">
+                            <div class="btn-group" role="group" aria-label="...">
+                                <button th:text="#{add}" type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal">Добавить</button>
+                                <button th:text="#{del}" type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal">Удалить</button>
+                                <button th:text="#{edit}" type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal">Редактировать</button>
                             </div>
+                            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                            <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary">Save changes</button>
+                                        </div>
+                                    </div>
+                                    <!-- /.modal-content -->
+                                </div>
+                                <!-- /.modal-dialog -->
+                            </div>
+                            <!-- /.modal -->
                         </div>
 
                     </div>
@@ -236,10 +236,10 @@
                             <table class="table table-striped table-bordered table-hover" id="dataTables-example">
                                 <thead>
                                 <tr>
-                                    <th>Номер</th>
+                                    <th th:text="#{nomer}">Номер</th>
 
 
-                                    <th>Наименование</th>
+                                    <th th:text="#{naimenovanie}">Наименование</th>
 
 
 

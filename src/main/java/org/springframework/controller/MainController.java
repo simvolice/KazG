@@ -10,14 +10,19 @@ import org.springframework.service.MainService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.util.StringUtils;
+import org.springframework.validation.BindingResult;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.SessionAttributes;
+import org.springframework.web.bind.support.SessionStatus;
 import org.springframework.web.servlet.ModelAndView;
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
+import javax.validation.Valid;
 import java.util.List;
 import java.util.Locale;
 
@@ -25,6 +30,7 @@ import java.util.Locale;
  * Created by Администратор on 17.11.2014.
  */
 @Controller
+@SessionAttributes(types = UsersEntity.class)
 public class MainController {
 
 
@@ -36,6 +42,21 @@ public class MainController {
         this.mainService = mainService;
 
     }
+
+
+
+
+    @RequestMapping(value = "/user", method = RequestMethod.POST)
+    public String processCreationForm(@Valid UsersEntity usersEntity, BindingResult result, SessionStatus status) {
+        if (result.hasErrors()) {
+            return "user";
+        } else {
+            this.mainService.addRecordsUsers(usersEntity);
+            status.setComplete();
+            return "user";
+        }
+    }
+
 
 
     @RequestMapping("/")
@@ -54,6 +75,13 @@ public class MainController {
     }
 
 
+
+    @RequestMapping("/report")
+    public String report(Locale locale){
+
+        return "report";
+
+    }
 
 
     @RequestMapping(value = "/login", method = RequestMethod.GET)

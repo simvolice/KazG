@@ -8,7 +8,7 @@
     <meta name="description" content=""/>
     <meta name="author" content=""/>
 
-    <title th:text="#{login.title}">КазГидро.Отчет</title>
+    <title th:text="#{login.title}"></title>
 
     <!-- Bootstrap Core CSS -->
     <link href="../../resources/css/bootstrap.min.css" th:href="@{../../resources/css/bootstrap.min.css}" rel="stylesheet"/>
@@ -47,15 +47,15 @@
                         <form role="form" action="/j_spring_security_check" th:action="@{/j_spring_security_check}"  method="post">
                             <fieldset>
                                 <div class="form-group">
-                                    <input class="form-control" placeholder="Логин" name="j_username" type="text" id="j_username" autofocus="autofocus"/>
+                                    <input class="form-control" placeholder="Логин" th:placeholder="#{Login}" name="j_username" type="text" id="j_username" autofocus="autofocus"/>
                                 </div>
                                 <div class="form-group">
-                                    <input class="form-control" placeholder="Пароль" name="j_password" type="password" id="j_password"/>
+                                    <input class="form-control" placeholder="Пароль" th:placeholder="#{Pass}" name="j_password" type="password" id="j_password"/>
                                 </div>
                                 <div class="checkbox">
-                                    <label >
-                                        <input name="remember-me" type="checkbox" value="" id="remember-me"/>Запомнить
-                                    </label>
+                                    <label th:for="remember-me" th:text="#{login.ehkBox}"></label>
+
+                                    <input name="remember-me" type="checkbox" id="remember-me" value=""/>
                                 </div>
                                 <!-- Change this to a button or input when using this as a form -->
 

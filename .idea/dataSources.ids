@@ -32,12 +32,23 @@
       <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
       <column name="date" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93"/>
       <column name="avtor" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="Jan" sqlType="VARCHAR" precision="45" scale="0" nullable="false" jdbcType="12"/>
+      <column name="Feb" sqlType="VARCHAR" precision="45" scale="0" nullable="false" jdbcType="12"/>
+      <column name="Mar" sqlType="VARCHAR" precision="45" scale="0" nullable="false" jdbcType="12"/>
+      <column name="Apr" sqlType="VARCHAR" precision="45" scale="0" nullable="false" jdbcType="12"/>
+      <column name="May" sqlType="VARCHAR" precision="45" scale="0" nullable="false" jdbcType="12"/>
+      <column name="June" sqlType="VARCHAR" precision="45" scale="0" nullable="false" jdbcType="12"/>
+      <column name="July" sqlType="VARCHAR" precision="45" scale="0" nullable="false" jdbcType="12"/>
+      <column name="Auv" sqlType="VARCHAR" precision="45" scale="0" nullable="false" jdbcType="12"/>
+      <column name="Sep" sqlType="VARCHAR" precision="45" scale="0" nullable="false" jdbcType="12"/>
+      <column name="Oct" sqlType="VARCHAR" precision="45" scale="0" nullable="false" jdbcType="12"/>
+      <column name="Nov" sqlType="VARCHAR" precision="45" scale="0" nullable="false" jdbcType="12"/>
+      <column name="Dec" sqlType="VARCHAR" precision="45" scale="0" nullable="false" jdbcType="12"/>
       <column name="filialID" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
       <column name="year" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
       <primary-key name="PRIMARY" columns="id"/>
       <foreign-key name="FK_FilialID" columns="filialID" ref-table="filialy" ref-schema="" ref-catalog="kazgidro" ref-columns="filialid" update-rule="3" delete-rule="3" deferrability="2"/>
       <foreign-key name="FK_UserID" columns="avtor" ref-table="users" ref-schema="" ref-catalog="kazgidro" ref-columns="userid" update-rule="3" delete-rule="3" deferrability="2"/>
-      <exported-key name="FK_DocPlanID" table="planbymonthes" schema="" catalog="kazgidro" columns="docPlanID"/>
       <index name="filialID_idx" unique="false" columns="filialID"/>
       <index name="FK_UserID_idx" unique="false" columns="avtor"/>
     </table>
@@ -74,24 +85,13 @@
       <column name="last_used" sqlType="TIMESTAMP" precision="19" scale="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA=" version="true"/>
       <primary-key name="PRIMARY" columns="series"/>
     </table>
-    <table name="planbymonthes" schema="" catalog="kazgidro" type="TABLE">
+    <table name="testplanbymonth" schema="" catalog="kazgidro" type="TABLE">
       <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
-      <column name="Jan" sqlType="VARCHAR" precision="45" scale="0" nullable="false" jdbcType="12"/>
-      <column name="Feb" sqlType="VARCHAR" precision="45" scale="0" nullable="false" jdbcType="12"/>
-      <column name="Mar" sqlType="VARCHAR" precision="45" scale="0" nullable="false" jdbcType="12"/>
-      <column name="Apr" sqlType="VARCHAR" precision="45" scale="0" nullable="false" jdbcType="12"/>
-      <column name="May" sqlType="VARCHAR" precision="45" scale="0" nullable="false" jdbcType="12"/>
-      <column name="June" sqlType="VARCHAR" precision="45" scale="0" nullable="false" jdbcType="12"/>
-      <column name="July" sqlType="VARCHAR" precision="45" scale="0" nullable="false" jdbcType="12"/>
-      <column name="Auv" sqlType="VARCHAR" precision="45" scale="0" nullable="false" jdbcType="12"/>
-      <column name="Sep" sqlType="VARCHAR" precision="45" scale="0" nullable="false" jdbcType="12"/>
-      <column name="Oct" sqlType="VARCHAR" precision="45" scale="0" nullable="false" jdbcType="12"/>
-      <column name="Nov" sqlType="VARCHAR" precision="45" scale="0" nullable="false" jdbcType="12"/>
-      <column name="Dec" sqlType="VARCHAR" precision="45" scale="0" nullable="false" jdbcType="12"/>
-      <column name="docPlanID" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="monthName" sqlType="VARCHAR" precision="45" scale="0" nullable="false" jdbcType="12"/>
+      <column name="kolvoUslug" sqlType="VARCHAR" precision="45" scale="0" nullable="true" jdbcType="12"/>
+      <column name="foreignDocPlan" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
       <primary-key name="PRIMARY" columns="id"/>
-      <foreign-key name="FK_DocPlanID" columns="docPlanID" ref-table="doc_plan" ref-schema="" ref-catalog="kazgidro" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
-      <index name="FK_DocPlanID_idx" unique="false" columns="docPlanID"/>
+      <index name="docplan_idx" unique="false" columns="foreignDocPlan"/>
     </table>
     <table name="users" schema="" catalog="kazgidro" type="TABLE">
       <column name="userid" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>

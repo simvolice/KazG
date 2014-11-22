@@ -5,55 +5,33 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3dfaa8a2-392d-49a9-850a-4dd09e4004b0" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/springframework/dao/UsersDAOImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/ehcache_2_9_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/ehcache_core_2_6_9.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/hibernate_core_4_3_7_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/hibernate_jpa_2_1_api_1_0_0_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_5_1_34.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/spring_context_support_4_1_2_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/spring_webmvc_4_1_2_RELEASE.xml" />
-      <change type="DELETED" beforePath="C:\Users\Администратор\Desktop\Projects\KazG5\.idea\libraries\ehcache_2_9_01.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Администратор\Desktop\Projects\KazG5\.idea\libraries\ehcache_core_2_6_91.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Администратор\Desktop\Projects\KazG5\.idea\libraries\hibernate_core_4_3_7_Final1.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Администратор\Desktop\Projects\KazG5\.idea\libraries\hibernate_jpa_2_1_api_1_0_0_Final1.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Администратор\Desktop\Projects\KazG5\.idea\libraries\mysql_connector_java_5_1_34_bin.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Администратор\Desktop\Projects\KazG5\.idea\libraries\spring_context_support_4_1_2_RELEASE1.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Администратор\Desktop\Projects\KazG5\.idea\libraries\spring_webmvc_4_1_2_RELEASE1.xml" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_classmate_1_0_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_validation_validation_api_1_1_0_Final.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_validator_5_1_3_Final.xml" />
+      <change type="DELETED" beforePath="C:\Users\Администратор\Desktop\Projects\KazG5\src\main\java\org\springframework\dao\PlanByMonthDAO.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Администратор\Desktop\Projects\KazG5\src\main\java\org\springframework\dao\PlanByMonthDAOImpl.java" afterPath="" />
+      <change type="MOVED" beforePath="C:\Users\Администратор\Desktop\Projects\KazG5\src\main\java\org\springframework\model\PlanbymonthesEntity.java" afterPath="$PROJECT_DIR$/src/main/java/org/springframework/model/DocPlanEntity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.ids" afterPath="$PROJECT_DIR$/.idea/dataSources.ids" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/springframework/dao/DocCreateUslDAO.java" afterPath="$PROJECT_DIR$/src/main/java/org/springframework/dao/DocCreateUslDAO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/springframework/dao/DocCreateUslDAOImpl.java" afterPath="$PROJECT_DIR$/src/main/java/org/springframework/dao/DocCreateUslDAOImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/springframework/model/DocCreateUslEntity.java" afterPath="$PROJECT_DIR$/src/main/java/org/springframework/model/DocCreateUslEntity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/springframework/dao/DocPlanDAO.java" afterPath="$PROJECT_DIR$/src/main/java/org/springframework/dao/DocPlanDAO.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/springframework/dao/DocPlanDAOImpl.java" afterPath="$PROJECT_DIR$/src/main/java/org/springframework/dao/DocPlanDAOImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/springframework/model/DocPlanEntity.java" afterPath="$PROJECT_DIR$/src/main/java/org/springframework/model/DocPlanEntity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/springframework/dao/DogovoraDAO.java" afterPath="$PROJECT_DIR$/src/main/java/org/springframework/dao/DogovoraDAO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/springframework/dao/DogovoraDAOImpl.java" afterPath="$PROJECT_DIR$/src/main/java/org/springframework/dao/DogovoraDAOImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/springframework/model/DogovoraEntity.java" afterPath="$PROJECT_DIR$/src/main/java/org/springframework/model/DogovoraEntity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/springframework/dao/FilialyDAO.java" afterPath="$PROJECT_DIR$/src/main/java/org/springframework/dao/FilialyDAO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/springframework/dao/FilialyDAOImpl.java" afterPath="$PROJECT_DIR$/src/main/java/org/springframework/dao/FilialyDAOImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/springframework/model/FilialyEntity.java" afterPath="$PROJECT_DIR$/src/main/java/org/springframework/model/FilialyEntity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/KazG.iml" afterPath="$PROJECT_DIR$/KazG.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/KazG_war.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/KazG_war.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/KazG_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/KazG_war_exploded.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/springframework/model/KontragentEntity.java" afterPath="$PROJECT_DIR$/src/main/java/org/springframework/model/KontragentEntity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/springframework/dao/KontragentyDAO.java" afterPath="$PROJECT_DIR$/src/main/java/org/springframework/dao/KontragentyDAO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/springframework/dao/KontragentyDAOImpl.java" afterPath="$PROJECT_DIR$/src/main/java/org/springframework/dao/KontragentyDAOImpl.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/springframework/controller/MainController.java" afterPath="$PROJECT_DIR$/src/main/java/org/springframework/controller/MainController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/springframework/dao/PlanByMonthDAO.java" afterPath="$PROJECT_DIR$/src/main/java/org/springframework/dao/PlanByMonthDAO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/springframework/dao/PlanByMonthDAOImpl.java" afterPath="$PROJECT_DIR$/src/main/java/org/springframework/dao/PlanByMonthDAOImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/springframework/model/PlanbymonthesEntity.java" afterPath="$PROJECT_DIR$/src/main/java/org/springframework/model/PlanbymonthesEntity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/springframework/dao/UserDAO.java" afterPath="$PROJECT_DIR$/src/main/java/org/springframework/dao/UserDAO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/springframework/model/UsersEntity.java" afterPath="$PROJECT_DIR$/src/main/java/org/springframework/model/UsersEntity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/springframework/dao/UslugiDAO.java" afterPath="$PROJECT_DIR$/src/main/java/org/springframework/dao/UslugiDAO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/springframework/dao/UslugiDAOImpl.java" afterPath="$PROJECT_DIR$/src/main/java/org/springframework/dao/UslugiDAOImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/springframework/model/UslugiEntity.java" afterPath="$PROJECT_DIR$/src/main/java/org/springframework/model/UslugiEntity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/config/business-context.xml" afterPath="$PROJECT_DIR$/src/main/resources/config/business-context.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/springframework/service/MainService.java" afterPath="$PROJECT_DIR$/src/main/java/org/springframework/service/MainService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/springframework/service/MainServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/org/springframework/service/MainServiceImpl.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/doc.html" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/doc.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/dogovora.html" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/dogovora.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/filials.html" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/filials.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/index.html" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/kontra.html" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/kontra.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/login.html" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/login.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/messages/messages.properties" afterPath="$PROJECT_DIR$/src/main/resources/messages/messages.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/messages/messages_en.properties" afterPath="$PROJECT_DIR$/src/main/resources/messages/messages_en.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/messages/messages_ru.properties" afterPath="$PROJECT_DIR$/src/main/resources/messages/messages_ru.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/plan.html" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/plan.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/report.html" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/report.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/user.html" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/user.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/uslugi.html" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/uslugi.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
@@ -94,24 +72,6 @@
         <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
       </PATH_ELEMENT>
     </PATH>
-    <PATH>
-      <PATH_ELEMENT>
-        <option name="myItemId" />
-        <option name="myItemType" value="com.intellij.database.view.DbRootNodeDescriptor" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="MySQL - kazgidro@178.91.252.123" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="kazgidro" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="planbymonthes" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
-    </PATH>
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
@@ -119,31 +79,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="doc.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/doc.html">
+      <file leaf-file-name="MainController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/springframework/controller/MainController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.49556214" vertical-offset="5473" max-vertical-offset="8448">
-              <caret line="264" column="37" selection-start-line="264" selection-start-column="37" selection-end-line="264" selection-end-column="37" />
-              <folding />
+            <state vertical-scroll-proportion="0.34229138" vertical-offset="836" max-vertical-offset="4598">
+              <caret line="49" column="68" selection-start-line="49" selection-start-column="68" selection-end-line="49" selection-end-column="68" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="plan.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/plan.html">
+      <file leaf-file-name="user.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/user.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="4.612903" vertical-offset="6281" max-vertical-offset="10868">
-              <caret line="279" column="51" selection-start-line="279" selection-start-column="51" selection-end-line="279" selection-end-column="51" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PlanbymonthesEntity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/springframework/model/PlanbymonthesEntity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="440" max-vertical-offset="3630">
-              <caret line="33" column="14" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="14" />
+            <state vertical-scroll-proportion="-3.967742" vertical-offset="5157" max-vertical-offset="9350">
+              <caret line="240" column="87" selection-start-line="240" selection-start-column="87" selection-end-line="240" selection-end-column="87" />
               <folding />
             </state>
           </provider>
@@ -170,39 +122,43 @@
         <option value="$PROJECT_DIR$/src/main/java/org/springframework/service/Service.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/thymeleaf/login.html" />
         <option value="$PROJECT_DIR$/src/main/resources/config/tool-context.xml" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/thymeleaf/logout.html" />
         <option value="$PROJECT_DIR$/src/main/resources/messages/messages_ru.properties" />
-        <option value="$PROJECT_DIR$/src/main/resources/messages/messages.properties" />
         <option value="$PROJECT_DIR$/src/main/resources/messages/messages_ru_RU.properties" />
         <option value="$PROJECT_DIR$/src/main/java/org/springframework/dao/UserDAOImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/springframework/dao/UserDAO.java" />
         <option value="/" />
         <option value="$PROJECT_DIR$/src/main/webapp/resources/css/sb-admin-2.css" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/report.html" />
         <option value="$PROJECT_DIR$/src/main/resources/config/view-context.xml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/login.html" />
-        <option value="$PROJECT_DIR$/src/main/java/org/springframework/service/MainService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/springframework/service/MainServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/index.html" />
         <option value="$PROJECT_DIR$/src/main/resources/config/security-context.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/config/business-context.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/config/root-context.xml" />
         <option value="$PROJECT_DIR$/src/main/java/org/springframework/dao/FilialyDAOImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/filials.html" />
         <option value="$PROJECT_DIR$/src/main/java/org/springframework/model/DogovoraEntity.java" />
         <option value="4464ccad/scratch" />
+        <option value="$PROJECT_DIR$/src/main/java/org/springframework/model/PlanbymonthesEntity.java" />
+        <option value="dbtable:/4464ccad/703b17f1-f127-497a-98c4-083f3b74410f/kazgidro..planbymonthes" />
+        <option value="dbtable:/4464ccad/703b17f1-f127-497a-98c4-083f3b74410f/kazgidro..doc_plan" />
+        <option value="$PROJECT_DIR$/src/main/java/org/springframework/model/DocPlanEntity.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/springframework/service/MainService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/springframework/dao/DocPlanDAOImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/springframework/service/MainServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/test.html" />
+        <option value="db-console:/4464ccad/703b17f1-f127-497a-98c4-083f3b74410f/" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/index.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/login.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/messages/messages.properties" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/doc.html" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/dogovora.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/filials.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/kontra.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/plan.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/report.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/uslugi.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/dogovora.html" />
+        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/user.html" />
         <option value="$PROJECT_DIR$/src/main/java/org/springframework/controller/MainController.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/uslugi.html" />
-        <option value="dbtable:/4464ccad/703b17f1-f127-497a-98c4-083f3b74410f/kazgidro..planbymonthes" />
-        <option value="db-console:/4464ccad/703b17f1-f127-497a-98c4-083f3b74410f/" />
-        <option value="$PROJECT_DIR$/src/main/java/org/springframework/model/PlanbymonthesEntity.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/plan.html" />
       </list>
     </option>
   </component>
@@ -396,6 +352,100 @@
               <option name="myItemId" value="webapp" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="less" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="KazG" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="KazG5" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="KazG" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="KazG5" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="KazG" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="KazG5" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -417,6 +467,14 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="resources" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="messages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resource Bundle 'messages'" />
+              <option name="myItemType" value="com.intellij.lang.properties.projectView.ResourceBundleNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -622,11 +680,11 @@
       <recent name="org.springframework.service" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Администратор\Desktop\Projects\KazG5\src\main\resources\messages" />
       <recent name="C:\Users\Администратор\Desktop\Projects\KazG5\src\main\java\org\springframework\dao" />
       <recent name="C:\Users\Администратор\Desktop\Projects\KazG5\src\main\java\org\springframework\model" />
       <recent name="C:\Users\user\Desktop\KazGTest3\KazGTest3\src\main\java\org\springframework\model" />
       <recent name="C:\Users\user\Desktop\KazGTest3\KazGTest3\src\main\java\org\springframework\dao" />
-      <recent name="C:\Users\user\Desktop\KazGTest3\KazGTest3\src\main\webapp\WEB-INF\templates" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -991,7 +1049,7 @@
       <workItem from="1416462366453" duration="18575000" />
       <workItem from="1416492259008" duration="18301000" />
       <workItem from="1416511578371" duration="981000" />
-      <workItem from="1416543504287" duration="14265000" />
+      <workItem from="1416543504287" duration="37267000" />
     </task>
     <task id="LOCAL-00001" summary="Сделали USerDAO">
       <created>1416134215909</created>
@@ -1029,11 +1087,17 @@
       <option name="project" value="LOCAL" />
       <updated>1416422006046</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="остался план">
+      <created>1416562518064</created>
+      <option name="number" value="00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1416562518064</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="126548000" />
+    <option name="totallyTimeSpent" value="149550000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -1059,30 +1123,31 @@
     <frame x="-4" y="-4" width="1608" height="864" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32843137" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3297587" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3297587" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32991013" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3297587" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.63235295" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5616622" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32980332" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32862645" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.6648794" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32843137" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3297587" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32891566" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3297587" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32843137" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.88433737" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.8820375" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32843137" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32843137" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23620026" sideWeight="0.5013405" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3297587" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23620026" sideWeight="0.49865952" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23620026" sideWeight="0.49865952" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.8552279" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32862645" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.6648794" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Hibernate Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3297587" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1108,15 +1173,15 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.6648794" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32843137" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3297587" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3297587" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32891566" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3297587" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39973262" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32843137" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.6541555" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.8820375" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32843137" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32843137" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
-      <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23620026" sideWeight="0.5013405" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23620026" sideWeight="0.5013405" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3297587" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23620026" sideWeight="0.49865952" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
@@ -1148,21 +1213,14 @@
     <MESSAGE value="Добавлен DAO эталонный" />
     <MESSAGE value="страница индекс отрисована" />
     <MESSAGE value="добавил филиалы таблица и форма" />
-    <option name="LAST_COMMIT_MESSAGE" value="добавил филиалы таблица и форма" />
+    <MESSAGE value="остался план" />
+    <option name="LAST_COMMIT_MESSAGE" value="остался план" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/filials.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="6001">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/springframework/controller/MainController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1530" max-vertical-offset="4012">
@@ -1249,28 +1307,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.9054291" vertical-offset="0" max-vertical-offset="3502">
-          <caret line="64" column="0" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/less/sb-admin-2.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.6505377" vertical-offset="1479" max-vertical-offset="6324">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/less/variables.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="584">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/less/mixins.less">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="584">
@@ -1282,20 +1318,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.08931699" vertical-offset="0" max-vertical-offset="571">
           <caret line="3" column="428" selection-start-line="3" selection-start-column="428" selection-end-line="3" selection-end-column="428" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/css/bootstrap.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.12523021" vertical-offset="0" max-vertical-offset="543">
-          <caret line="4" column="59887" selection-start-line="4" selection-start-column="59884" selection-end-line="4" selection-end-column="59887" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/css/sb-admin-2.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6232877" vertical-offset="1642" max-vertical-offset="6018">
-          <caret line="118" column="20" selection-start-line="118" selection-start-column="20" selection-end-line="118" selection-end-column="20" />
         </state>
       </provider>
     </entry>
@@ -1313,31 +1335,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/messages/messages_ru.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.357143" vertical-offset="0" max-vertical-offset="264">
-          <caret line="3" column="7" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
-        </state>
-      </provider>
-      <provider editor-type-id="ResourceBundle">
-        <state />
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-web/3.2.5.RELEASE/spring-security-web-3.2.5.RELEASE.jar!/org/springframework/security/web/authentication/AbstractAuthenticationTargetUrlRequestHandler.class">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.34457478" vertical-offset="1217" max-vertical-offset="1936">
           <caret line="84" column="16" selection-start-line="84" selection-start-column="16" selection-end-line="84" selection-end-column="16" />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/messages/messages.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.09426987" vertical-offset="0" max-vertical-offset="541">
-          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-        </state>
-      </provider>
-      <provider editor-type-id="ResourceBundle">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/config/data-context.xml">
@@ -1352,29 +1354,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="1.0479453" vertical-offset="0" max-vertical-offset="833">
           <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/report.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-14.423077" vertical-offset="11865" max-vertical-offset="12563">
-          <caret line="720" column="113" selection-start-line="710" selection-start-column="0" selection-end-line="720" selection-end-column="113" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/springframework/service/MainService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.4657534" vertical-offset="861" max-vertical-offset="1904">
-          <caret line="103" column="65" selection-start-line="103" selection-start-column="65" selection-end-line="103" selection-end-column="65" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.37431192" vertical-offset="714" max-vertical-offset="1581">
-          <caret line="54" column="54" selection-start-line="54" selection-start-column="54" selection-end-line="54" selection-end-column="54" />
           <folding />
         </state>
       </provider>
@@ -1414,22 +1393,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.47100425" vertical-offset="63" max-vertical-offset="1562">
-          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/springframework/service/MainServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.9886847" vertical-offset="4077" max-vertical-offset="5214">
-          <caret line="31" column="39" selection-start-line="31" selection-start-column="39" selection-end-line="31" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="scratchpad://4464ccad/scratch">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="720">
@@ -1446,112 +1409,6 @@
             <element signature="e#1415#1416#0" expanded="true" />
             <element signature="e#1463#1464#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/dogovora.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.10059172" vertical-offset="5564" max-vertical-offset="8448">
-          <caret line="256" column="52" selection-start-line="0" selection-start-column="0" selection-end-line="378" selection-end-column="0" />
-          <folding>
-            <marker date="1416548607010" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/kontra.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.71597636" vertical-offset="5280" max-vertical-offset="8448">
-          <caret line="262" column="63" selection-start-line="0" selection-start-column="0" selection-end-line="378" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/springframework/dao/PlanByMonthDAOImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="330" max-vertical-offset="1694">
-          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/springframework/dao/DocPlanDAOImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1045" max-vertical-offset="1870">
-          <caret line="73" column="32" selection-start-line="73" selection-start-column="32" selection-end-line="73" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/4464ccad/703b17f1-f127-497a-98c4-083f3b74410f/kazgidro..doc_plan">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state />
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="100">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/user.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6834319" vertical-offset="5412" max-vertical-offset="8316">
-          <caret line="267" column="79" selection-start-line="267" selection-start-column="79" selection-end-line="267" selection-end-column="79" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.193548" vertical-offset="1255" max-vertical-offset="6666">
-          <caret line="70" column="25" selection-start-line="70" selection-start-column="25" selection-end-line="70" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/springframework/controller/MainController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="2712" max-vertical-offset="3982">
-          <caret line="139" column="0" selection-start-line="139" selection-start-column="0" selection-end-line="139" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/springframework/model/DocPlanEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1370" max-vertical-offset="2090">
-          <caret line="55" column="71" selection-start-line="55" selection-start-column="71" selection-end-line="55" selection-end-column="71" />
-          <folding>
-            <element signature="e#1272#1273#0" expanded="true" />
-            <element signature="e#1311#1312#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/filials.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.11982249" vertical-offset="5221" max-vertical-offset="7766">
-          <caret line="241" column="42" selection-start-line="0" selection-start-column="0" selection-end-line="347" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/uslugi.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2928994" vertical-offset="5148" max-vertical-offset="8030">
-          <caret line="243" column="0" selection-start-line="243" selection-start-column="0" selection-end-line="243" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://db-console:/4464ccad/703b17f1-f127-497a-98c4-083f3b74410f/">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.662037" vertical-offset="0" max-vertical-offset="726">
-          <caret line="13" column="6" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1583,37 +1440,234 @@
       </provider>
     </entry>
     <entry file="dbDummy://dbtable:/4464ccad/703b17f1-f127-497a-98c4-083f3b74410f/kazgidro..planbymonthes">
+      <provider editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.017544" vertical-offset="0" max-vertical-offset="528">
+          <caret line="13" column="29" selection-start-line="2" selection-start-column="2" selection-end-line="13" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/4464ccad/703b17f1-f127-497a-98c4-083f3b74410f/kazgidro..persistent_logins">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state />
       </provider>
       <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="66" max-vertical-offset="308">
-          <caret line="3" column="6" selection-start-line="0" selection-start-column="0" selection-end-line="8" selection-end-column="56" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="100">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/springframework/model/DocPlanEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.4972222" vertical-offset="0" max-vertical-offset="4246">
+          <caret line="58" column="0" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/springframework/service/MainServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8621997" vertical-offset="0" max-vertical-offset="5302">
+          <caret line="37" column="47" selection-start-line="37" selection-start-column="9" selection-end-line="37" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/springframework/dao/DocPlanDAOImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.9165613" vertical-offset="617" max-vertical-offset="1870">
+          <caret line="75" column="11" selection-start-line="73" selection-start-column="7" selection-end-line="75" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/springframework/service/MainService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.38432837" vertical-offset="1209" max-vertical-offset="2464">
+          <caret line="71" column="28" selection-start-line="71" selection-start-column="3" selection-end-line="79" selection-end-column="86" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/4464ccad/703b17f1-f127-497a-98c4-083f3b74410f/kazgidro..doc_plan">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="528" max-vertical-offset="704">
+          <caret line="24" column="88" selection-start-line="24" selection-start-column="88" selection-end-line="24" selection-end-column="88" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/css/bootstrap.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="220">
+          <caret line="4" column="109740" selection-start-line="4" selection-start-column="109740" selection-end-line="4" selection-end-column="109740" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/less/variables.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="440">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/less/sb-admin-2.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.8011613" vertical-offset="4686" max-vertical-offset="8184">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/css/sb-admin-2.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.7680554" vertical-offset="4589" max-vertical-offset="7788">
+          <caret line="118" column="20" selection-start-line="118" selection-start-column="20" selection-end-line="118" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://db-console:/4464ccad/703b17f1-f127-497a-98c4-083f3b74410f/">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.19469027" vertical-offset="0" max-vertical-offset="678">
+          <caret line="6" column="2" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="26.967741" vertical-offset="858" max-vertical-offset="2046">
+          <caret line="1" column="51" selection-start-line="1" selection-start-column="25" selection-end-line="1" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/messages/messages.properties">
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="748">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="ResourceBundle">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/doc.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.44674557" vertical-offset="4296" max-vertical-offset="8448">
+          <caret line="209" column="17" selection-start-line="204" selection-start-column="13" selection-end-line="209" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/filials.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="5.3609467" vertical-offset="1436" max-vertical-offset="8250">
+          <caret line="230" column="17" selection-start-line="230" selection-start-column="17" selection-end-line="230" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/kontra.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.45266274" vertical-offset="882" max-vertical-offset="8448">
+          <caret line="54" column="107" selection-start-line="54" selection-start-column="107" selection-end-line="54" selection-end-column="107" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6035503" vertical-offset="758" max-vertical-offset="6688">
+          <caret line="53" column="89" selection-start-line="0" selection-start-column="0" selection-end-line="298" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/plan.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="4.612903" vertical-offset="6281" max-vertical-offset="10868">
-          <caret line="279" column="51" selection-start-line="279" selection-start-column="51" selection-end-line="279" selection-end-column="51" />
+        <state vertical-scroll-proportion="0.48668638" vertical-offset="4269" max-vertical-offset="9592">
+          <caret line="209" column="17" selection-start-line="209" selection-start-column="17" selection-end-line="209" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/springframework/model/PlanbymonthesEntity.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/uslugi.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="440" max-vertical-offset="3630">
-          <caret line="33" column="14" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="14" />
+        <state vertical-scroll-proportion="0.6834319" vertical-offset="726" max-vertical-offset="8030">
+          <caret line="54" column="107" selection-start-line="54" selection-start-column="107" selection-end-line="54" selection-end-column="107" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/doc.html">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/report.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.49556214" vertical-offset="5473" max-vertical-offset="8448">
-          <caret line="264" column="37" selection-start-line="264" selection-start-column="37" selection-end-line="264" selection-end-column="37" />
+        <state vertical-scroll-proportion="0.693787" vertical-offset="763" max-vertical-offset="7194">
+          <caret line="56" column="107" selection-start-line="56" selection-start-column="107" selection-end-line="56" selection-end-column="107" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/dogovora.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6168639" vertical-offset="5369" max-vertical-offset="8448">
+          <caret line="263" column="77" selection-start-line="263" selection-start-column="77" selection-end-line="263" selection-end-column="77" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/jquery.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="707">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="63" max-vertical-offset="1562">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="745" max-vertical-offset="4730">
+          <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/user.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.967742" vertical-offset="5157" max-vertical-offset="9350">
+          <caret line="240" column="87" selection-start-line="240" selection-start-column="87" selection-end-line="240" selection-end-column="87" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/springframework/controller/MainController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.34229138" vertical-offset="836" max-vertical-offset="4598">
+          <caret line="49" column="68" selection-start-line="49" selection-start-column="68" selection-end-line="49" selection-end-column="68" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

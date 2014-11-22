@@ -71,9 +71,9 @@ public class DocPlanDAOImpl implements DocPlanDAO {
         DocPlanEntity docPlanEntity= (DocPlanEntity)currentSession().createQuery("from DocPlanEntity c where c.id =:id").setParameter("id", id).uniqueResult();
 
 
-        if (docPlanEntity.getPlanByMonth().size() == 0){
+       /* if (docPlanEntity.getPlanByMonth().size() == 0){
             docPlanEntity.getPlanByMonth().clear();
-        }
+        }*/
 
         return docPlanEntity;
     }

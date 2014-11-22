@@ -69,7 +69,7 @@ public interface MainService {
     public String updateRecordsKontragenty(KontragentEntity kontragentEntity);
 
     //Plan by month DAO
-    public List<PlanbymonthesEntity> getAllRecordsPlanByMonth();
+   /* public List<PlanbymonthesEntity> getAllRecordsPlanByMonth();
 
     public String addRecordsPlanByMonth(PlanbymonthesEntity planbymonthesEntity);
 
@@ -77,7 +77,7 @@ public interface MainService {
 
     public PlanbymonthesEntity findByIdPlanByMonth(int id);
 
-    public String updateRecordsPlanByMonth(PlanbymonthesEntity planbymonthesEntity);
+    public String updateRecordsPlanByMonth(PlanbymonthesEntity planbymonthesEntity);*/
 
     // User dao
 

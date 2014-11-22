@@ -20,7 +20,7 @@ public class MainServiceImpl implements MainService {
     private DogovoraDAO dogovoraDAO;
     private FilialyDAO filialyDAO;
     private KontragentyDAO kontragentyDAO;
-    private PlanByMonthDAO planByMonthDAO;
+//    private PlanByMonthDAO planByMonthDAO;
     private UserDAO userDAO;
     private UslugiDAO uslugiDAO;
 
@@ -28,14 +28,14 @@ public class MainServiceImpl implements MainService {
     @Autowired
     public MainServiceImpl(DocCreateUslDAO docCreateUslDAO, DocPlanDAO docPlanDAO,
                                DogovoraDAO dogovoraDAO, FilialyDAO filialyDAO,
-                               KontragentyDAO kontragentyDAO, PlanByMonthDAO planByMonthDAO,
+                               KontragentyDAO kontragentyDAO,
                                UserDAO userDAO,  UslugiDAO uslugiDAO) {
         this.docCreateUslDAO = docCreateUslDAO;
         this.docPlanDAO = docPlanDAO;
         this.dogovoraDAO = dogovoraDAO;
         this.filialyDAO = filialyDAO;
         this.kontragentyDAO = kontragentyDAO;
-        this.planByMonthDAO = planByMonthDAO;
+//        this.planByMonthDAO = planByMonthDAO;
         this.userDAO = userDAO;
         this.uslugiDAO = uslugiDAO;
     }
@@ -194,7 +194,7 @@ public class MainServiceImpl implements MainService {
         return kontragentyDAO.updateRecordsKontragenty(kontragentEntity);
     }
 
-    @Override
+   /* @Override
     @Transactional
     public List<PlanbymonthesEntity> getAllRecordsPlanByMonth() {
         return planByMonthDAO.getAllRecordsPlanByMonth();
@@ -222,7 +222,7 @@ public class MainServiceImpl implements MainService {
     @Transactional
     public String updateRecordsPlanByMonth(PlanbymonthesEntity planbymonthesEntity) {
         return planByMonthDAO.updateRecordsPlanByMonth(planbymonthesEntity);
-    }
+    }*/
 
     @Override
     @Transactional
