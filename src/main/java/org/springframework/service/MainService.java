@@ -83,7 +83,7 @@ public interface MainService {
 
     public List<UsersEntity> getAllRecordsUserEntity();
 
-    public String addRecordsUsers(UsersEntity usersEntity);
+    public void addRecordsUsers(UsersEntity usersEntity);
 
     public String deleteRecordUsers(UsersEntity usersEntity);
 

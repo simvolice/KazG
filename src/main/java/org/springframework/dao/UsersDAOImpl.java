@@ -49,15 +49,10 @@ public class UsersDAOImpl implements UserDAO {
     }
 
     @Override
-    public String addRecordsUsers(UsersEntity usersEntity) {
+    public void addRecordsUsers(UsersEntity usersEntity) {
         currentSession().saveOrUpdate(usersEntity);
-        ResourceBundle bundle = null;
-        try {
-            bundle = ResourceBundle.getBundle("resources.messages.messages", Locale.getDefault());
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-        return  bundle.getString("AddRowSuccess");
+
+
     }
 
     @Override

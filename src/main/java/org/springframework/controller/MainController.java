@@ -6,16 +6,15 @@ import org.springframework.model.*;
 import org.springframework.security.authentication.RememberMeAuthenticationToken;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
+import org.springframework.security.core.userdetails.User;
 import org.springframework.service.MainService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.util.StringUtils;
 import org.springframework.validation.BindingResult;
 import org.springframework.validation.annotation.Validated;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.SessionAttributes;
+import org.springframework.web.bind.WebDataBinder;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.bind.support.SessionStatus;
 import org.springframework.web.servlet.ModelAndView;
 
@@ -30,8 +29,11 @@ import java.util.Locale;
  * Created by Администратор on 17.11.2014.
  */
 @Controller
-@SessionAttributes(types = UsersEntity.class)
+
 public class MainController {
+
+
+
 
 
     private final MainService mainService;
@@ -44,18 +46,11 @@ public class MainController {
     }
 
 
-
-
-    @RequestMapping(value = "/user", method = RequestMethod.POST)
-    public String processCreationForm(@Valid UsersEntity usersEntity, BindingResult result, SessionStatus status) {
-        if (result.hasErrors()) {
-            return "user";
-        } else {
-            this.mainService.addRecordsUsers(usersEntity);
-            status.setComplete();
-            return "user";
-        }
+    @InitBinder
+    public void setAllowedFields(WebDataBinder dataBinder) {
+        dataBinder.setDisallowedFields("id");
     }
+
 
 
 
@@ -190,14 +185,6 @@ model.setViewName("login");
         return "doc";
     }
 
-    @RequestMapping("/user")
-    public String getAllRecordsUser(Model uimodel){
 
-        List<UsersEntity> usersEntities = this.mainService.getAllRecordsUserEntity();
-
-        uimodel.addAttribute("users", usersEntities);
-
-        return "user";
-    }
 
 }

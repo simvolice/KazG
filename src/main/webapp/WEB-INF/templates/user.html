@@ -14,10 +14,10 @@
 
 
     <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" th:href="@{//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css}"/>
 
     <!-- Optional theme -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css" th:href="@{//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css}"/>
 
     <!-- Latest compiled and minified JavaScript -->
 
@@ -238,30 +238,99 @@
 
 
 
-                                            <form class="form-horizontal" th:object="${}" th:method="${users} post" action="user.html" th:action="@{${#httpServletRequest.servletPath}}">
+                                            <form class="form-horizontal" th:object="${usersEntity}" th:method="post" action="/user" th:action="@{${#httpServletRequest.servletPath}}">
                                                 <fieldset>
 
 
                                                     <!-- Prepended text-->
                                                     <div class="form-group">
-                                                        <label class="col-md-4 control-label" for="prependedtext"></label>
+                                                        <label class="col-md-4 control-label" for="prependedtext">Login</label>
                                                         <div class="col-md-4">
                                                             <div class="input-group">
-                                                                <span class="input-group-addon">Логин</span>
-                                                                <input id="prependedtext" name="prependedtext" class="form-control" placeholder="" type="text" th:field="${}" />
+                                                                <span class="input-group-addon">login</span>
+                                                                <input id="prependedtext" name="prependedtext" class="form-control" placeholder="" type="text" th:field="*{username}"/>
                                                             </div>
 
                                                         </div>
                                                     </div>
 
+                                                    <!-- Prepended text-->
+                                                    <div class="form-group">
+                                                        <label class="col-md-4 control-label" for="prependedtext2">PAss</label>
+                                                        <div class="col-md-4">
+                                                            <div class="input-group">
+                                                                <span class="input-group-addon">pass</span>
+                                                                <input id="prependedtext2" name="prependedtext2" class="form-control" placeholder="" type="text" th:field="*{userpassword}"/>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- Prepended text-->
+                                                    <div class="form-group">
+                                                        <label class="col-md-4 control-label" for="prependedtext3">Email</label>
+                                                        <div class="col-md-4">
+                                                            <div class="input-group">
+                                                                <span class="input-group-addon">Email</span>
+                                                                <input id="prependedtext3" name="prependedtext3" class="form-control" placeholder="" type="text" th:field="*{useremail}"/>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- Prepended text-->
+                                                    <div class="form-group">
+                                                        <label class="col-md-4 control-label" for="prependedtext4">name</label>
+                                                        <div class="col-md-4">
+                                                            <div class="input-group">
+                                                                <span class="input-group-addon">name</span>
+                                                                <input id="prependedtext4" name="prependedtext4" class="form-control" placeholder="" type="text" th:field="*{userfirstname}" />
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- Prepended text-->
+                                                    <div class="form-group">
+                                                        <label class="col-md-4 control-label" for="prependedtext5">Surname</label>
+                                                        <div class="col-md-4">
+                                                            <div class="input-group">
+                                                                <span class="input-group-addon">surname</span>
+                                                                <input id="prependedtext5" name="prependedtext5" class="form-control" placeholder="" type="text" th:field="*{userlastname}"/>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- Prepended text-->
+                                                    <div class="form-group">
+                                                        <label class="col-md-4 control-label" for="prependedtext8">Role</label>
+                                                        <div class="col-md-4">
+                                                            <div class="input-group">
+                                                                <span class="input-group-addon">role</span>
+                                                                <input id="prependedtext8" name="prependedtext8" class="form-control" placeholder="" type="text" th:field="*{userrole}" />
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+
+
+
+
+
+
+                                                    <div class="form-actions">
+                                                        <button type="reset"  >Close</button>
+                                                        <button type="submit" >Save changes</button>
+                                                    </div>
                                                 </fieldset>
+
+
+
                                             </form>
 
                                         </div>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                            <button type="submit" class="btn btn-primary">Save changes</button>
-                                        </div>
+
                                     </div>
                                     <!-- /.modal-content -->
                                 </div>
@@ -295,7 +364,7 @@
                                 <tbody>
 
 
-                                <tr th:each="fil : ${users}">
+                                <tr th:each="fil : ${usersEntities}">
                                     <td th:text="${fil.getUserid()}">[getFilialid]</td>
                                     <td th:text="${fil.getUsername()}">[getUsername]</td>
                                     <td th:text="${fil.getUserpassword()}">[getpass]</td>

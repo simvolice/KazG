@@ -53,13 +53,23 @@
     </orderEntry>
     <orderEntry type="library" name="commons-dbcp:commons-dbcp:1.4" level="project" />
     <orderEntry type="library" name="org.hibernate.java-persistence:jpa-api:2.0-cr-1" level="project" />
-    <orderEntry type="library" name="ehcache-core-2.6.9" level="project" />
-    <orderEntry type="library" name="ehcache-2.9.0" level="project" />
-    <orderEntry type="library" name="hibernate-core-4.3.7.Final" level="project" />
-    <orderEntry type="library" name="hibernate-jpa-2.1-api-1.0.0.Final" level="project" />
-    <orderEntry type="library" name="mysql-connector-java-5.1.34" level="project" />
-    <orderEntry type="library" name="spring-context-support-4.1.2.RELEASE" level="project" />
-    <orderEntry type="library" name="spring-webmvc-4.1.2.RELEASE" level="project" />
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/geronimo-validation_1.0_spec-1.0-CR5.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="library" name="spring-webmvc-4.1.2.RELEASE1" level="project" />
+    <orderEntry type="library" name="spring-context-support-4.1.2.RELEASE1" level="project" />
+    <orderEntry type="library" name="mysql-connector-java-5.1.34-bin" level="project" />
+    <orderEntry type="library" name="hibernate-core-4.3.7.Final1" level="project" />
+    <orderEntry type="library" name="ehcache-2.9.01" level="project" />
+    <orderEntry type="library" name="ehcache-core-2.6.91" level="project" />
+    <orderEntry type="library" name="hibernate-jpa-2.1-api-1.0.0.Final1" level="project" />
+    <orderEntry type="library" name="hibernate-jpa-2.1-api-1.0.0.Final2" level="project" />
     <orderEntry type="library" name="Maven: org.hibernate:hibernate-core:4.3.7.Final" level="project" />
     <orderEntry type="library" name="Maven: org.jboss.logging:jboss-logging:3.1.3.GA" level="project" />
     <orderEntry type="library" name="Maven: org.jboss.logging:jboss-logging-annotations:1.2.0.Beta1" level="project" />
@@ -72,9 +82,6 @@
     <orderEntry type="library" name="Maven: org.jboss:jandex:1.1.0.Final" level="project" />
     <orderEntry type="library" name="Maven: org.hibernate:hibernate-entitymanager:4.3.7.Final" level="project" />
     <orderEntry type="library" name="Maven: org.hibernate.javax.persistence:hibernate-jpa-2.1-api:1.0.0.Final" level="project" />
-    <orderEntry type="library" name="Maven: org.hibernate:hibernate-validator:5.1.3.Final" level="project" />
-    <orderEntry type="library" name="Maven: javax.validation:validation-api:1.1.0.Final" level="project" />
-    <orderEntry type="library" name="Maven: com.fasterxml:classmate:1.0.0" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.data:spring-data-jpa:1.7.1.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.data:spring-data-commons:1.9.1.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-tx:4.0.7.RELEASE" level="project" />

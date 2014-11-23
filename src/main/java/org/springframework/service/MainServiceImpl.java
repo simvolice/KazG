@@ -232,8 +232,8 @@ public class MainServiceImpl implements MainService {
 
     @Override
     @Transactional
-    public String addRecordsUsers(UsersEntity usersEntity) {
-        return userDAO.addRecordsUsers(usersEntity);
+    public void addRecordsUsers(UsersEntity usersEntity) {
+        userDAO.addRecordsUsers(usersEntity);
     }
 
     @Override

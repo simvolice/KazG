@@ -1,5 +1,9 @@
 package org.springframework.model;
 
+import org.hibernate.Session;
+import org.springframework.context.annotation.Scope;
+import org.springframework.stereotype.Component;
+
 import javax.persistence.*;
 import java.util.HashSet;
 import java.util.Set;
@@ -7,6 +11,10 @@ import java.util.Set;
 /**
  * Created by Естай on 17.11.2014.
  */
+
+
+
+
 @Entity
 @Table(name = "users", schema = "", catalog = "kazgidro")
 public class UsersEntity {
@@ -75,7 +83,7 @@ public class UsersEntity {
         this.userid = userid;
     }
 
-    @Basic
+
     @Column(name = "username", nullable = false, insertable = true, updatable = true, length = 45)
     public String getUsername() {
         return username;
@@ -85,7 +93,7 @@ public class UsersEntity {
         this.username = username;
     }
 
-    @Basic
+
     @Column(name = "userpassword", nullable = false, insertable = true, updatable = true, length = 45)
     public String getUserpassword() {
         return userpassword;
@@ -95,7 +103,7 @@ public class UsersEntity {
         this.userpassword = userpassword;
     }
 
-    @Basic
+
     @Column(name = "userrole", nullable = false, insertable = true, updatable = true, length = 45)
     public String getUserrole() {
         return userrole;
@@ -105,7 +113,7 @@ public class UsersEntity {
         this.userrole = userrole;
     }
 
-    @Basic
+
     @Column(name = "userfirstname", nullable = false, insertable = true, updatable = true, length = 45)
     public String getUserfirstname() {
         return userfirstname;
@@ -115,7 +123,7 @@ public class UsersEntity {
         this.userfirstname = userfirstname;
     }
 
-    @Basic
+
     @Column(name = "userlastname", nullable = false, insertable = true, updatable = true, length = 45)
     public String getUserlastname() {
         return userlastname;
@@ -125,7 +133,7 @@ public class UsersEntity {
         this.userlastname = userlastname;
     }
 
-    @Basic
+
     @Column(name = "useremail", nullable = false, insertable = true, updatable = true, length = 45)
     public String getUseremail() {
         return useremail;
@@ -135,34 +143,7 @@ public class UsersEntity {
         this.useremail = useremail;
     }
 
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
 
-        UsersEntity that = (UsersEntity) o;
 
-        if (userid != that.userid) return false;
-        if (useremail != null ? !useremail.equals(that.useremail) : that.useremail != null) return false;
-        if (userfirstname != null ? !userfirstname.equals(that.userfirstname) : that.userfirstname != null)
-            return false;
-        if (userlastname != null ? !userlastname.equals(that.userlastname) : that.userlastname != null) return false;
-        if (username != null ? !username.equals(that.username) : that.username != null) return false;
-        if (userpassword != null ? !userpassword.equals(that.userpassword) : that.userpassword != null) return false;
-        if (userrole != null ? !userrole.equals(that.userrole) : that.userrole != null) return false;
 
-        return true;
-    }
-
-    @Override
-    public int hashCode() {
-        int result = userid;
-        result = 31 * result + (username != null ? username.hashCode() : 0);
-        result = 31 * result + (userpassword != null ? userpassword.hashCode() : 0);
-        result = 31 * result + (userrole != null ? userrole.hashCode() : 0);
-        result = 31 * result + (userfirstname != null ? userfirstname.hashCode() : 0);
-        result = 31 * result + (userlastname != null ? userlastname.hashCode() : 0);
-        result = 31 * result + (useremail != null ? useremail.hashCode() : 0);
-        return result;
-    }
 }
