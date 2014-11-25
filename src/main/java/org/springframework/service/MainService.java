@@ -85,7 +85,7 @@ public interface MainService {
 
     public void addRecordsUsers(UsersEntity usersEntity);
 
-    public String deleteRecordUsers(UsersEntity usersEntity);
+    public void deleteRecordUsers(UsersEntity usersEntity);
 
     public UsersEntity findByIdUser(int id);
 

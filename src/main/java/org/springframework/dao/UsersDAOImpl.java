@@ -56,15 +56,9 @@ public class UsersDAOImpl implements UserDAO {
     }
 
     @Override
-    public String deleteRecordUsers(UsersEntity usersEntity) {
+    public void deleteRecordUsers(UsersEntity usersEntity) {
         currentSession().delete(usersEntity);
-        ResourceBundle bundle = null;
-        try {
-            bundle = ResourceBundle.getBundle("resources.messages.messages", Locale.getDefault());
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-        return  bundle.getString("DeleteRowSuccess");
+
     }
 
     @Override

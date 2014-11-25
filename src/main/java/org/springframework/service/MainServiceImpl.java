@@ -238,8 +238,8 @@ public class MainServiceImpl implements MainService {
 
     @Override
     @Transactional
-    public String deleteRecordUsers(UsersEntity usersEntity) {
-        return userDAO.deleteRecordUsers(usersEntity);
+    public void deleteRecordUsers(UsersEntity usersEntity) {
+         userDAO.deleteRecordUsers(usersEntity);
     }
 
     @Override
