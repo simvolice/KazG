@@ -5,6 +5,11 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
 
+
+
+
+
+
        <bean id="templateResolver"
              class="org.thymeleaf.templateresolver.ServletContextTemplateResolver">
               <property name="prefix" value="/WEB-INF/templates/" />

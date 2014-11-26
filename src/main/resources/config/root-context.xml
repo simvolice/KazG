@@ -27,9 +27,13 @@
 
 
 
+    <bean id="xmlViewResolver" class="org.springframework.web.servlet.view.XmlViewResolver">
 
 
+    <property name="location" value="classpath:config/jasper-views.xml"/>
+    <property name="order" value="1"/>
 
+</bean>
 
 
 </beans>

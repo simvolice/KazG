@@ -10,7 +10,7 @@
     <context-param>
 		<param-name>contextConfigLocation</param-name>
 		<param-value>
-			 classpath:config/business-context.xml, classpath:config/security-context.xml, classpath:config/tool-context.xml
+			 classpath:config/business-context.xml, classpath:config/security-context.xml, classpath:config/tool-context.xml, classpath:config/jasper-views.xml
 		</param-value>
 	</context-param>
 

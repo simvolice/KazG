@@ -50,6 +50,13 @@ public class DocCreateUslDAOImpl implements DocCreateUslDAO {
     @Override
     public String addRecordsDocCreateUsl(DocCreateUslEntity docCreateUslEntity) {
 
+
+
+
+
+
+
+
         currentSession().saveOrUpdate(docCreateUslEntity);
         ResourceBundle bundle = null;
         try {

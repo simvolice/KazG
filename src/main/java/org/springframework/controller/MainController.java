@@ -46,16 +46,7 @@ public class MainController {
 
 
 
-    @RequestMapping(value = "/user", method = RequestMethod.POST)
-    public String processCreationForm(@Valid UsersEntity usersEntity, BindingResult result, SessionStatus status) {
-        if (result.hasErrors()) {
-            return "user";
-        } else {
-            this.mainService.addRecordsUsers(usersEntity);
-            status.setComplete();
-            return "user";
-        }
-    }
+
 
 
 
@@ -190,14 +181,6 @@ model.setViewName("login");
         return "doc";
     }
 
-    @RequestMapping("/user")
-    public String getAllRecordsUser(Model uimodel){
 
-        List<UsersEntity> usersEntities = this.mainService.getAllRecordsUserEntity();
-
-        uimodel.addAttribute("users", usersEntities);
-
-        return "user";
-    }
 
 }

@@ -232,14 +232,14 @@ public class MainServiceImpl implements MainService {
 
     @Override
     @Transactional
-    public String addRecordsUsers(UsersEntity usersEntity) {
-        return userDAO.addRecordsUsers(usersEntity);
+    public void addRecordsUsers(UsersEntity usersEntity) {
+        userDAO.addRecordsUsers(usersEntity);
     }
 
     @Override
     @Transactional
-    public String deleteRecordUsers(UsersEntity usersEntity) {
-        return userDAO.deleteRecordUsers(usersEntity);
+    public void deleteRecordUsers(UsersEntity usersEntity) {
+       userDAO.deleteRecordUsers(usersEntity);
     }
 
     @Override

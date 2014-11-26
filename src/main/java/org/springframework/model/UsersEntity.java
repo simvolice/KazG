@@ -126,7 +126,7 @@ public class UsersEntity {
     }
 
     @Basic
-    @Column(name = "useremail", nullable = false, insertable = true, updatable = true, length = 45)
+    @Column(name = "useremail", nullable = true, insertable = true, updatable = true, length = 45)
     public String getUseremail() {
         return useremail;
     }
