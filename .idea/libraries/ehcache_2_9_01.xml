@@ -1,7 +1,7 @@
 <component name="libraryTable">
-  <library name="mysql-connector-java-5.1.34">
+  <library name="ehcache-2.9.01">
     <CLASSES>
-      <root url="jar://D:/mysql-connector-java-5.1.34.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/ehcache-2.9.0.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
