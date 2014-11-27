@@ -89,7 +89,7 @@ public class DocCreateUslEntity {
 
 
     @Id
-    @Column(name = "docCreateUslID", nullable = false, insertable = true, updatable = true)
+    @Column(name = "docCreateUslID", nullable = true, insertable = true, updatable = true)
     public int getDocCreateUslId() {
         return docCreateUslId;
     }
@@ -99,7 +99,7 @@ public class DocCreateUslEntity {
     }
 
     @Basic
-    @Column(name = "date", nullable = false, insertable = true, updatable = true)
+    @Column(name = "date", nullable = true, insertable = true, updatable = true)
     public Timestamp getDate() {
         return date;
     }

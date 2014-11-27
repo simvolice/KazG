@@ -76,7 +76,7 @@ public class UsersEntity {
     }
 
     @Basic
-    @Column(name = "username", nullable = false, insertable = true, updatable = true, length = 45)
+    @Column(name = "username", nullable = true, insertable = true, updatable = true, length = 45)
     public String getUsername() {
         return username;
     }
@@ -86,7 +86,7 @@ public class UsersEntity {
     }
 
     @Basic
-    @Column(name = "userpassword", nullable = false, insertable = true, updatable = true, length = 45)
+    @Column(name = "userpassword", nullable = true, insertable = true, updatable = true, length = 45)
     public String getUserpassword() {
         return userpassword;
     }
@@ -96,7 +96,7 @@ public class UsersEntity {
     }
 
     @Basic
-    @Column(name = "userrole", nullable = false, insertable = true, updatable = true, length = 45)
+    @Column(name = "userrole", nullable = true, insertable = true, updatable = true, length = 45)
     public String getUserrole() {
         return userrole;
     }
@@ -106,7 +106,7 @@ public class UsersEntity {
     }
 
     @Basic
-    @Column(name = "userfirstname", nullable = false, insertable = true, updatable = true, length = 45)
+    @Column(name = "userfirstname", nullable = true, insertable = true, updatable = true, length = 45)
     public String getUserfirstname() {
         return userfirstname;
     }
@@ -116,7 +116,7 @@ public class UsersEntity {
     }
 
     @Basic
-    @Column(name = "userlastname", nullable = false, insertable = true, updatable = true, length = 45)
+    @Column(name = "userlastname", nullable = true, insertable = true, updatable = true, length = 45)
     public String getUserlastname() {
         return userlastname;
     }

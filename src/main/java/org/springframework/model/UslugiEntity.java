@@ -46,7 +46,7 @@ public class UslugiEntity {
     }
 
     @Basic
-    @Column(name = "naimenovanie", nullable = false, insertable = true, updatable = true, length = 45)
+    @Column(name = "naimenovanie", nullable = true, insertable = true, updatable = true, length = 45)
     public String getNaimenovanie() {
         return naimenovanie;
     }

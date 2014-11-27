@@ -1,7 +1,6 @@
 package org.springframework.model;
 
 import javax.persistence.*;
-import java.sql.Timestamp;
 import java.util.Date;
 import java.util.HashSet;
 import java.util.Set;
@@ -42,7 +41,7 @@ private  String naimenovanie;
 
 
     @Basic
-    @Column(name = "naimenovanie", nullable = false, insertable = true, updatable = true, length = 45)
+    @Column(name = "naimenovanie", nullable = true, insertable = true, updatable = true, length = 45)
     public String getNaimenovanie() {
 
         return naimenovanie;
@@ -64,7 +63,7 @@ private  String naimenovanie;
     }
 
     @Basic
-    @Column(name = "start_date", nullable = false, insertable = true, updatable = true)
+    @Column(name = "start_date", nullable = true, insertable = true, updatable = true)
     public Date getStartDate() {
         return startDate;
     }
@@ -74,7 +73,7 @@ private  String naimenovanie;
     }
 
     @Basic
-    @Column(name = "end_date", nullable = false, insertable = true, updatable = true)
+    @Column(name = "end_date", nullable = true, insertable = true, updatable = true)
     public Date getEndDate() {
         return endDate;
     }
@@ -84,7 +83,7 @@ private  String naimenovanie;
     }
 
     @Basic
-    @Column(name = "Summa", nullable = false, insertable = true, updatable = true, precision = 0)
+    @Column(name = "Summa", nullable = true, insertable = true, updatable = true, precision = 0)
     public double getSumma() {
         return summa;
     }

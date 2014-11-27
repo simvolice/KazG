@@ -32,9 +32,7 @@
                 <prop key="show_sql">true</prop>
 
                 <prop key="hibernate.generate_statistics">true</prop>
-                <prop key="hibernate.connection.url">jdbc:mysql://178.91.252.123:3306/kazgidro</prop>
-                <prop key="hibernate.connection.driver_class">com.mysql.jdbc.Driver</prop>
-            </props>
+                </props>
         </property>
     </bean>
 

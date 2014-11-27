@@ -69,7 +69,7 @@ public class DocPlanEntity {
     }
 
     @Basic
-    @Column(name = "date", nullable = false, insertable = true, updatable = true)
+    @Column(name = "date", nullable = true, insertable = true, updatable = true)
     public Timestamp getDate() {
         return date;
     }
@@ -79,7 +79,7 @@ public class DocPlanEntity {
     }
 
     @Basic
-    @Column(name = "Jan", nullable = false, insertable = true, updatable = true, length = 45)
+    @Column(name = "Jan", nullable = true, insertable = true, updatable = true, length = 45)
     public String getJan() {
         return jan;
     }
@@ -89,7 +89,7 @@ public class DocPlanEntity {
     }
 
     @Basic
-    @Column(name = "Feb", nullable = false, insertable = true, updatable = true, length = 45)
+    @Column(name = "Feb", nullable = true, insertable = true, updatable = true, length = 45)
     public String getFeb() {
         return feb;
     }
@@ -99,7 +99,7 @@ public class DocPlanEntity {
     }
 
     @Basic
-    @Column(name = "Mar", nullable = false, insertable = true, updatable = true, length = 45)
+    @Column(name = "Mar", nullable = true, insertable = true, updatable = true, length = 45)
     public String getMar() {
         return mar;
     }
@@ -109,7 +109,7 @@ public class DocPlanEntity {
     }
 
     @Basic
-    @Column(name = "Apr", nullable = false, insertable = true, updatable = true, length = 45)
+    @Column(name = "Apr", nullable = true, insertable = true, updatable = true, length = 45)
     public String getApr() {
         return apr;
     }
@@ -119,7 +119,7 @@ public class DocPlanEntity {
     }
 
     @Basic
-    @Column(name = "May", nullable = false, insertable = true, updatable = true, length = 45)
+    @Column(name = "May", nullable = true, insertable = true, updatable = true, length = 45)
     public String getMay() {
         return may;
     }
@@ -129,7 +129,7 @@ public class DocPlanEntity {
     }
 
     @Basic
-    @Column(name = "June", nullable = false, insertable = true, updatable = true, length = 45)
+    @Column(name = "June", nullable = true, insertable = true, updatable = true, length = 45)
     public String getJune() {
         return june;
     }
@@ -139,7 +139,7 @@ public class DocPlanEntity {
     }
 
     @Basic
-    @Column(name = "July", nullable = false, insertable = true, updatable = true, length = 45)
+    @Column(name = "July", nullable = true, insertable = true, updatable = true, length = 45)
     public String getJuly() {
         return july;
     }
@@ -149,7 +149,7 @@ public class DocPlanEntity {
     }
 
     @Basic
-    @Column(name = "Auv", nullable = false, insertable = true, updatable = true, length = 45)
+    @Column(name = "Auv", nullable = true, insertable = true, updatable = true, length = 45)
     public String getAuv() {
         return auv;
     }
@@ -159,7 +159,7 @@ public class DocPlanEntity {
     }
 
     @Basic
-    @Column(name = "Sep", nullable = false, insertable = true, updatable = true, length = 45)
+    @Column(name = "Sep", nullable = true, insertable = true, updatable = true, length = 45)
     public String getSep() {
         return sep;
     }
@@ -169,7 +169,7 @@ public class DocPlanEntity {
     }
 
     @Basic
-    @Column(name = "Oct", nullable = false, insertable = true, updatable = true, length = 45)
+    @Column(name = "Oct", nullable = true, insertable = true, updatable = true, length = 45)
     public String getOct() {
         return oct;
     }
@@ -179,7 +179,7 @@ public class DocPlanEntity {
     }
 
     @Basic
-    @Column(name = "Nov", nullable = false, insertable = true, updatable = true, length = 45)
+    @Column(name = "Nov", nullable = true, insertable = true, updatable = true, length = 45)
     public String getNov() {
         return nov;
     }
@@ -189,7 +189,7 @@ public class DocPlanEntity {
     }
 
     @Basic
-    @Column(name = "Dec", nullable = false, insertable = true, updatable = true, length = 45)
+    @Column(name = "Dec", nullable = true, insertable = true, updatable = true, length = 45)
     public String getDec() {
         return dec;
     }
@@ -199,7 +199,7 @@ public class DocPlanEntity {
     }
 
     @Basic
-    @Column(name = "year", nullable = false, insertable = true, updatable = true)
+    @Column(name = "year", nullable = true, insertable = true, updatable = true)
     public int getYear() {
         return year;
     }
@@ -214,6 +214,9 @@ public class DocPlanEntity {
         if (o == null || getClass() != o.getClass()) return false;
 
         DocPlanEntity that = (DocPlanEntity) o;
+
+
+
 
         if (id != that.id) return false;
         if (year != that.year) return false;

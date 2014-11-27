@@ -17,13 +17,13 @@
           p:reportDataKey="datasource" />
 
 
-  <!--  <bean id="xlsReport"
+    <bean id="xlsReport"
           class="org.springframework.web.servlet.view.jasperreports.JasperReportsXlsView"
-          p:url="classpath:config/chathuranga-sample-report.jrxml"
+          p:url="classpath:config/new_jasper_report.jrxml"
           p:reportDataKey="datasource" />
 
 
-    <bean id="htmlReport"
+   <!-- <bean id="htmlReport"
           class="org.springframework.web.servlet.view.jasperreports.JasperReportsHtmlView"
           p:url="classpath:config/chathuranga-sample-report.jrxml"
           p:reportDataKey="datasource" />

@@ -2,12 +2,7 @@ package org.springframework.controller;
 
 import net.sf.jasperreports.engine.JRDataSource;
 import net.sf.jasperreports.engine.data.JRBeanCollectionDataSource;
-
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.model.DocCreateUslEntity;
 import org.springframework.model.FilialyEntity;
 import org.springframework.model.UsersEntity;
 import org.springframework.service.MainService;
@@ -66,14 +61,14 @@ public class ReportController {
 
 
 
-    /*@RequestMapping(method = RequestMethod.GET , value = "xls")
+    @RequestMapping(method = RequestMethod.GET , value = "xls")
     public ModelAndView generateXlsReport(ModelAndView modelAndView){
 
 
 
         Map<String,Object> parameterMap = new HashMap<String,Object>();
 
-        List<User> usersList = userDao.retrieveAllRegisteredUsers();
+        List<UsersEntity> usersList = mainService.getAllRecordsUserEntity();
 
         JRDataSource JRdataSource = new JRBeanCollectionDataSource(usersList);
 
@@ -87,7 +82,7 @@ public class ReportController {
     }//generatePdfReport
 
 
-    @RequestMapping(method = RequestMethod.GET , value = "csv")
+   /* @RequestMapping(method = RequestMethod.GET , value = "csv")
     public ModelAndView generateCsvReport(ModelAndView modelAndView){
 
 

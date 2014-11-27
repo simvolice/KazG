@@ -64,7 +64,6 @@
 
                       token-validity-seconds="2419200" data-source-ref="dataSource" remember-me-parameter="remember-me"/>
 
-
 <intercept-url pattern="/**" access="permitAll"/>
 
 

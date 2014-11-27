@@ -47,7 +47,7 @@ public class KontragentEntity {
     }
 
     @Basic
-    @Column(name = "naimenovanie", nullable = false, insertable = true, updatable = true, length = 45)
+    @Column(name = "naimenovanie", nullable = true, insertable = true, updatable = true, length = 45)
     public String getNaimenovanie() {
         return naimenovanie;
     }
@@ -57,7 +57,7 @@ public class KontragentEntity {
     }
 
     @Basic
-    @Column(name = "BIN", nullable = false, insertable = true, updatable = true, length = 45)
+    @Column(name = "BIN", nullable = true, insertable = true, updatable = true, length = 45)
     public String getBin() {
         return bin;
     }
@@ -67,7 +67,7 @@ public class KontragentEntity {
     }
 
     @Basic
-    @Column(name = "IIN", nullable = false, insertable = true, updatable = true, length = 45)
+    @Column(name = "IIN", nullable = true, insertable = true, updatable = true, length = 45)
     public String getIin() {
         return iin;
     }
