@@ -23,13 +23,15 @@ public class MainServiceImpl implements MainService {
 //    private PlanByMonthDAO planByMonthDAO;
     private UserDAO userDAO;
     private UslugiDAO uslugiDAO;
+    private ImageDao imageDao;
+    private ArticleDAO articleDAO;
 
 
     @Autowired
     public MainServiceImpl(DocCreateUslDAO docCreateUslDAO, DocPlanDAO docPlanDAO,
                                DogovoraDAO dogovoraDAO, FilialyDAO filialyDAO,
                                KontragentyDAO kontragentyDAO,
-                               UserDAO userDAO,  UslugiDAO uslugiDAO) {
+                               UserDAO userDAO,  UslugiDAO uslugiDAO, ImageDao imageDao, ArticleDAO articleDAO) {
         this.docCreateUslDAO = docCreateUslDAO;
         this.docPlanDAO = docPlanDAO;
         this.dogovoraDAO = dogovoraDAO;
@@ -38,11 +40,43 @@ public class MainServiceImpl implements MainService {
 //        this.planByMonthDAO = planByMonthDAO;
         this.userDAO = userDAO;
         this.uslugiDAO = uslugiDAO;
+        this.imageDao = imageDao;
+        this.articleDAO = articleDAO;
     }
 
 
+    @Override
+    @Transactional
+    public ArticleEntity findByIdArticleEntity(int id) {
 
 
+        return articleDAO.findByIdArticle(id);
+
+
+
+    }
+
+    @Override
+    @Transactional
+    public void addRecordsArticle(ArticleEntity articleEntity) {
+
+        articleDAO.addRecordsArticle(articleEntity);
+
+
+
+    }
+
+    @Override
+    @Transactional
+    public void addRecordsImage(ImageEntity imageEntity) {
+         imageDao.addRecordsImage(imageEntity);
+    }
+
+    @Override
+    @Transactional
+    public String deleteRecordImage(ImageEntity imageEntity) {
+        return null;
+    }
 
     @Override
     @Transactional

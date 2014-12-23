@@ -10,6 +10,19 @@ import java.util.List;
 public interface MainService {
 
 
+
+
+
+    public ArticleEntity findByIdArticleEntity(int id);
+
+public void addRecordsArticle (ArticleEntity articleEntity);
+
+    public void addRecordsImage(ImageEntity imageEntity);
+
+    public String deleteRecordImage(ImageEntity imageEntity);
+
+
+
     // Doc Crate uslugi DAO
     public List<DocCreateUslEntity> getAllRecordsDocCreateUsl();
 
